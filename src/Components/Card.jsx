@@ -7,6 +7,7 @@ export function Card(props) {
       </div>
       <div className="card-content">
         <h2 className="card-title">{props.card_title}</h2>
+        <hr></hr>
         <p className="card-description">{props.card_description}</p>
       </div>
     </div>

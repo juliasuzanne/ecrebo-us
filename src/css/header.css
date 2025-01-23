@@ -1,8 +1,9 @@
 h1 {
   font-family: 'NeuzeitGro-Bol';
   text-align: center;
+  padding-top: 64px;
   margin: 12px 36px;
-  font-size: 50px;
+  font-size: 40px;
 
   .green_span {
     color: var(--bright-green);

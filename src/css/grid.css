@@ -3,6 +3,10 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: 12px;
   grid-auto-rows: 1fr;
+  padding-top: 100px;
+
+  align-items: stretch;
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -11,5 +15,18 @@
     grid-template-columns: 1fr;
     column-gap: 12px;
     grid-auto-rows: 1fr;
+    justify-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+
+  .card-icon {
+    z-index: 20;
+    position: relative;
+    top: 0;
+  }
+
+  .card-container {
+    display: block;
   }
 }

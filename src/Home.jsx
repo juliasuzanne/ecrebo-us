@@ -56,7 +56,7 @@ export function Home() {
             card_color="purple"
             icon_url="src/assets/DataCard-2-1.svg"
             card_title="POS Agnostic"
-            card_description="Works with all POS systems and all receipt printers. No new hardware."
+            card_description="Works with all POS systems and all receipt printers. No new hardware. Works with all POS systems and all receipt printers. No new hardware."
           />
           <Card
             card_color="purple"

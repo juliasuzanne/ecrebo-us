@@ -1,0 +1,27 @@
+.hero-home {
+  display: block;
+  background: url('/src/assets/HeroImage-Home.jpg');
+  border-image: fill 0 linear-gradient(140deg, rgba(40, 43, 74, .9),rgba(118, 98, 238, 0.5), rgba(118, 98, 238, 0.3));
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding-left: 32px;
+  padding-bottom: 100px;
+  background-position-y: 25%;
+  color: white;
+  font-size: 20px;
+  img {
+    max-width: 55%;
+  }
+  
+  h3 {
+    max-width: 50%;
+  }
+}
+
+
+
+.hero-home:before {
+  background: linear-gradient(-45deg, rgba(var(--bright-purple), 0.5), rgba(var(--dark-purple), 0.2))
+}

@@ -1,0 +1,54 @@
+:root {
+  --dark-purple: rgb(40, 43, 74);
+  --white: rgb(255, 255, 255);
+  --light-purple: rgb(240, 237, 243);
+  --bright-green: rgb(44, 245, 208);
+  --bright-purple: hwb(249 38% 7%);
+  --border-radius: 12px;
+}
+
+html {
+  background-color: var(--white);
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: 'NeuzeitGro-Bol';
+}
+
+.container {
+  padding: 20px 0;
+  margin: auto;
+  margin: 0 32px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0 12px;
+  }
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.white-background {
+  padding: 20px 0;
+  background-color: var(--white);
+  margin: 0;
+
+}
+
+button {
+  height: 32px;
+  border-radius: 500px;
+  border: 2px var(--bright-green) solid;
+  background-color: var(--bright-green);
+  color: var(--dark-purple);
+  padding: .5em 1em;
+  font-family: 'NeuzeitGro-Bol';
+}
+
+button:hover{
+  background-color: transparent;
+}
+

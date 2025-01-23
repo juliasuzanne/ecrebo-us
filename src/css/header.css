@@ -1,0 +1,23 @@
+h1 {
+  font-family: 'NeuzeitGro-Bol';
+  text-align: center;
+  margin: 12px 36px;
+  font-size: 50px;
+
+  .green_span {
+    color: var(--bright-green);
+  }
+}
+
+.dark {
+  color: var(--dark-purple);
+}
+
+.white {
+  color: var(--white);
+}
+
+.round-div {
+  border-radius: var(--border-radius);
+  background-color: var(--dark-purple);
+}

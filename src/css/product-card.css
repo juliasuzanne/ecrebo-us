@@ -1,0 +1,57 @@
+.product-card-container {
+  border-radius: var(--border-radius);
+  background-color: var(--dark-purple);
+  margin-bottom: 20px;
+  font-family: 'NeuzeitGro-Lig';
+  color: var(--white);
+  overflow:hidden;
+}
+
+#product-card-subtitle {
+  font-weight: normal;
+  font-family: 'NeuzeitGro-Lig';
+}
+
+.product-container {
+  border-radius: var(--border-radius);
+  background-color: var(--light-purple);
+  padding: 12px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.grid-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 36px;
+  margin: 0 24px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.product-card-content {
+  padding: 12px;
+  max-width: 70%;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+.product-card-description {
+  border-left: 1px rgba(255, 255, 255, 0.4) solid;
+  padding-left: 9px;
+}
+
+.gradient-background {
+  background: linear-gradient(var(--dark-purple), white);
+}
+
+.product-image {
+  object-fit:cover;
+  width: auto;
+  height: 200px;
+  background-size:cover;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

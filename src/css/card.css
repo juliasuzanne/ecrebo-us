@@ -1,0 +1,43 @@
+.card-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  z-index: 2;
+  margin: auto;
+
+  img {
+    height: auto;
+    width: 75%;
+  }
+}
+
+.green {
+  background-color: var(--bright-green);
+}
+
+.purple {
+  background-color: var(--bright-purple);
+}
+
+.card-content {
+  text-align: center;
+  border-radius: var(--border-radius);
+  background-color: var(--light-purple);
+  padding: 34px;
+  padding-top: 64px;
+  transform: translateY(-60px);
+  z-index: 0;
+  color: var(--dark-purple);
+}
+
+.card-title {
+  font-family: 'NeuzeitGro-Bol';
+}
+
+.card-description {
+  font-family: 'NeuzeitGro-Lig';
+}

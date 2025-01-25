@@ -13,6 +13,8 @@ html {
   scroll-behavior: smooth;
   margin: 0;
   font-family: 'NeuzeitGro-Bol';
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -31,6 +33,11 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .white-background {
   padding: 20px 0;
   background-color: var(--white);
@@ -43,36 +50,42 @@ button {
   border-radius: 500px;
   border: 2px var(--bright-green) solid;
   background-color: var(--bright-green);
-  padding: .5em 1em;
+  padding: 1.2em 1em;
+  display: flex;
+  align-items: center;
   font-family: 'NeuzeitGro-Bol';
+  font-size: 18px;
+
 }
 
 a {
   text-decoration: none;
-  color: var(--dark-purple);
 }
 
 button:hover{
   background-color: transparent;
   color: white;
-
 }
 
 a:hover {
   color: white;
 }
 
-
 .receiptanim{
   color: rgb(228, 222, 234);
   margin: 0 auto;
   padding-bottom: 0vh;
-
-
 }
+
 .riveBox{
   height: 120vh;
   margin: auto;
   padding-right: 4vw;
+}
 
+.circles-for-email {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70vw;
 }

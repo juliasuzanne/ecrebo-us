@@ -13,10 +13,9 @@ export function ProductCard(props) {
             <span id="product-card-subtitle">{props.product_subtitle}</span>
           </h2>
           <p className="product-card-description">{props.product_description}</p>
-          <button>
-            {" "}
-            <a href={`${props.button_url}`}>See Demo</a>
-          </button>
+          <a href={`${props.button_url}`}>
+            <button> See Demo</button>
+          </a>
         </div>
       </a>
     </div>

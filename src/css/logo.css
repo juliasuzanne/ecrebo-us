@@ -17,5 +17,9 @@
 @media only screen and (max-width: 768px) {
   .logo-container {
     grid-template-columns: repeat(3, 1fr);
+    margin: 0 12px;
+    img {
+      max-width: 80%;
+    }
   }
 }

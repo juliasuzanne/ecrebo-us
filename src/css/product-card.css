@@ -51,15 +51,16 @@
 
 .product-image-container {
   overflow: hidden;
-  box-shadow: inset 1px 1px 5px 1px #00000090;
-
 }
 
 .product-image {
   background-size: cover;
   width: auto;
   height: 300px;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.4s ease-in-out;
+  z-index: 1;
 
   img {
     width: 100%;

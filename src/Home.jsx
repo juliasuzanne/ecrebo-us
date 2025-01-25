@@ -50,7 +50,6 @@ export function Home() {
             Ecrebo's software-only solution is <span className="green_span">pain-free.</span>
           </MainTitle>
         </div>
-
         <div className="container container-grid">
           <Card
             card_color="purple"

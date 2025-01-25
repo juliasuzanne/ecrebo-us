@@ -1,0 +1,23 @@
+ul {
+  position: absolute;
+  top: 2vh;
+  right: 5vw;  
+  list-style-type: none;
+  color: var(--white);
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  color: var(--white);
+  img {
+    transform: translateY(15%) scale(0.6);
+  }
+}
+
+li:hover,
+li:focus {
+  opacity: 0.8;
+}

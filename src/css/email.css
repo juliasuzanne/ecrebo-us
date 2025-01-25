@@ -3,18 +3,36 @@
   background-image: linear-gradient(0deg, var(--dark-purple), var(--bright-purple));
   color: white;
   margin: 0 64px;
+  z-index: -20;
+
+  button {
+    position: relative;
+    z-index: 10;
+  }
+
+  button:hover {
+    background-color: rgba(40,43,74, 0.9);
+  }
 }
+/* 
+.email-circles {
+  position: absolute;
+  left: 0;
+  opacity: 0.6;
+  width: 100%;
+  height: auto;
+} */
 
 .form-control {
   height: 24px;
   width: 100%;
   font-family: 'NeuzeitGro-Lig';
-  border-radius: 2px;
+  border-radius: 4px;
   border: 0px solid;
   margin: 12px 0;
   padding: 6px;
   resize: vertical;
-
+  position: relative;
 }
 
 .textarea {
@@ -28,9 +46,32 @@
   width: 100%;
 }
 
+.circles {
+  width: 100%;
+  left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("/src/assets/Email-Circles.svg");
+  display: block;
+}
+
 .disclaimer {
+  position: relative;
+  text-align: right;
+  z-index: 0;
+  width: 50%;
+  float: right;
   font-family: "NeuzeitGro-Lig";
   font-size: 13px;
-  padding: 10px 0 20px;
-  opacity: 0.9;
+  margin: 0 0 20px;
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.771);
+}
+
+.success {
+  display:none;
+}
+
+.errors {
+  display:none;
 }

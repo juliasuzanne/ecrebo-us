@@ -1,16 +1,18 @@
-import "../src/Pages/Css/navbar.css";
+import "../src/css/navbar.css";
 
 export function Navbar() {
   return (
-    <ul>
-      <li>
-        <a>Demos</a>
-      </li>
-      <li>
-        <button>
-          <a href="#contact-us">Contact Us</a>
-        </button>
-      </li>
-    </ul>
+    <div className="nav">
+      <ul>
+        <li>
+          <a>Demos</a> <img src="/src/assets/Down_Arrow_Menu.svg" />
+        </li>
+        <li>
+          <a href="#contact-us">
+            <button>Contact Us</button>
+          </a>
+        </li>
+      </ul>
+    </div>
   );
 }

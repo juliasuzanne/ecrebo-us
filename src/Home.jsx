@@ -9,7 +9,7 @@ import { Logos } from "./Logos";
 
 export function Home() {
   return (
-    <div>
+    <div style={{ backgroundColor: "var(--white)" }}>
       <div style={{ backgroundColor: "var(--dark-purple)" }}>
         <Hero />
         <MainTitle header_color="white">

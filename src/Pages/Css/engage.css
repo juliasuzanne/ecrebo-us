@@ -1,0 +1,506 @@
+
+
+.engageborder{
+  background-color:rgb(40,43,74);
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+#engagecontainer{
+  font-family: sans-serif;
+
+  width: 90%;
+  margin: auto;
+  min-height: 98vh;
+  background-color: white;
+
+}
+
+.mmnavbar{
+  height: 10vh;
+
+  margin: auto;
+  background-color: rgb(16, 75, 27);
+}
+
+.engagelogo{
+  height: 8vh;
+  float: left;
+  padding-left: 1em;
+}
+
+
+
+
+.inputsearch {
+  padding: 20px;
+  padding-left: 150px;
+}
+
+
+
+#checkbox {
+  background: #ffffff;
+  justify-content: center;;
+}
+
+
+h1{
+  padding: 5vh;
+
+}
+
+
+
+@media screen and (max-width: 10092px){
+  .titlemmrewardsimage{
+    height: 13vh;
+    margin: auto;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+  
+  }
+  .personalizedheader{
+    padding: 5px;
+    font-size: 4.5vh;
+  }
+
+  #points{
+    font-size: 2.2vh;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    background-color: rgb(28, 68, 28);
+    margin: auto;
+    border-radius: 10px;
+    max-width: 60%;
+    /* border-radius: 100%; */
+    display: inline-block;
+  }
+  
+
+  .titlebox{
+    background-color: white;
+    margin: auto;
+    width: 50%;
+    height: 30%;
+    border-radius: 15px;
+
+  }
+  .titlemmrewardstext{
+    font-size: 3vw;
+    font-family: "PulpDisplay-SemiBold";
+    margin: auto;
+    color: rgb(24,67,37);
+    padding-bottom: 0;
+    padding-bottom: 20px;
+
+
+  }
+  .engagedescription{
+    font-family: "Corda";
+    color: rgb(24,67,37);
+    padding-bottom: 5vh;
+    font-size: 20px;
+    text-align: left;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.952);
+  }
+  .subtitlemmrewardsimage{
+    height: 2.5vw;
+    padding-top: 0vw;
+    padding-left: .5rem;
+    padding-bottom: .8vw;
+    
+  }
+  .personalizedheader{
+    padding: 5px;
+    padding-left: 6vw;
+    text-align: left;
+    font-size: 4.25vh;
+  }
+
+  
+}
+
+.mmengagetitle{
+  background-image: url("https://res.cloudinary.com/dytb4ayqj/image/upload/w_1000/v1709349538/grocery_sfh8ho.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position-x: 45vw;
+  background-position-y: -15vh; */
+  background-color: rgb(248,247,245);
+}
+
+
+
+
+@media screen and (max-width: 992px){
+  .titlemmrewardsimage{
+    height: 8vw;
+    margin: auto;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+  
+  }
+
+  .titlebox{
+    background-color: white;
+    margin: auto;
+    width: 60%;
+    height: 30%;
+  }
+  .titlemmrewardstext{
+    font-size: 4vw;
+    margin: auto;
+    font-family: "PulpDisplay-SemiBold";
+    color: rgb(24,67,37);
+    padding-bottom: 0;
+    padding-bottom: 20px;
+
+
+  }
+  .engagedescription{
+    font-family: "Corda";
+    color: rgb(24,67,37);
+    padding-bottom: 5vh;
+    font-size: 20px;
+    text-align: left;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.952);
+    padding-top: 0vh;
+  }
+  .subtitlemmrewardsimage{
+    height: 5vw;
+    margin: auto;
+    padding-top: 1vw;
+    padding-bottom: 1.7vw;
+    
+  }
+  .personalizedheader{
+    padding: 5px;
+    padding-left: 10vw;
+
+    text-align: left;
+    font-size: 4.25vh;
+  }
+
+
+  
+}
+
+@media screen and (max-width: 738px){
+  .titlemmrewardsimage{
+    height: 10vw;
+    padding-top: 1vw;
+    margin: auto;
+  
+  }
+
+  .personalizedheader{
+    padding: 5px;
+    text-align: center;
+    font-size: 4.25vh;
+  }
+
+  #points{
+    max-width: 70%;
+    
+  }
+  
+
+  .titlebox{
+    background-color: white;
+    margin: auto;
+    width: 80%;
+    height: 30%;
+  }
+
+
+  .titlemmrewardstext{
+    font-size: 26px;
+    padding: 4px;
+    padding-top:20px;
+    margin:auto;
+    font-family: "PulpDisplay-SemiBold";
+    padding-bottom: 20px;
+    color: rgb(24,67,37);
+  }
+  .engagedescription{
+    font-family: "Corda";
+    color: rgb(24,67,37);
+    font-size: clamp(2vw, 16px, 20px);
+    text-align: left;
+    margin: auto;
+    width: 96%;
+    background-color: rgba(255, 255, 255, 0.952);
+
+
+  }
+
+ 
+
+  .subtitlemmrewardsimage{
+    height: 6.4vw;
+    padding-left: 0;
+    margin: auto;
+    padding-top: 1vw;
+    padding-bottom: 1.85vw;
+
+  
+  }
+  
+
+}
+
+@media screen and (max-width: 370px){
+  .subtitlemmrewardsimage{
+    height: 4vh;
+    padding-left: 0;
+    margin: auto;
+    padding-top: 1vw;
+    padding-bottom: 1.85vw;
+
+  
+  }
+  
+
+
+  }
+
+@media screen and (max-width: 570px){
+  #points{
+    max-width: 100%;
+
+    
+  }
+
+
+  }
+
+
+
+/* 
+.engagedescription{
+  font-family: "Pulp";
+  font-style: oblique;
+  color: rgb(0, 0, 0);
+  padding-bottom: 5vh;
+  font-size: 2vw;
+  margin: auto;
+} */
+
+#engageitemdescription{
+  display: inline;
+  text-align: left;
+  
+}
+
+
+.engageitemcontainer {
+  font-family: "Gilroy-Regular";
+  background-color: rgb(255, 255, 255); 
+  width: 100%;
+  border-radius: 10px;    
+  margin: auto;
+  padding: 1vh;
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.item{
+  font-family: "Gilroy-Regular";
+  height: auto;
+  display: block;
+}
+
+.itemcontainer {
+  padding: 2em;
+  width: 90%;
+  margin: auto;
+}
+
+.itemimage {
+  width: 100%;
+  margin-top: auto;
+  flex-wrap: nowrap;
+
+}
+
+
+.itemtitle{
+  font-family: "Gilroy-Regular";
+  font-size: 2vh;
+  margin: 1vw;
+}
+
+#price{
+font-weight: bold;
+font-size: 3.4vh;
+}
+
+#strikethrough{
+  font-size: 1em;
+  font-weight: normal;
+  font-family: sans-serif;
+  text-decoration: line-through;
+}
+
+
+/* 
+.titlemmrewardsimage{
+  height: 8vw;
+  margin: auto;
+  padding-top: 1vw;
+  padding-bottom: 2vw;
+
+} */
+
+
+.pointsmmrewardsimage{
+  height: 4vh;
+  padding-top: 1vh;
+  padding-bottom: .5vh;
+
+}
+
+.savingsmmrewardsimage{
+  height:4.8vh;
+  padding-top: 1vh;
+  padding-bottom: .9vh;
+  padding-left: 0;
+  margin-left: 0;
+
+}
+
+
+
+#engagehead{
+font-size: clamp(2.2vh, 20px, 5vw);
+width: 90%;
+font-family: "PulpDisplay-SemiBold";
+}
+
+#saving{
+  font-weight: bold;
+  color: rgb(4, 65, 4);
+  font-size: 2vh;
+
+}
+
+
+
+
+/* This css is for changing checkbox to something prettier */
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: rgb(248,247,245);
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+input[type="checkbox"]{
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: .5em;
+  height: .5em;
+  border: 0.02em solid currentColor;
+  border-radius: 15%;
+  transform: translateY(-0.075em);
+}
+
+.large2x {
+  font-family: "NeuzeitGro-Bol";
+  font-size: 2.4vw;
+}
+
+.form-control + .form-control {
+  margin-top: 1em;
+}
+
+input[type="checkbox"] {
+  /* ...existing styles */
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]:before  {
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  transform: scale(.5);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="checkbox"]{
+  /* ...existing styles */
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]{
+  content: "";
+  width: 1.1em;
+  transform-origin: bottom left;
+  height: 1.1em;
+  color: rgb(1, 48, 9);
+
+  transform: scale(1.25);
+  background-color: rgb(219, 249, 219);
+  /* transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color); */
+}
+
+input[type="checkbox"]:before{
+  content: "";
+  color: rgb(1, 48, 9);
+  transform: scale(2);
+  background-color: rgb(255, 255, 255);
+  /* transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color); */
+}
+
+
+
+
+input[type="checkbox"]:checked:before {
+  /* transform: scale(2); */
+  background-color: rgb(70,152,64);
+  transform: scale(1.8);
+
+  transform-origin: middle center;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  color: #3a3a3a;
+
+
+}
+
+.engagebrowsemore{
+  font-family: "PulpDisplay-SemiBold";
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  margin-bottom: 5vh;
+  border-radius: 30px;
+  text-decoration: underline;
+}
+
+.engagebrowsemore:hover{
+  font-family: "PulpDisplay-SemiBold";
+  color: rgb(0,128,1);
+  padding: 10px;
+  margin-bottom: 5vh;
+  border-radius: 30px;
+}

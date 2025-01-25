@@ -1,12 +1,14 @@
 h1 {
   font-family: 'NeuzeitGro-Bol';
   text-align: center;
-  padding-top: 64px;
+  padding-top: var(--default-margin);
   margin: 12px 36px;
-  font-size: 40px;
 
   .green_span {
     color: var(--bright-green);
+  }
+  @media screen and (max-width: 787px){
+    margin: 12px 6px;
   }
 }
 

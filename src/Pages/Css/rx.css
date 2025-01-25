@@ -1,0 +1,296 @@
+.rxcontainer{
+  width: 90%;
+  min-height: 80vh;
+  margin: auto;
+  font-family: "Gilroy-Regular";
+  background-color: rgb(255, 255, 255);
+}
+
+.rxcontentcontainer{
+  width: 100%;
+  overflow-y: hidden;
+  min-height: 80vh;
+  overflow-x: hidden;
+  font-family: "Gilroy-Regular";
+  background-color: rgb(255, 255, 255);
+}
+
+.rxheaderbackground{
+  background-image: url("https://res.cloudinary.com/dytb4ayqj/image/upload/v1710074922/AdobeStock_26321728_h6mkxa.jpg");
+  background-size: cover;
+}
+
+
+
+@media screen and (max-width: 3908px){
+  .rxbackground{
+    padding: 0;
+    margin: 0;
+    min-height: 40vh;
+    background-image: url("https://res.cloudinary.com/dytb4ayqj/image/upload/v1710074726/AdobeStock_42545852_upedxc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+  }
+
+  .subtitlemmlogo{
+    height: 4.7vh;
+    padding-left: 0;
+    padding-bottom: 1.2vh;
+  }
+
+  .titlemmlogo{
+    height: 9.3vh;
+    padding-left: 0;
+    padding-bottom: 1.5vh;
+  }
+
+  .rxtitle{
+    font-family:"PulpDisplay-SemiBold", Georgia;
+    font-size: 5vw;
+    color:rgb(5,51,28);
+  }
+  
+  .rxsubtitle{
+    font-family:"Corda";
+    font-size: 2vw;
+    padding-bottom: 5vh;
+    margin-bottom: 0;
+    width: 90%;
+    margin:auto;
+  }
+
+
+  /* .listbackground{
+    background-image: url("https://res.cloudinary.com/dytb4ayqj/image/upload/w_900,f_auto/v1709845230/AdobeStock_303740855_pxwick_bk14gj.png");
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 110%;
+     width: 110%;
+     padding: 50px;
+     background-position-x: -50px;
+     overflow-y: hidden;
+  } */
+
+  .rxmainlist {
+    padding-top: 5vh;
+    font-size: 3vh;
+    display:inline-block;
+  }
+  
+  
+  .rxsublist {
+    list-style: square;
+    font-size: 3.0vh;
+  
+  }
+  
+
+
+.listtextonly{
+  max-width: 80%;
+  margin:auto;
+}
+
+
+  .rxactivate{
+    margin-top: 5vh;
+    font-family: "PulpDisplay-SemiBold";
+    color: white;
+    padding: 10px;
+    margin-bottom: 5vh;
+    border-radius: 30px;
+    border: 2px solid rgb(4, 65, 4);
+    background-color: rgb(4, 65, 4);
+  }
+  
+  .rxactivate:hover{
+    font-family: "PulpDisplay-SemiBold";
+    background-color: white;
+      border: 2px solid rgb(4, 65, 4);
+      color:  rgb(4, 65, 4);
+    padding: 10px;
+    margin-bottom: 5vh;
+    border-radius: 30px;
+  }
+
+  .listmmlogo{
+    height: 4.2vh;
+    padding-bottom: 1vh;
+  
+  }
+}
+
+@media screen and (max-width: 768px){
+  .rxbackground{
+    background-position-x: 0px;
+    background-size: cover;
+  }
+
+   
+  .rxsublist {
+    list-style: square;
+    font-size: 2.5vh;
+  
+  }
+
+  .listmmlogo{
+    height: 3.4vh;
+    padding-bottom: .4vh;
+  
+  }
+  .rxtitle{
+    font-family:"PulpDisplay-SemiBold", Georgia;
+    font-size: 7vw;
+  }
+
+  .subtitlemmlogo{
+    height: 3.7vh;
+    padding-left: 0;
+    padding-bottom: .95vh;
+  }
+  
+  .rxsubtitle{
+    font-family:"Corda";
+    font-size: 3.5vw;
+    padding-bottom: 5vh;
+    margin-bottom: 0;
+    width: 90%;
+    margin:auto;
+  }
+
+  .listbackground{
+    
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 110%;
+     width: 110%;
+     padding: 25px;
+     background-position-x: -210px;
+     overflow-y: hidden;
+
+  }
+
+  .rxmainlist {
+    padding-top: 0;
+    font-size: 3vh;
+    display:inline-block;
+    
+  }
+  
+  
+  .rxsublist {
+    list-style: square;
+    font-size: 2.5vh;
+  
+  }
+
+  .rxactivate{
+    margin-top: 5vh;
+    font-family: "PulpDisplay-SemiBold";
+    color: white;
+    padding: 7px;
+    margin-bottom: 5vh;
+    border-radius: 30px;
+    border: 2px solid rgb(4, 65, 4);
+    background-color: rgb(4, 65, 4);
+  }
+  
+  .rxactivate:hover{
+    font-family: "PulpDisplay-SemiBold";
+    background-color: white;
+      border: 2px solid rgb(4, 65, 4);
+      color:  rgb(4, 65, 4);
+    padding: 7px;
+    margin-bottom: 5vh;
+    border-radius: 30px;
+  }
+  .listmmlogo{
+    height: 4vh;
+    padding-bottom: 1vh;
+  
+  }
+
+  .listtextonly{
+    max-width: 96%;
+    font-size: 3vh;    
+  }
+  
+  
+  
+}
+
+
+.rxrow {
+  width: 110%;
+}
+
+.rxlist {
+display: inline-flex;
+width: 97.25%;
+}
+
+
+
+ul {
+  font-size: 2.3vh;
+  float: top;
+  text-align: left;
+  list-style: circle;
+  align-items: center;
+  margin: 0 auto;
+  padding: auto;
+
+}
+
+.rxheader{
+  background-color: rgba(255, 255, 255, 0.891);
+  width: 70%;
+  border-radius: 15px;
+  padding: auto;
+  margin: auto;
+  /* background-image: url("https://res.cloudinary.com/dytb4ayqj/image/upload/v1709839633/AdobeStock_100459285_urvd4m.png"); */
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: 54vw;
+  color: rgb(24,67,37);
+  background-position-y: 6vh;
+
+}
+
+
+
+
+
+
+.activatebutton {
+  list-style: none;
+  text-align: center;
+  color: rgb(248,247,245);
+}
+
+
+@media screen and (max-width: 618px){
+
+
+  .titlemmlogo{
+    height: 6.2vh;
+    padding-left: 0;
+    padding-bottom: .95vh;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 418px){
+
+
+  .titlemmlogo{
+    height: 5.2vh;
+    padding-left: 0;
+    padding-bottom: .95vh;
+  }
+  
+}
+

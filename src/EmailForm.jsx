@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./css/email.css";
+import { MainTitle } from "./Components/MainTitle";
 
 export function EmailForm() {
   const form = useRef();
@@ -38,12 +39,12 @@ export function EmailForm() {
   };
 
   return (
-    <div id="login">
+    <div id="contact-us">
       <form ref={form} onSubmit={sendEmail}>
         <div className="container">
           <div className="row">
             <div className="email-outsides">
-              <h3>Get in touch. Let’s put your receipts to work.</h3>
+              <MainTitle header_color="white">Get in touch. Let's put your receipts to work.</MainTitle>
             </div>
             <ul hidden={successMessageShow} className="success">
               {successMessage.map((successMessage) => (
@@ -58,25 +59,21 @@ export function EmailForm() {
           </div>
           <div className="row">
             <div>
-              E-mail:
-              <input name="email" className="form-control" type="email" />
+              <input name="email" placeholder="E-mail" className="form-control" type="email" />
             </div>
           </div>
           <div className="row">
             <div className="col-sm-6">
-              First Name:
-              <input name="name" className="form-control" type="string" />
+              <input name="name" placeholder="First Name" className="form-control" type="string" />
             </div>
             <div className="col-sm-6">
-              Last Name:
-              <input name="last_name" className="form-control" type="string" />
+              <input name="last_name" placeholder="Last Name" className="form-control" type="string" />
             </div>
           </div>
           <div className="row">
             <div>
-              Message:
               <p>
-                <textarea name="message" type="text" className="textarea"></textarea>
+                <textarea placeholder="Message" type="text" className="form-control"></textarea>
               </p>
               {/* <input name="message" className="textarea form-control" type="text" /> */}
             </div>

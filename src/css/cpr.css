@@ -1,0 +1,11 @@
+.ecrebo-product {
+  max-width: 50%;
+  color: var(--white);
+  font-family: 'NeuzeitGro-Lig';
+
+  .main_header {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+}

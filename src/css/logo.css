@@ -1,5 +1,6 @@
 .logo-container {
   display: grid;
+  margin: 0 var(--default-margin);
   grid-template-columns: repeat(5, 1fr);
   column-gap: 12px;
   img {

@@ -1,0 +1,28 @@
+.mmnavbar-custom {
+  background-color: rgb(4, 51, 28);
+  display: flex;
+}
+
+.containernavbar{
+  display:flex;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+#yeswraprewards{
+  flex-wrap: wrap;
+}
+#nowraprewards{
+  flex-wrap: wrap;
+}
+
+
+.mmnavbarimage{
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
+
+

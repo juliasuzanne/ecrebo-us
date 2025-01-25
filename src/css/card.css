@@ -39,7 +39,7 @@
   border-radius: var(--border-radius);
   background-color: var(--light-purple);
   padding: 34px;
-  padding-top: 64px;
+  padding-top: var(--default-margin);
   transform: translateY(-60px);
   z-index: 0;
   color: var(--dark-purple);

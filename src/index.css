@@ -5,17 +5,17 @@
   --bright-green: rgb(44, 245, 208);
   --bright-purple: hwb(249 38% 7%);
   --border-radius: 12px;
+  --default-margin: 64px;
 }
 
 html {
-  background-color: var(--white);
+  background-color: var(--dark-purple);
   scroll-behavior: smooth;
   margin: 0;
   font-family: 'NeuzeitGro-Bol';
 }
 
 .container {
-  padding: 20px 0;
   margin: auto;
   margin: 0 32px;
 }
@@ -43,13 +43,36 @@ button {
   border-radius: 500px;
   border: 2px var(--bright-green) solid;
   background-color: var(--bright-green);
-  color: var(--dark-purple);
   padding: .5em 1em;
   font-family: 'NeuzeitGro-Bol';
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-purple);
 }
 
 button:hover{
   background-color: transparent;
   color: white;
+
 }
 
+a:hover {
+  color: white;
+}
+
+
+.receiptanim{
+  color: rgb(228, 222, 234);
+  margin: 0 auto;
+  padding-bottom: 0vh;
+
+
+}
+.riveBox{
+  height: 120vh;
+  margin: auto;
+  padding-right: 4vw;
+
+}

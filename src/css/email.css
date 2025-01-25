@@ -1,5 +1,36 @@
-#login {
+#contact-us {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
-  background-image: linear-gradient(25deg, var(--dark-purple), var(--dark-purple), var(--bright-purple));
+  background-image: linear-gradient(0deg, var(--dark-purple), var(--bright-purple));
   color: white;
+  margin: 0 64px;
+}
+
+.form-control {
+  height: 24px;
+  width: 100%;
+  font-family: 'NeuzeitGro-Lig';
+  border-radius: 2px;
+  border: 0px solid;
+  margin: 12px 0;
+  padding: 6px;
+  resize: vertical;
+
+}
+
+.textarea {
+  height: 24px;
+  padding: 6px;
+  font-family: 'NeuzeitGro-Lig';
+  border-radius: 2px;
+  border: 0px solid;
+  margin: 12px 0;
+  resize: vertical;
+  width: 100%;
+}
+
+.disclaimer {
+  font-family: "NeuzeitGro-Lig";
+  font-size: 13px;
+  padding: 10px 0 20px;
+  opacity: 0.9;
 }

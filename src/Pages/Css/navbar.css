@@ -1,0 +1,29 @@
+.navbar-custom {
+  background-color: rgb(40,43,74);
+  display: flex;
+}
+
+.nav-link{
+  color:white;
+  font-family: 'NeuzeitGro-Lig', Futura;
+}
+
+.navbarimagepulse{
+  padding: 1em;
+  animation: call 2s infinite linear;
+}
+
+
+.navbarimage{
+  padding: 1em;
+}
+
+
+@keyframes call {
+  0% {  -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% { -webkit-transform: scale(1.1);
+    transform: scale(1.1);}
+  100% {  -webkit-transform: scale(1);
+    transform: scale(1);}
+}

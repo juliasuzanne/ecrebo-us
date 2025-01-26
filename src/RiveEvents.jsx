@@ -1,5 +1,6 @@
 import { useRive, EventType, RiveEventType } from "@rive-app/react-canvas";
 import { useCallback, useEffect, useState, useRef } from "react";
+import "/src/index.css";
 
 export function RiveEvents() {
   const [showExtendedDiv, setShowExtendedDiv] = useState(true);
@@ -69,15 +70,16 @@ export function RiveEvents() {
 
   return (
     <div>
-      <div ref={scrollRef} className="clicktopadding">
-        <span className="clickto">See Clickable Paper Receipts in Action </span>
-      </div>
-      <p className="clicktosee">Click to print a personalized receipt that:</p>
+      <div ref={scrollRef}></div>
+      <p className="clicktosee">
+        Click to print a<br /> personalized receipt that:
+      </p>
 
       <div className="rivecontainer">
         <RiveComponent className="riveBox" onMouseEnter={() => rive && rive.play()} />
       </div>
       <div ref={myRef}></div>
+
       <div id="test" hidden={showExtendedDiv}></div>
     </div>
   );

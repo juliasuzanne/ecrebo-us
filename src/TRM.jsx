@@ -1,10 +1,13 @@
 import { EmailForm } from "./EmailForm";
 import { RiveEvents } from "./RiveEvents";
 import { TRMPageDescription } from "./TRMPageDescription";
+import { TRMHero } from "./Components/TRMHero";
+import "/src/css/hero.css";
 
 export function TRM() {
   return (
-    <div className="bodyborder">
+    <div className="product-page">
+      <TRMHero></TRMHero>
       <div className="description container.fluid" id="circlebackground">
         <div className="row">
           <div className="description col-sm-12 col-md-12 col-lg-6">
@@ -17,10 +20,10 @@ export function TRM() {
       </div>
       <div className="email container.fluid">
         <div className="row">
-          <div className="col-sm-12 col-md-8">
+          <div className="col-sm-12">
             <EmailForm></EmailForm>
           </div>
-          <div className="col-sm-12 col-md-4"></div>
+          <div className="col-sm-12"></div>
         </div>
       </div>
     </div>

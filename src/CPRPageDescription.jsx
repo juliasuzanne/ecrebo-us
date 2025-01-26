@@ -3,7 +3,7 @@ import "/src/css/cpr.css";
 
 export function CPRPageDescription() {
   return (
-    <div className="description container ecrebo-product">
+    <div className="ecrebo-product">
       <MainTitle header_color="white">
         {" "}
         Introducing EcreboCPR{" "}
@@ -13,13 +13,12 @@ export function CPRPageDescription() {
       </MainTitle>
       <br></br>
       <p className="descriptiontext">
-        Instantly turn humble paper receipts into powerful digital marketing by adding personalized QR codes.
+        Add personalized QR codes to your paper receipts to cost-effectively acquire and activate loyalty app users.
       </p>
       <p className="descriptiontext">
-        Ecrebo’s Clickable Paper Receipt (CPR) solution is the most cost-effective way for retailers to drive more
-        digital engagement.{" "}
+        More users, using your app more often, means more retail media to sell and better promotional performance.
+        That’s money in the bank.
       </p>
-      <p className="descriptiontext">No new equipment or POS integration required.</p>
     </div>
   );
 }

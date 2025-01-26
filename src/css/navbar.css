@@ -13,7 +13,7 @@ ul {
 li {
   color: var(--white);
   img {
-    transform: translateY(15%) scale(0.6);
+    transform: translateY(-4%) scale(0.6);
   }
 }
 

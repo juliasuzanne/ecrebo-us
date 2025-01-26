@@ -6,6 +6,7 @@ import { Products } from "./Products";
 import { Hero } from "./Hero";
 import "/src/css/grid.css";
 import { Logos } from "./Logos";
+import { RiveEvents } from "./RiveEvents";
 
 export function Home() {
   return (
@@ -15,7 +16,7 @@ export function Home() {
         <MainTitle header_color="white">
           Personalized paper receipts are <span className="green_span">powerful.</span>
         </MainTitle>
-        <div className="container container-grid">
+        <div className="container-grid">
           <Card
             card_color="green"
             icon_url="src/assets/DataCard-1-1.svg"
@@ -50,7 +51,7 @@ export function Home() {
             Ecrebo's software-only solution is <span className="green_span">pain-free.</span>
           </MainTitle>
         </div>
-        <div className="container container-grid">
+        <div className="container-grid">
           <Card
             card_color="purple"
             icon_url="src/assets/DataCard-2-1.svg"
@@ -70,6 +71,8 @@ export function Home() {
             card_description="Campaign creation and management through an intuitive Ecrebo portal."
           />
         </div>
+        <RiveEvents></RiveEvents>
+
         <EmailForm></EmailForm>
       </div>
     </div>

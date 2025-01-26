@@ -4,7 +4,6 @@
   border-image: fill 0 linear-gradient(140deg, rgba(40, 43, 74, .9),rgba(118, 98, 238, 0.5), rgba(118, 98, 238, 0.3));
   background-size: cover;
   height: 100%;
-  width: 100%;
   margin: 0;
   padding: 36px 32px 100px 64px;
   background-position-y: 25%;
@@ -23,4 +22,28 @@
 
 .hero-home:before {
   background: linear-gradient(-45deg, rgba(var(--bright-purple), 0.5), rgba(var(--dark-purple), 0.2))
+}
+
+.cpr-hero-div {
+  height: 12rem;
+  width: 100%;
+  background-image: url("/src/assets/CPR_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-image: fill 0 linear-gradient(140deg, rgba(40, 43, 74, 1) 10%, rgba(118, 98, 238, 0.2) 50%);
+}
+
+.trm-hero-div {
+  height: 12rem;
+  width: 100%;
+  background-image: url("/src/assets/Grocery_coupon_US.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-image: fill 0 linear-gradient(140deg, rgba(40, 43, 74, 1) 10%, rgba(118, 98, 238, 0.2) 50%);
+}
+
+.product-page {
+  background: var(--dark-purple);
 }

@@ -41,52 +41,50 @@ export function EmailForm() {
   return (
     <div id="contact-us">
       <form ref={form} onSubmit={sendEmail}>
-        <div className="container">
-          <div className="row">
-            <div className="email-outsides">
-              <MainTitle header_color="white">Get in touch. Let's put your receipts to work.</MainTitle>
-            </div>
-            <ul hidden={successMessageShow} className="success">
-              {successMessage.map((successMessage) => (
-                <li key={successMessage}>{successMessage}</li>
-              ))}
-            </ul>
-            <ul hidden={errorShow} className="errors">
-              {errors.map((error) => (
-                <li key={error}>{error}</li>
-              ))}
-            </ul>
+        <div className="row">
+          <div className="email-outsides">
+            <MainTitle header_color="white">Get in touch. Let's put your receipts to work.</MainTitle>
           </div>
-          <div className="row">
-            <div>
-              <input name="email" placeholder="E-mail" className="form-control" type="email" />
-            </div>
+          <ul hidden={successMessageShow} className="success">
+            {successMessage.map((successMessage) => (
+              <li key={successMessage}>{successMessage}</li>
+            ))}
+          </ul>
+          <ul hidden={errorShow} className="errors">
+            {errors.map((error) => (
+              <li key={error}>{error}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="row">
+          <div>
+            <input name="email" placeholder="E-mail" className="form-control" type="email" />
           </div>
-          <div className="row">
-            <div className="col-sm-6">
-              <input name="name" placeholder="First Name" className="form-control" type="string" />
-            </div>
-            <div className="col-sm-6">
-              <input name="last_name" placeholder="Last Name" className="form-control" type="string" />
-            </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-6">
+            <input name="name" placeholder="First Name" className="form-control" type="string" />
           </div>
-          <div className="row">
-            <div>
-              <p>
-                <textarea placeholder="Message" type="text" className="form-control"></textarea>
-              </p>
-              {/* <input name="message" className="textarea form-control" type="text" /> */}
-            </div>
+          <div className="col-sm-6">
+            <input name="last_name" placeholder="Last Name" className="form-control" type="string" />
           </div>
-          <div className="row">
-            <p className="disclaimer">
-              Ecrebo will use the information in this form to contact you about a follow-up meeting to learn more about
-              Ecrebo’s products and solutions.
+        </div>
+        <div className="row">
+          <div>
+            <p>
+              <textarea placeholder="Message" type="text" className="form-control"></textarea>
             </p>
+            {/* <input name="message" className="textarea form-control" type="text" /> */}
           </div>
-          <div className="row">
-            <button className="submitbutton btn btn-secondary mt-3 submit ">Submit</button>
-          </div>
+        </div>
+        <div className="row">
+          <p className="disclaimer pull-right">
+            Ecrebo will use the information in this form to contact you about a follow-up meeting to learn more about
+            Ecrebo’s products and solutions.
+          </p>
+        </div>
+        <div className="row">
+          <button className="button">Submit</button>
         </div>
       </form>
     </div>

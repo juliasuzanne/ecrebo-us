@@ -22,12 +22,10 @@ export function Navbar() {
   return (
     <div className="nav">
       <ul className="main-nav">
-        <a href="#products">
+        <a>
           <li
-            onMouseEnter={() => {
-              if (window.innerWidth > 968) {
-                setShowNavMenu(false);
-              }
+            onClick={() => {
+              toggleShowNavMenu(false);
             }}
           >
             Products <img className="nav-arrow" src="/assets/Down_Arrow_Menu.svg" />

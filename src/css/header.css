@@ -7,7 +7,7 @@ h1 {
   .green_span {
     color: var(--bright-green);
   }
-  @media screen and (max-width: 787px){
+  @media screen and (max-width: 987px){
     margin: 12px 6px;
   }
 }

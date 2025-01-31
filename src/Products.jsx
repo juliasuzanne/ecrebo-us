@@ -4,7 +4,7 @@ import "/src/css/product-card.css";
 
 export function Products() {
   return (
-    <div className="gradient-background">
+    <div className="gradient-background" id="products">
       <div className="product-container">
         <MainTitle header_color="dark">
           Grow retail media <span style={{ textDecoration: "underline" }}>and</span> super-charge promotional lift.

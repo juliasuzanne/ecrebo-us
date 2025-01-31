@@ -71,7 +71,6 @@ export function Home() {
             card_description="Campaign creation and management through an intuitive Ecrebo portal."
           />
         </div>
-        <RiveEvents></RiveEvents>
 
         <EmailForm></EmailForm>
       </div>

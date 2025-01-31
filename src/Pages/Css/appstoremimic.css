@@ -311,7 +311,7 @@ font-family: "SF Pro Display","SF Pro Icons","Apple WebExp Icons Custom","Helvet
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 968px){
 
   #mmtitle {
     font-size: 1.2em;

@@ -2,9 +2,9 @@
   display: grid;
   margin: 0 var(--default-margin);
   grid-template-columns: repeat(5, 1fr);
-  column-gap: 12px;
+  column-gap: 30px;
   img {
-    max-width: 70%;
+    max-width: 90%;
   }
 }
 
@@ -14,9 +14,10 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 968px) {
   .logo-container {
-    grid-template-columns: repeat(3, 1fr);
+    justify-content:center;
+    grid-template-columns: repeat(2, 1fr);
     margin: 0 12px;
     img {
       max-width: 80%;

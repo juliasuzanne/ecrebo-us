@@ -1,9 +1,14 @@
 import "/src/css/hero.css";
+import { ProductNavbar } from "../ProductNavbar";
 
 export function TRMHero(props) {
   return (
     <div className="trm-hero-div">
-      <img src="/src/assets/ecrebo-logo-white.svg" />
+      <a href="/trm">
+        <img className="product-hero-img" src="/src/assets/ecrebo-logo-white.svg" />
+      </a>
+      <p className="hero_subtitle">TRM</p>
+      <ProductNavbar nav_product="EcreboCPR" nav_url="/cpr" />
     </div>
   );
 }

@@ -1,11 +1,16 @@
+import { MainTitle } from "./Components/MainTitle";
+import "/src/css/cpr.css";
+
 export function TRMPageDescription() {
   return (
-    <div className="description " id="ecrebocpr">
-      <h1 className="descriptionhead1">Introducing EcreboTRM</h1>{" "}
-      <span className="descriptionhead2">
-        Total Receipt Marketing
-        <span id="tm">™</span>
-      </span>
+    <div className="ecrebo-product">
+      <MainTitle header_color="white">
+        {" "}
+        Introducing EcreboTRM <br />
+        <span style={{ color: "var(--bright-green)" }}>
+          Total Receipt Marketing<span id="tm">™</span>
+        </span>{" "}
+      </MainTitle>
       <br></br>
       <p className="descriptiontext">
         Ecrebo makes delivering personalized, high-impact offers and messages on printed receipts easy. No POS

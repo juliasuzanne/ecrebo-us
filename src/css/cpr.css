@@ -19,6 +19,9 @@
   font-family: 'NeuzeitGro-Bol';
   font-size: 28px;
   width: 70%;
+  @media only screen and (max-width: 968px) {
+    width: 100%;
+  }
 }
 
 .clickto {

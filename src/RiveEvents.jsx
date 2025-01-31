@@ -30,7 +30,8 @@ export function RiveEvents() {
     const eventProperties = eventData.properties;
 
     if (eventData.type === RiveEventType.General) {
-      console.log("Event name", eventData.name);
+      console.log("Event name" + eventData.name);
+
       if (eventData.name == "PlaySound") {
         play();
         handleShowDiv();
@@ -49,13 +50,13 @@ export function RiveEvents() {
       console.log("Event name", eventData.name);
       // Handle OpenUrl event manually
       if (eventData.name == "GoToAcquire") {
-        window.open("/acquire", "_self");
+        window.open("/cpr/acquire", "_self");
       } else if (eventData.name == "GoToRx") {
-        window.open("/rx_link", "_self");
+        window.open("/cpr/rx_link", "_self");
       } else if (eventData.name == "GoToEngage") {
-        window.open("/engage", "_self");
+        window.open("/cpr/engage", "_self");
       } else if (eventData.name == "GoToConversion") {
-        window.open("/digital_conversion", "_self");
+        window.open("/cpr/digital_conversion", "_self");
       }
     }
   };
@@ -74,7 +75,6 @@ export function RiveEvents() {
       <p className="clicktosee">
         Click to print a<br /> personalized receipt that:
       </p>
-
       <div className="rivecontainer">
         <RiveComponent className="riveBox" onMouseEnter={() => rive && rive.play()} />
       </div>

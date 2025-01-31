@@ -10,9 +10,26 @@
     position: relative;
     z-index: 10;
   }
+  
+  @media only screen and (max-width: 968px) {
+    margin: 0 24px; 
+    padding: 0 24px 24px;
+  }
 
   button:hover {
     background-color: rgba(40,43,74, 0.9);
+  }
+
+  h1 {
+    @media only screen and (max-width: 968px) {
+      padding: 12px;
+    }
+  }
+}
+
+form {
+  @media only screen and (max-width: 968px) {
+    margin: 0;
   }
 }
 /* 
@@ -48,10 +65,9 @@
 
 .disclaimer {
   position: relative;
-  text-align: right;
+  line-height: 20px;
   z-index: 0;
-  width: 50%;
-  float: right;
+  float: left;
   font-family: "NeuzeitGro-Lig";
   font-size: 13px;
   margin: 0 0 20px;

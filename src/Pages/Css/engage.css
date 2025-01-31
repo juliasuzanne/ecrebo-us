@@ -8,11 +8,9 @@
 
 #engagecontainer{
   font-family: sans-serif;
-
   width: 90%;
   margin: auto;
   min-height: 98vh;
-  background-color: white;
 
 }
 
@@ -29,15 +27,10 @@
   padding-left: 1em;
 }
 
-
-
-
 .inputsearch {
   padding: 20px;
   padding-left: 150px;
 }
-
-
 
 #checkbox {
   background: #ffffff;

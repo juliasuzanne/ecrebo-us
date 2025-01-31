@@ -1,3 +1,4 @@
+import { CPRHero } from "../Components/CPRHero";
 import "./Css/appstoremimic.css";
 import { Footer } from "./Footer";
 

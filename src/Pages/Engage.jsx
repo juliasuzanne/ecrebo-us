@@ -3,6 +3,7 @@ import { Footer } from "./Footer";
 import React, { useState } from "react";
 import { ItemContainer } from "./ItemContainer";
 import { MMNavbar } from "./MMNavbar";
+import { CPRHero } from "../Components/CPRHero";
 
 function getDate() {
   const today = new Date();
@@ -17,6 +18,7 @@ export function Engage() {
 
   return (
     <div>
+      <CPRHero></CPRHero>
       <div className="engageborder">
         <div id="engagecontainer">
           <div id="externalpagebackground">
@@ -112,7 +114,6 @@ export function Engage() {
           <button className="engagebrowsemore">Browse more great offers and manufacturer's coupons</button>
         </div>
       </div>
-
       <Footer></Footer>
     </div>
   );

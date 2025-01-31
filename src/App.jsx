@@ -7,6 +7,7 @@ import { Digital } from "./Pages/Digital";
 import { Engage } from "./Pages/Engage";
 import { CPR } from "./CPR";
 import { TRM } from "./TRM";
+import { Rx } from "./Pages/Rx";
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/cpr" element={<CPR />} />
           <Route path="/trm" element={<TRM />} />
-          <Route path="/acquire" element={<Acquire />} />
-          <Route path="/digital" element={<Digital />} />
-          <Route path="/engage" element={<Engage />} />
+          <Route path="/cpr/acquire" element={<Acquire />} />
+          <Route path="/cpr/digital" element={<Digital />} />
+          <Route path="/cpr/engage" element={<Engage />} />
+          <Route path="/cpr/rx_link" element={<Rx />} />
         </Routes>
       </BrowserRouter>
     </div>

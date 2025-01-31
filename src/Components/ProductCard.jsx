@@ -8,14 +8,21 @@ export function ProductCard(props) {
           <div className="product-image" style={{ backgroundImage: `url(${props.image_url})` }}></div>
         </div>
         <div className="product-card-content">
-          <h2 className="product-card-title">
-            {props.product_title}
-            <span id="product-card-subtitle">{props.product_subtitle}</span>
-          </h2>
-          <p className="product-card-description">{props.product_description}</p>
-          <a href={`${props.button_url}`}>
-            <button> See Demo</button>
-          </a>
+          <div>
+            <h2 className="product-card-title">
+              {props.product_title}
+              <br />
+              <span id="product-card-subtitle">{props.product_subtitle}</span>
+            </h2>
+          </div>
+          <div>
+            <p className="product-card-description">{props.product_description}</p>
+          </div>
+          <div className="demo-button">
+            <a href={`${props.button_url}`}>
+              <button> See Demo</button>
+            </a>
+          </div>
         </div>
       </a>
     </div>

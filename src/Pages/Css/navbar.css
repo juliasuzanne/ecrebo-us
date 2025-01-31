@@ -5,7 +5,7 @@
 
 .nav-link{
   color:white;
-  font-family: 'NeuzeitGro-Lig', Futura;
+  font-family: 'NeuzeitGro-Lig';
 }
 
 .navbarimagepulse{
@@ -17,7 +17,6 @@
 .navbarimage{
   padding: 1em;
 }
-
 
 @keyframes call {
   0% {  -webkit-transform: scale(1);

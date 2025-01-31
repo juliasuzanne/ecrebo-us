@@ -9,15 +9,37 @@
   background-position-y: 25%;
   color: white;
   font-size: 20px;
-  img {
-    max-width: 55%;
+
+  @media only screen and (max-width: 968px) {
+    padding: 100px 32px 36px 32px;
   }
-  
+
+  .hero-img {
+    max-width: 55%;
+    height: auto;
+    @media only screen and (max-width: 968px) {
+      max-width: 100%;
+      margin: auto;
+    }
+  }
+
   h3 {
     max-width: 50%;
+    @media only screen and (max-width: 968px) {
+      max-width: 100%;
+      text-align: center;
+    }
   }
 }
 
+.product-hero-img {
+  max-height: 100%;
+  width: auto;
+  @media only screen and (max-width: 968px) {
+    max-width: 70%;
+    margin: auto;
+  }
+}
 
 
 .hero-home:before {
@@ -27,23 +49,39 @@
 .cpr-hero-div {
   height: 12rem;
   width: 100%;
+  padding: 12px 32px 100px 64px;
   background-image: url("/src/assets/CPR_image.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   border-image: fill 0 linear-gradient(140deg, rgba(40, 43, 74, 1) 10%, rgba(118, 98, 238, 0.2) 50%);
+  @media only screen and (max-width: 968px) {
+    padding: 24px 32px;
+  }
 }
 
 .trm-hero-div {
   height: 12rem;
   width: 100%;
+  padding: 12px 32px 100px 64px;
   background-image: url("/src/assets/Grocery_coupon_US.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   border-image: fill 0 linear-gradient(140deg, rgba(40, 43, 74, 1) 10%, rgba(118, 98, 238, 0.2) 50%);
+  @media only screen and (max-width: 968px) {
+    padding: 24px 32px;
+  }
 }
 
 .product-page {
   background: var(--dark-purple);
+}
+
+.hero_subtitle {
+  color: white;
+  font-size: 39px;
+  padding-top: 18px;
+  padding-left: 3px;
+  font-family: "NeuzeitGro-Lig";
 }

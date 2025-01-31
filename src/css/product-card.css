@@ -16,6 +16,9 @@
   border-radius: var(--border-radius);
   background-color: var(--light-purple);
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .grid-product {
@@ -24,21 +27,19 @@
   grid-gap: 36px;
   margin: 0 var(--default-margin);
 
-  @media screen and (max-width: 787px){
+  @media screen and (max-width: 987px){
     grid-template-columns: 1fr;
     margin: 0 24px;
   }
 }
 
 .product-card-content {
-  position:relative;
-  padding: 32px 12px 12px;
-  max-width: 80%;
+  padding: 32px 10% 12px 10%;
   margin: auto;
   color: var(--white);
   padding-bottom: 60px;
   font-family: 'NeuzeitGro-Bol';
-
+  background: linear-gradient(var(--bright-purple) -100%, var(--dark-purple));
 }
  
 

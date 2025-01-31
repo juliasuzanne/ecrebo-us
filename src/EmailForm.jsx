@@ -77,15 +77,15 @@ export function EmailForm() {
             {/* <input name="message" className="textarea form-control" type="text" /> */}
           </div>
         </div>
-        <div className="row">
-          <p className="disclaimer pull-right">
-            Ecrebo will use the information in this form to contact you about a follow-up meeting to learn more about
-            Ecrebo’s products and solutions.
-          </p>
-        </div>
-        <div className="row">
-          <button className="button">Submit</button>
-        </div>
+
+        <p className="disclaimer pull-right">
+          Ecrebo will use the information in this form to contact you about a follow-up meeting to learn more about
+          Ecrebo’s products and solutions.
+        </p>
+        <br></br>
+        <br></br>
+
+        <button className="button submit-button">Submit</button>
       </form>
     </div>
   );

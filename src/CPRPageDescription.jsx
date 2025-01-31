@@ -6,7 +6,7 @@ export function CPRPageDescription() {
     <div className="ecrebo-product">
       <MainTitle header_color="white">
         {" "}
-        Introducing EcreboCPR{" "}
+        Introducing EcreboCPR <br />
         <span style={{ color: "var(--bright-green)" }}>
           Clickable Paper Receipts<span id="tm">™</span>
         </span>{" "}

@@ -1,5 +1,5 @@
 .hero-home {
-  display: block;
+  display: flex;
   background: url('/src/assets/HeroImage-Home.jpg');
   border-image: fill 0 linear-gradient(140deg, rgba(40, 43, 74, .9),rgba(118, 98, 238, 0.5), rgba(118, 98, 238, 0.3));
   background-size: cover;
@@ -9,9 +9,14 @@
   background-position-y: 25%;
   color: white;
   font-size: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
 
   @media only screen and (max-width: 968px) {
     padding: 100px 32px 36px 32px;
+    align-items: center;
+
   }
 
   .hero-img {

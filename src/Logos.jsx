@@ -4,19 +4,19 @@ export function Logos() {
   return (
     <div className="logo-container">
       <div className="logo-img">
-        <img src="src/assets/Total-Wine.svg" />
+        <img src="assets/Total-Wine.svg" />
       </div>
       <div className="logo-img">
-        <img src="src/assets/Southeastern.svg" />
+        <img src="assets/Southeastern.svg" />
       </div>
       <div className="logo-img">
-        <img src="src/assets/loblaws.svg" />
+        <img src="assets/loblaws.svg" />
       </div>
       <div className="logo-img">
-        <img src="src/assets/Albertsons.svg" />
+        <img src="assets/Albertsons.svg" />
       </div>
       <div className="logo-img">
-        <img src="src/assets/Ahold.svg" />
+        <img src="assets/Ahold.svg" />
       </div>
     </div>
   );

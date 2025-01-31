@@ -1,6 +1,6 @@
 .hero-home {
   display: flex;
-  background: url('/src/assets/HeroImage-Home.jpg');
+  background: url('/assets/HeroImage-Home.jpg');
   border-image: fill 0 linear-gradient(140deg, rgba(40, 43, 74, .9),rgba(118, 98, 238, 0.5), rgba(118, 98, 238, 0.3));
   background-size: cover;
   height: 100%;
@@ -55,7 +55,7 @@
   height: 12rem;
   width: 100%;
   padding: 12px 32px 100px 64px;
-  background-image: url("/src/assets/CPR_image.png");
+  background-image: url("/assets/CPR_image.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -69,7 +69,7 @@
   height: 12rem;
   width: 100%;
   padding: 12px 32px 100px 64px;
-  background-image: url("/src/assets/Grocery_coupon_US.png");
+  background-image: url("/assets/Grocery_coupon_US.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

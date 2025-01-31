@@ -30,7 +30,7 @@ export function Navbar() {
               }
             }}
           >
-            Products <img className="nav-arrow" src="/src/assets/Down_Arrow_Menu.svg" />
+            Products <img className="nav-arrow" src="/assets/Down_Arrow_Menu.svg" />
           </li>
         </a>
         <NavMenu show={showNavMenu} closeMenu={closeNavMenu} />

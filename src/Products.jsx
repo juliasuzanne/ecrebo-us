@@ -11,14 +11,14 @@ export function Products() {
         </MainTitle>
         <div className="grid-product">
           <ProductCard
-            image_url="src/assets/CPR_image.png"
+            image_url="assets/CPR_image.png"
             button_url="/cpr"
             product_title="EcreboCPR™ "
             product_subtitle="Clickable Paper Receipts"
             product_description="Grow your retail media business. Efficiently acquire and activate loyalty app users by adding customized QR codes to paper receipts."
           ></ProductCard>
           <ProductCard
-            image_url="src/assets/Grocery_coupon_US.png"
+            image_url="assets/Grocery_coupon_US.png"
             button_url="/trm"
             product_title="EcreboTRM™ "
             product_subtitle="Total Receipt Marketing"

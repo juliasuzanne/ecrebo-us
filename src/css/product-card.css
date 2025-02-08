@@ -5,7 +5,9 @@
   font-family: 'NeuzeitGro-Lig';
   color: var(--white);
   overflow:hidden;
+  display: flex;
 }
+
 
 #product-card-subtitle {
   font-weight: normal;
@@ -15,7 +17,6 @@
 .product-container {
   border-radius: var(--border-radius);
   background-color: var(--light-purple);
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -26,10 +27,15 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 36px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 var(--default-margin);
 
   @media only screen and (max-width: 987px){
     grid-template-columns: 1fr;
+    margin: 0 var(--default-margin);
+
+  }
+
+  @media only screen and (max-width: 767px){
     margin: 0 24px;
   }
 }
@@ -77,4 +83,8 @@
   .product-image {
     transform: scale(1.1);
   }
+}
+
+.demo-button {
+  flex-grow: 1;
 }

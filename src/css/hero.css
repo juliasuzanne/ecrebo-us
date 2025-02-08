@@ -98,3 +98,10 @@
   padding-left: 3px;
   font-family: "NeuzeitGro-Lig";
 }
+
+.externalpagedescription {
+  background-color: var(--dark-purple);
+  border: 0;
+  padding: 24px 0;
+  text-align: center;
+}

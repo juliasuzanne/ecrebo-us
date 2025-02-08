@@ -12,13 +12,12 @@ export function Rx() {
           <p className="externalpagedescription">
             Simulates sending a known pharmacy customer to a page in the retailer’s app explaining a new time and
             money-saving feature at the pharmacy.
+            <br></br>
+            <br></br>
+            <a className="externalpagedescriptionlink" href="/">
+              Return to home page
+            </a>
           </p>
-          <br></br>
-          <a className="externalpagedescriptionlink" href="/">
-            Return to home page
-          </a>
-          <br></br>
-          <br></br>
         </div>
 
         <div className="rxcontainer">

@@ -8,7 +8,7 @@ export function CPRHero(props) {
         <img className="product-hero-img" src="/assets/ecrebo-logo-white.svg" />
       </a>
       <p className="hero_subtitle">CPR</p>
-      <ProductNavbar nav_product="EcreboTRM" nav_url="/trm" />
+      {/* <ProductNavbar nav_product="EcreboTRM" nav_url="/trm" /> */}
     </div>
   );
 }

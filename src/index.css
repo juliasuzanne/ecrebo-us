@@ -150,5 +150,26 @@ canvas {
 }
 
 #externalpagebackground{
-  background-color: transparent;
+  background-color:  rgb(40,43,74);
+  color: rgb(240,237,243); 
+
+}
+
+.externalpagedescription{
+  max-width: 80%;
+  margin:auto;
+  padding-top: 25px;
+  font-size: 18px;
+}
+
+.externalpagedescriptionlink{
+  max-width: 70%;
+  color:rgb(44,245,208);
+  margin: 0 auto;
+  font-size: 15px;
+  text-align: center;
+}
+
+.externalpagedescriptionlink:hover{
+  color:rgb(118,98,238);
 }

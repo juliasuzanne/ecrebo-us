@@ -13,13 +13,13 @@ export function Digital() {
           <p className="externalpagedescription">
             Simulates sending existing loyalty club members who have not downloaded the app to the retailer’s App Store
             page to install the app.
+            <br></br>
+            <br></br>
+            <a className="externalpagedescriptionlink" href="/">
+              Return to home page
+            </a>
           </p>
-          <br></br>
-          <a className="externalpagedescriptionlink" href="/">
-            Return to home page
-          </a>
-          <br></br>
-          <br></br>
+
           <AppStoreMimic></AppStoreMimic>
         </div>
       </div>

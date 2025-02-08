@@ -25,13 +25,12 @@ export function Engage() {
             <p className="externalpagedescription">
               Simulates sending a declining/lapsed loyalty app user to a page loaded with personalized offers to
               emphasize the app’s money-saving benefits.
+              <br></br>
+              <br></br>
+              <a className="externalpagedescriptionlink" href="/">
+                Return to home page
+              </a>
             </p>
-            <br></br>
-            <a className="externalpagedescriptionlink" href="/">
-              Return to home page
-            </a>
-            <br></br>
-            <br></br>
           </div>
           <MMNavbar></MMNavbar>
           <div>

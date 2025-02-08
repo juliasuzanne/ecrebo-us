@@ -3,7 +3,7 @@
   min-height: 80vh;
   margin: auto;
   font-family: "Gilroy-Regular";
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 
 .rxcontentcontainer{
@@ -12,7 +12,6 @@
   min-height: 80vh;
   overflow-x: hidden;
   font-family: "Gilroy-Regular";
-  background-color: rgb(255, 255, 255);
 }
 
 .rxheaderbackground{
@@ -294,3 +293,7 @@ ul {
   
 }
 
+
+.rxborder {
+  background-color: var(--dark-purple);
+}

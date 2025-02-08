@@ -4,7 +4,7 @@
   background-size: cover;
   height: 100%;
   margin: 0;
-  min-height: 50vh;
+  min-height: 35vh;
   padding: 64px;
   padding-right: 0;
   background-position-y: 25%;
@@ -30,13 +30,12 @@
 
   .hero-img {
     background: url('/assets/HeroImage-Home.jpg');
-    height: 50vh;
+    height: 40vh;
     background-size:cover;
     margin: 0;
-    border-top-left-radius: 25vh;
-    border-bottom-left-radius: 25vh;
-    border-bottom-right-radius: 25vh;
-    width: 60%;
+    border-top-left-radius: 20vh;
+    border-bottom-left-radius: 20vh;
+    width: 55%;
     float: right;
     @media only screen and (max-width: 968px) {
       max-width: 100%;
@@ -45,10 +44,13 @@
   }
 
   h3 {
-    max-width: 50%;
+    max-width: 40%;
     float: left;
     position: absolute;
-    font-size: 50px;
+    top: 9%;
+    margin: 0 var(--default-margin);
+    width: 33%;
+    font-size: 46px;
     color: white;
     @media only screen and (max-width: 968px) {
       max-width: 100%;

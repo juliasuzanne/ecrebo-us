@@ -4,9 +4,9 @@ import "/src/css/product-card.css";
 
 export function Products() {
   return (
-    <div className="gradient-background" id="products">
+    <div className="white-background" id="products">
       <div className="product-container">
-        <MainTitle header_color="dark">
+        <MainTitle header_color="white">
           Grow retail media <span style={{ textDecoration: "underline" }}>and</span> super-charge promotional lift.
         </MainTitle>
         <div className="grid-product">

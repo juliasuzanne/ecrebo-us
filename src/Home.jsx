@@ -13,28 +13,30 @@ export function Home() {
     <div style={{ backgroundColor: "var(--white)" }}>
       <div style={{ backgroundColor: "var(--dark-purple)" }}>
         <Hero />
-        <MainTitle header_color="white">
-          Personalized paper receipts are <span className="green_span">powerful.</span>
-        </MainTitle>
-        <div className="container-grid">
-          <Card
-            card_color="green"
-            icon_url="assets/DataCard-1-1.svg"
-            card_title="1/10th The Cost"
-            card_description="Acquire & activate loyalty app user for 1/10th the usual cost."
-          />
-          <Card
-            card_color="green"
-            icon_url="assets/DataCard-1-2.svg"
-            card_title="100% Reach"
-            card_description="Reach 100% of shoppers with bespoke offers and messages."
-          />
-          <Card
-            card_color="green"
-            icon_url="assets/DataCard-1-3.svg"
-            card_title="15% Lift"
-            card_description="Boost redemption of your specials and offers by 15% or more."
-          />
+        <div style={{ backgroundColor: "var(--white)" }}>
+          <MainTitle header_color="dark spaced-header-cards">
+            Personalized paper receipts are <span className="purple_span">powerful.</span>
+          </MainTitle>
+          <div className="container-grid">
+            <Card
+              card_color="purple"
+              icon_url="assets/DataCard-1-1.svg"
+              card_title="1/10th The Cost"
+              card_description="Acquire & activate loyalty app user for 1/10th the usual cost."
+            />
+            <Card
+              card_color="purple"
+              icon_url="assets/DataCard-1-2.svg"
+              card_title="100% Reach"
+              card_description="Reach 100% of shoppers with bespoke offers and messages."
+            />
+            <Card
+              card_color="purple"
+              icon_url="assets/DataCard-1-3.svg"
+              card_title="15% Lift"
+              card_description="Boost redemption of your specials and offers by 15% or more."
+            />
+          </div>
         </div>
         <Products />
       </div>

@@ -16,7 +16,7 @@
 
 .product-container {
   border-radius: var(--border-radius);
-  background-color: var(--light-purple);
+  background-color: var(--dark-purple);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -45,17 +45,17 @@
 }
 
 .product-card-content {
-  padding: 32px 10% 12px 10%;
+  padding: 32px 30px 12px;
   margin: auto;
-  color: var(--white);
+  color: var(--dark-purple);
   padding-bottom: 60px;
   font-family: 'NeuzeitGro-Bol';
-  background: linear-gradient(var(--bright-purple) -100%, var(--dark-purple));
+  background: var(--light-purple);
 }
  
 
 .product-card-description {
-  border-left: 1px rgba(255, 255, 255, 0.4) solid;
+  border-left: 1px rgba(41, 29, 61, 0.4) solid;
   padding-left: 9px;
   font-family: 'NeuzeitGro-Lig';
 }

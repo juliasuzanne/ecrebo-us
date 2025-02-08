@@ -7,6 +7,12 @@ h1 {
   .green_span {
     color: var(--bright-green);
   }
+
+
+  .purple_span {
+    color: var(--bright-purple);
+  }
+
   @media screen and (max-width: 987px){
     margin: 12px 6px;
   }
@@ -14,6 +20,13 @@ h1 {
 
 .dark {
   color: var(--dark-purple);
+
+  &.spaced-header-cards {
+    padding-top: 90px;
+    padding-bottom: 0;
+  
+  }
+
 }
 
 .white {

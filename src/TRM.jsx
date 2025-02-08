@@ -8,16 +8,17 @@ export function TRM() {
   return (
     <div className="product-page">
       <TRMHero />
-      <div className="container.fluid" id="circlebackground">
+      <RiveEvents></RiveEvents>
+      {/* <div className="container.fluid" id="circlebackground">
         <div className="row">
           <div className="description col-sm-12 col-md-12 col-lg-6">
             <TRMPageDescription></TRMPageDescription>
           </div>
           <div className="description col-sm-12 col-md-12  col-lg-6">
-            <RiveEvents></RiveEvents>
+            
           </div>
         </div>
-      </div>
+      </div> */}
       <EmailForm></EmailForm>
     </div>
   );

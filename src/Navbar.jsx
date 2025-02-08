@@ -1,4 +1,4 @@
-import "../src/css/navbar.css";
+// import "../src/css/navbar.css";
 import { useState } from "react";
 import { NavMenu } from "./NavMenu";
 
@@ -20,26 +20,73 @@ export function Navbar() {
   };
 
   return (
-    <div className="nav">
-      <ul className="main-nav">
-        <a href="#products">
-          <li
-            onMouseEnter={() => {
-              if (window.innerWidth > 968) {
-                setShowNavMenu(false);
-              }
-            }}
-          >
-            Products <img className="nav-arrow" src="/assets/Down_Arrow_Menu.svg" />
+    // <div className="navbar-expand{-sm|-md|-lg|-xl}" role="navigation">
+    //   <ul className="main-nav">
+    //     <a href="#products">
+    //       <li
+    //         onMouseEnter={() => {
+    //           if (window.innerWidth > 968) {
+    //             setShowNavMenu(false);
+    //           }
+    //         }}
+    //       >
+    //         Products <img className="nav-arrow" src="/assets/Down_Arrow_Menu.svg" />
+    //       </li>
+    //     </a>
+    //     <NavMenu show={showNavMenu} closeMenu={closeNavMenu} />
+    //     <li>
+    //       <a href="#contact-us">
+    //         <button>Contact Us</button>
+    //       </a>
+    //     </li>
+    //   </ul>
+    // </div>
+    <nav className="navbar navbar-expand-md navbar-light">
+      {/* <a className="navbar-brand" href="#">
+        Navbar
+      </a> */}
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="nav-fill navbar-nav mr-auto">
+          <li className="nav-item dropdown">
+            <a
+              className="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Solutions
+            </a>
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a className="dropdown-item" href="/cpr">
+                EcreboCPR
+              </a>
+              <a className="dropdown-item" href="/trm">
+                EcreboTRM
+              </a>
+            </div>
           </li>
-        </a>
-        <NavMenu show={showNavMenu} closeMenu={closeNavMenu} />
-        <li>
-          <a href="#contact-us">
-            <button>Contact Us</button>
-          </a>
-        </li>
-      </ul>
-    </div>
+          <li className="nav-item">
+            <a className="nav-link" href="#contact-us ">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 }

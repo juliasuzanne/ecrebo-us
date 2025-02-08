@@ -1,4 +1,27 @@
-ul {
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.navbar {
+  position: absolute;
+  width: 100%;
+}
+
+.navbar-expand-md {
+  justify-content: flex-end;
+  padding-right: 24px;
+  background-color: transparent;
+
+}
+/* ul {
   position: absolute;
   top: 12px;
   right: 5vw;  
@@ -80,4 +103,4 @@ ul {
    top: 140px; 
    justify-content: space-around;
   }
-}
+} */

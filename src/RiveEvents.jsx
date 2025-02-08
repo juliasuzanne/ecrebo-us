@@ -1,14 +1,33 @@
-import { useRive, EventType, RiveEventType } from "@rive-app/react-canvas";
+import {
+  useRive,
+  EventType,
+  RiveEventType,
+  useStateMachineInput,
+  makeRenderer,
+  Rive,
+  onLoad,
+  Fit,
+  Layout,
+  Alignment,
+} from "@rive-app/react-canvas";
 import { useCallback, useEffect, useState, useRef } from "react";
 import "/src/index.css";
+import { EmailForm } from "./EmailForm";
 
 export function RiveEvents() {
   const [showExtendedDiv, setShowExtendedDiv] = useState(true);
 
+  const [scrollPos, setScrollPos] = useState(1200);
+
   const { rive, RiveComponent } = useRive({
-    src: "ecrebocpr.riv",
+    src: "ecrebocpr3.riv",
+    artboard: "Artboard",
     stateMachines: "State Machine 1",
-    autoPlay: "false",
+    autoPlay: "true",
+    layout: new Layout({
+      fit: Fit.FitWidth,
+      alignment: Alignment.TopLeft,
+    }),
   });
   const myRef = useRef(null);
   const scrollRef = useRef(null);
@@ -19,6 +38,13 @@ export function RiveEvents() {
 
   const handleShowDiv = () => {
     setShowExtendedDiv(false);
+  };
+
+  const scrollToPos = () => {
+    const riveBox = document.querySelector(".riveBox");
+    const rect = riveBox.getBoundingClientRect();
+    console.log(rect);
+    window.scrollTo(0, rect.bottom);
   };
 
   const handleHideDiv = () => {
@@ -37,7 +63,7 @@ export function RiveEvents() {
         handleShowDiv();
       } else if (eventData.name == "EndAnimation") {
         console.log("end animation");
-        executeScroll();
+        scrollToPos();
       } else if (eventData.name == "Scroller") {
         console.log("receipt hit");
         backToTopScroll();
@@ -61,6 +87,23 @@ export function RiveEvents() {
     }
   };
 
+  useEffect(() => {
+    // Function to be executed on component load
+    function onLoadFunction() {
+      console.log("Component has loaded");
+      rive && rive.play();
+      // Add your desired logic here
+    }
+
+    onLoadFunction();
+
+    // Optional: Return a cleanup function if needed
+    return () => {
+      // This function will be called when the component is unmounted
+      console.log("Component is unmounting");
+    };
+  }, []); // Empty dependency array ensures the effect runs only once on mount
+
   // Wait until the rive object is instantiated before adding the Rive
   // event listener
   useEffect(() => {
@@ -69,18 +112,38 @@ export function RiveEvents() {
     }
   }, [rive]);
 
-  return (
-    <div>
-      <div ref={scrollRef}></div>
-      <p className="clicktosee">
-        Click to print a<br /> personalized receipt that:
-      </p>
-      <div className="rivecontainer">
-        <RiveComponent className="riveBox" onMouseEnter={() => rive && rive.play()} />
-      </div>
-      <div ref={myRef}></div>
+  const level = useStateMachineInput(rive, "State Machine 1", "level");
+  const width = useStateMachineInput(rive, "State Machine 1", "width");
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [currentLevel, setCurrentLevel] = useState(10);
 
-      <div id="test" hidden={showExtendedDiv}></div>
+  useEffect(() => {
+    if (level) {
+      level.value = currentLevel;
+      console.log(level.value);
+      console.log(currentLevel);
+    }
+  }, [currentLevel, level]);
+
+  return (
+    <div className="container.fluid" onMouseOver={() => rive && rive.play()}>
+      <div ref={scrollRef}></div>
+      <div className="row">
+        <div className="col-sm-12 col-md-6">
+          <p className="clicktosee">
+            Click to print a<br /> personalized receipt that:
+          </p>
+          <button onClick={() => setCurrentLevel(0)}>Level 1</button>
+          <button onClick={() => setCurrentLevel(1)}>Level 2</button>
+          <button onClick={() => setCurrentLevel(2)}>Level 3</button>
+          <button onClick={() => setCurrentLevel(3)}>Level 4</button>
+        </div>
+        <div ref={myRef} className="rivecontainer col-sm-12 col-md-6">
+          <RiveComponent className="riveBox" />
+        </div>
+        <div></div>
+        <div id="test" hidden={showExtendedDiv}></div>
+      </div>
     </div>
   );
 }

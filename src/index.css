@@ -33,6 +33,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 1800px) {
+  .container {
+    max-width: 1800px;
+  }
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -47,6 +53,10 @@ p {
   padding: 20px 0;
   background-color: var(--white);
   margin: 0;
+
+  .main_header {
+    padding-bottom: 0;
+  }
 
 }
 
@@ -88,15 +98,9 @@ a:hover {
   padding-bottom: 0vh;
 }
 
-.rivecontainer {
-  height: 80vh;
-  padding-left: 0;
-  padding-top: 0;
-}
 
 canvas {
-  align-items: left;
-
+  position: absolute;
 }
 
 .description {
@@ -106,19 +110,30 @@ canvas {
   }
 }
 
-#rivebox {
-  align-items: left;
-  
+.rivecontainer {
+  display: block;
+  position: relative;
+  height: 160vh;
 }
 
 .riveBox{
-  height: 85vw;
-  margin: auto;
   top: 0;
+  left: 0;
+  width: auto;
+  height: 250vh;
+  object-fit: fill;
+  transform: translateY(-12%);
+
+  @media only screen and (max-width: 900px) {
+    height: 115vw;
+
+  }
 }
 
 #test {
-  height: 40vw;
+  height: 50vh;
+  background-color: purple;
+  z-index: 10;
 }
 
 .circles-for-email {

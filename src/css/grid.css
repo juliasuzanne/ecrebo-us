@@ -4,9 +4,9 @@
   column-gap: 32px;
   grid-auto-rows: 1fr;
   padding-top: 100px;
-  margin: 0 var(--default-margin);
+  margin: 0 auto;
   align-items: stretch;
-
+  max-width: 1200px;
 }
 
 @media only screen and (max-width: 968px) {
@@ -30,5 +30,12 @@
 
   .card-container {
     display: block;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .container-grid {
+    margin: 0 var(--default-margin);
   }
 }

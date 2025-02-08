@@ -25,9 +25,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 36px;
-  margin: 0 var(--default-margin);
+  max-width: 1200px;
+  margin: 0 auto;
 
-  @media screen and (max-width: 987px){
+  @media only screen and (max-width: 987px){
     grid-template-columns: 1fr;
     margin: 0 24px;
   }

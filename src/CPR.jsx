@@ -10,10 +10,10 @@ export function CPR() {
       <CPRHero />
       <div className="container.fluid" id="circlebackground">
         <div className="row">
-          <div className="description col-sm-12 col-md-12 col-lg-6">
+          <div className="description col-sm-12 col-md-12 col-lg-12">
             <CPRPageDescription></CPRPageDescription>
           </div>
-          <div className="description col-sm-12 col-md-12 col-lg-6">
+          <div className="description col-sm-12 col-md-12 col-lg-12">
             <RiveEvents></RiveEvents>
           </div>
         </div>

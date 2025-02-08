@@ -171,5 +171,5 @@ canvas {
 }
 
 .externalpagedescriptionlink:hover{
-  color:rgb(118,98,238);
+  color:var(--light-purple);
 }

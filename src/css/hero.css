@@ -62,7 +62,7 @@
 .cpr-hero-div {
   height: 12rem;
   width: 100%;
-  padding: 12px 32px 100px 64px;
+  padding: 64px 32px 64px 64px;
   background-image: url("/assets/CPR_image.png");
   background-size: cover;
   background-repeat: no-repeat;

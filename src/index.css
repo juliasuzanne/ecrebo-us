@@ -120,7 +120,8 @@ canvas {
   top: 0;
   left: 0;
   width: auto;
-  height: 250vh;
+  height: 100vh;
+  min-height: 700px;
   object-fit: fill;
   transform: translateY(-12%);
 
@@ -128,6 +129,11 @@ canvas {
     height: 115vw;
 
   }
+}
+
+.clickhere {
+  color: white;
+  padding: 24px 0;
 }
 
 #test {

@@ -7,11 +7,13 @@ export function Hero() {
       <Navbar></Navbar>
 
       <div className="container hero-home">
-        <div className="hero-content">
-          <img className="hero-img" src="assets/ecrebo-logo-white.svg" />
-          <h3>Turn humble paper receipts into powerful marketing.</h3>
-        </div>
+        <div className="hero-img"></div>
+        <div className="hero-content"></div>
+        <h3>Turn humble paper receipts into powerful marketing.</h3>
       </div>
+      <br></br>
+
+      <br></br>
     </div>
   );
 }

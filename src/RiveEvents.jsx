@@ -29,7 +29,14 @@ export function RiveEvents() {
   const myRef = useRef(null);
   const scrollRef = useRef(null);
 
-  const executeScroll = () => myRef.current.scrollIntoView({ behavior: "smooth" });
+  const executeScroll = () => {
+    if (
+      document.querySelector(".riveBox").getBoundingClientRect.bottom >
+      Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+    ) {
+      window.scrollTo(document.querySelector(".riveBox").getBoundingClientRect.bottom);
+    }
+  };
 
   const backToTopScroll = () => scrollRef.current.scrollIntoView({ behavior: "smooth" });
 
@@ -42,11 +49,11 @@ export function RiveEvents() {
   };
 
   const startAnimation = () => {
-    document.querySelector(".clicktosee").scrollIntoView({
+    handleHideDiv();
+    document.querySelector(".riveContent").scrollIntoView({
       behavior: "smooth",
     });
     play();
-    handleShowDiv();
   };
 
   // Wait until the rive object is instantiated before adding the Rive
@@ -64,6 +71,8 @@ export function RiveEvents() {
         console.log("Event name" + eventData.name);
         if (eventData.name == "EndAnimation") {
           console.log("end animation");
+          executeScroll();
+          handleShowDiv();
         } else if (eventData.name == "Scroller") {
           console.log("receipt hit");
           backToTopScroll();
@@ -87,17 +96,20 @@ export function RiveEvents() {
 
   useEffect(() => {
     if (level) {
-      startAnimation();
       level.value = currentLevel;
       if (currentLevel === 0) {
+        startAnimation();
         setCurrentUrl("/cpr/acquire");
       } else if (currentLevel === 1) {
+        startAnimation();
         setCurrentUrl("/cpr/rx_link");
       }
       if (currentLevel === 2) {
+        startAnimation();
         setCurrentUrl("/cpr/engage");
       }
       if (currentLevel === 3) {
+        startAnimation();
         setCurrentUrl("/cpr/digital");
       }
     }
@@ -108,49 +120,35 @@ export function RiveEvents() {
   };
 
   return (
-    <div className="container.fluid">
+    <div className="riveContent container.fluid">
       <div ref={scrollRef}></div>
       <div className="row">
-        <div className="col-sm-12 col-md-6">
-          <p className="clicktosee">
+        {/* <div className="demo-buttons col-sm-12 col-md-1"></div> */}
+
+        <div className="demo-buttons col-sm-12 col-md-6">
+          <h2 className="clicktosee">
             Click to print a<br /> personalized receipt that:
-          </p>
-          <button
-            onClick={() => {
-              setCurrentLevel(0);
-            }}
-          >
-            Level 1
+          </h2>
+          <button onClick={() => setCurrentLevel(0)}>
+            <span className="arrow"></span> Acquires New Loyalty App Users
           </button>
-          <button
-            onClick={() => {
-              setCurrentLevel(1);
-            }}
-          >
-            Level 2
+          <button onClick={() => setCurrentLevel(1)}>
+            <span className="arrow"></span> Introduces A New Pharmacy Feature
           </button>
-          <button
-            onClick={() => {
-              setCurrentLevel(2);
-            }}
-          >
-            Level 3
+          <button onClick={() => setCurrentLevel(2)}>
+            <span className="arrow"></span> Drives More Digital Engagement
           </button>
-          <button
-            onClick={() => {
-              setCurrentLevel(3);
-            }}
-          >
-            Level 4
+          <button onClick={() => setCurrentLevel(3)}>
+            <span className="arrow"></span> Converts Non-Digital Members To Digital
           </button>
+        </div>
+        <div className="rivecontainer col-sm-12 col-md-6">
+          <RiveComponent className="riveBox" />
           <div hidden={showExtendedDiv}>
             <p className="clickhere">
               Scan the QR code or <a href={currentUrl}>click here</a> to see where it goes.
             </p>
           </div>
-        </div>
-        <div className="rivecontainer col-sm-12 col-md-6">
-          <RiveComponent className="riveBox" />
         </div>
         <div ref={myRef}></div>
       </div>

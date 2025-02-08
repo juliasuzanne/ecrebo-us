@@ -2,24 +2,16 @@ import "./css/navbar.css";
 
 export function NavMenu(props) {
   return (
-    <div
-      className="nav-menu-below"
-      hidden={props.show}
-      onMouseLeave={() => {
-        if (window.innerWidth > 968) {
-          props.closeMenu();
-        }
-      }}
-    >
-      <a href="#products">
-        <p>Overview</p>
-      </a>
-      <a href="/cpr">
-        <p>EcreboCPR</p>
-      </a>
-      <a href="/trm">
-        <p>EcreboTRM</p>
-      </a>
+    <div className="nav-menu-below" hidden={props.show}>
+      <p>
+        <a href="#products">Overview</a>
+      </p>
+      <p>
+        <a href="/cpr">EcreboCPR</a>
+      </p>
+      <p>
+        <a href="/trm">EcreboTRM</a>
+      </p>
     </div>
   );
 }

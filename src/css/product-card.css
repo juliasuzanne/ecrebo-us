@@ -27,7 +27,11 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 36px;
   max-width: 1200px;
-  margin: 0 var(--default-margin);
+  margin: 0 auto;
+
+  @media only screen and (max-width: 1328px) {
+    margin: 0 64px; 
+  }
 
   @media only screen and (max-width: 987px){
     grid-template-columns: 1fr;

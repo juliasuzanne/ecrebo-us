@@ -42,9 +42,7 @@ export function Navbar() {
     //   </ul>
     // </div>
     <nav className="navbar navbar-expand-md navbar-light">
-      {/* <a className="navbar-brand" href="#">
-        Navbar
-      </a> */}
+      <img className="navbar-logo" style={{ height: "30px" }} src="/assets/ecrebo-logo-white.svg" />
       <button
         className="navbar-toggler"
         type="button"

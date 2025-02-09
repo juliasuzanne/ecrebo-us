@@ -11,7 +11,6 @@ export function CPRPageDescription() {
           Clickable Paper Receipts<span id="tm">™</span>
         </span>{" "}
       </MainTitle>
-      <br></br>
       <p className="descriptiontext">
         Add personalized QR codes to your paper receipts to cost-effectively acquire and activate loyalty app users.
       </p>

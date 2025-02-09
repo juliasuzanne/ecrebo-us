@@ -2,7 +2,7 @@ import "../css/product-card.css";
 
 export function ProductCard(props) {
   return (
-    <div className="product-card-container">
+    <div className="product-card-container" onClick={() => window.open(`${props.button_url}`)}>
       <a href={`${props.button_url}`}>
         <div className="product-image-container">
           <div className="product-image" style={{ backgroundImage: `url(${props.image_url})` }}></div>

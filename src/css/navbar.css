@@ -1,6 +1,6 @@
 .navbar-collapse {
   flex-grow: 0;
-  @media only screen and (max-width: 968px) {
+  @media only screen and (max-width: 767px) {
     width: 100vw;
     height: 100vh;
     position:relative;
@@ -23,33 +23,53 @@ button:hover,
   z-index: 220;
 
   .navbar-logo {
-    height: 40px;
-    position: absolute;
-    top: 12px;
+    height: 40%;
     z-index: 200;
-    left: 32px;  }
+    position: absolute;
+    left: 64px;
+    top: unset;
+    @media only screen and (max-width: 767px) {
+      top: 19px;
+    }
+ }
 
   ul {
     color: white;
-    align-items: flex-start;
+    gap: 64px;
+    margin-right: 64px;
+    @media only screen and (max-width: 767px) {
+      align-items: start;
+      gap: 32px;
+      margin: 64px;
+
+    }
   }
 
   .nav-link {
     color: white;
     font-family: 'NeuzeitGro-Lig';
     text-align: left;
+
+    &.dropdown-toggle::after {
+      background-image: url('https://2579958.fs1.hubspotusercontent-na1.net/hubfs/2579958/Blend01/arrow-down%20(1).svg');
+      background-repeat: no-repeat;
+      border: unset;
+      height: 7px;
+      transform: translateY(3px);
+      width: 12.5px;
+    }
+
+    &.dropdown-toggle.show::after {
+
+      transform: rotate(180deg);
+    }
   }
 }
 
 .navbar-expand-md {
   justify-content: flex-end;
   background-color: var(--dark-purple);
-
-  @media only screen and (max-width: 767px) {
-    ul{
-      margin: 32px;
-    }
-  }
+  align-items: center;
 }
 
 

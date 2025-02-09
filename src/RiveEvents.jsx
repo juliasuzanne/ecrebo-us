@@ -22,7 +22,7 @@ export function RiveEvents() {
     stateMachines: "State Machine 1",
     autoPlay: "false",
     layout: new Layout({
-      fit: Fit.FitHeight,
+      fit: Fit.Contain,
       alignment: Alignment.TopCenter,
     }),
   });
@@ -142,12 +142,14 @@ export function RiveEvents() {
             <span className="arrow"></span> Converts Non-Digital Members To Digital
           </button>
         </div>
-        <div className="rivecontainer col-sm-12 col-md-6">
-          <RiveComponent className="riveBox" />
-          <div hidden={showExtendedDiv}>
-            <p className="clickhere">
-              Scan the QR code or <a href={currentUrl}>click here</a> to see where it goes.
-            </p>
+        <div className="rivecontainer col-sm-6 col-md-6">
+          <div className="rive-flex">
+            <RiveComponent className="riveBox" />
+            <div hidden={showExtendedDiv}>
+              <p className="clickhere">
+                Scan the QR code or <a href={currentUrl}>click here</a> to see where it goes.
+              </p>
+            </div>
           </div>
         </div>
         <div ref={myRef}></div>

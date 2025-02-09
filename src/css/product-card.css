@@ -50,7 +50,8 @@
   color: var(--dark-purple);
   padding-bottom: 60px;
   font-family: 'NeuzeitGro-Bol';
-  background: var(--light-purple);
+  /* background-color: white; */
+  background: linear-gradient(var(--bright-purple) -80%, var(--white) 60%);
 }
  
 

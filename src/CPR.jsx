@@ -2,13 +2,13 @@ import { EmailForm } from "./EmailForm";
 import { RiveEvents } from "./RiveEvents";
 import { CPRPageDescription } from "./CPRPageDescription";
 import { CPRHero } from "./Components/CPRHero";
-import { Navbar } from "./Navbar";
+import { NavbarDemos } from "./NavbarDemos";
 import "/src/css/hero.css";
 
 export function CPR() {
   return (
     <div className="product-page">
-      <Navbar></Navbar>
+      <NavbarDemos></NavbarDemos>
       <CPRHero />
       <div className="container.fluid" id="circlebackground">
         <div className="row">

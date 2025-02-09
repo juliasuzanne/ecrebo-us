@@ -14,8 +14,8 @@ export function Rx() {
             money-saving feature at the pharmacy.
             <br></br>
             <br></br>
-            <a className="externalpagedescriptionlink" href="/">
-              Return to home page
+            <a className="externalpagedescriptionlink" href="/cpr">
+              Back
             </a>
           </p>
         </div>

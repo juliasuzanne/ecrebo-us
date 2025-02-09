@@ -43,8 +43,12 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
+  max-width: unset;
 }
 
+canvas {
+  max-width: 100vw;
+}
 p {
   font-size: 18px;
   line-height: 30px;
@@ -138,7 +142,8 @@ canvas {
   }
 
   @media only screen and (max-width: 767px) {
-    width: 100%;
+    width: 40vw;
+    min-width: 80vw;
     height: unset;
     min-height: 80vh;
     margin: 0 auto;
@@ -192,6 +197,7 @@ canvas {
 
     @media only screen and (max-width: 767px) {
       border: none;
+      margin: 32px auto;
     }
 }
 
@@ -202,7 +208,7 @@ canvas {
 }
 
 .clickhere {
-  transform: translateY(-180px);
+  transform: translateY(-100%);
   text-align: center;
   max-width: 400px;
   margin: 0 auto;

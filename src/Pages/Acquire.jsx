@@ -15,8 +15,8 @@ export function Acquire() {
             program.
             <br></br>
             <br></br>
-            <a className="externalpagedescriptionlink" href="/">
-              Return to home page
+            <a className="externalpagedescriptionlink" href="/cpr">
+              Back
             </a>
           </p>
           <AppStoreMimic></AppStoreMimic>

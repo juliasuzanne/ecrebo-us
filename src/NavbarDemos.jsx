@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { NavMenu } from "./NavMenu";
 
-export function Navbar() {
+export function NavbarDemos() {
   const [showNavMenu, setShowNavMenu] = useState(true);
 
   const toggleShowNavMenu = () => {
@@ -20,27 +20,6 @@ export function Navbar() {
   };
 
   return (
-    // <div className="navbar-expand{-sm|-md|-lg|-xl}" role="navigation">
-    //   <ul className="main-nav">
-    //     <a href="#products">
-    //       <li
-    //         onMouseEnter={() => {
-    //           if (window.innerWidth > 968) {
-    //             setShowNavMenu(false);
-    //           }
-    //         }}
-    //       >
-    //         Products <img className="nav-arrow" src="/assets/Down_Arrow_Menu.svg" />
-    //       </li>
-    //     </a>
-    //     <NavMenu show={showNavMenu} closeMenu={closeNavMenu} />
-    //     <li>
-    //       <a href="#contact-us">
-    //         <button>Contact Us</button>
-    //       </a>
-    //     </li>
-    //   </ul>
-    // </div>
     <nav className="navbar navbar-expand-md navbar-light">
       <img onClick={() => window.location.replace("/")} className="navbar-logo" src="/assets/ecrebo-logo-white.svg" />
       <button
@@ -57,6 +36,11 @@ export function Navbar() {
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="nav-fill navbar-nav mr-auto">
+          <li className="nav-item">
+            <a className="nav-link" href="/">
+              Home
+            </a>
+          </li>
           <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle"

@@ -11,14 +11,14 @@ import { useCallback, useEffect, useState, useRef } from "react";
 
 import "/src/css/cpr.css";
 
-export function RiveEvents() {
+export function RiveEventsTRM() {
   const [showExtendedDiv, setShowExtendedDiv] = useState(true);
   const [currentUrl, setCurrentUrl] = useState("/cpr/acquire");
 
   // const [scrollPos, setScrollPos] = useState(1200);
 
   const { rive, RiveComponent } = useRive({
-    src: "ecrebocpr-CPR.riv",
+    src: "ecrebocpr-TRM.riv",
     stateMachines: "State Machine 1",
     autoPlay: "false",
     layout: new Layout({

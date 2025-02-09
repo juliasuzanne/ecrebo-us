@@ -137,6 +137,12 @@ canvas {
   }
 }
 
+.purple-circle {
+  position: absolute;
+  top: 0;
+  width: 290px;
+}
+
 .clickhere {
   transform: translateY(-180px);
   text-align: center;

@@ -9,6 +9,8 @@
   max-width: 1200px;
 }
 
+
+
 @media only screen and (max-width: 1328px) {
   .container-grid {
     margin: 0 64px; 
@@ -46,4 +48,8 @@
   .card-container {
     display: block;
   }
+}
+
+.personalized-receipts {
+  position: relative;
 }

@@ -1,5 +1,5 @@
 import { EmailForm } from "./EmailForm";
-import { RiveEvents } from "./RiveEvents";
+import { RiveEventsTRM } from "./RiveEventsTRM";
 import { TRMPageDescription } from "./TRMPageDescription";
 import { TRMHero } from "./Components/TRMHero";
 import { Navbar } from "./Navbar";
@@ -16,7 +16,7 @@ export function TRM() {
             <TRMPageDescription></TRMPageDescription>
           </div>
           <div className="description col-sm-12 col-md-12  col-lg-12">
-            <RiveEvents></RiveEvents>
+            <RiveEventsTRM></RiveEventsTRM>
           </div>
         </div>
       </div>

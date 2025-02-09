@@ -13,7 +13,8 @@ export function Home() {
     <div style={{ backgroundColor: "var(--white)" }}>
       <div style={{ backgroundColor: "var(--dark-purple)" }}>
         <Hero />
-        <div style={{ backgroundColor: "var(--white)" }}>
+        <div className="personalized-receipts" style={{ backgroundColor: "var(--white)" }}>
+          <img className="purple-circle" src="/assets/Purple-Stripe-Arc_Home.svg" />
           <MainTitle header_color="dark spaced-header-cards">
             Personalized paper receipts are <span className="purple_span">powerful.</span>
           </MainTitle>
@@ -55,19 +56,19 @@ export function Home() {
         </div>
         <div className="container-grid">
           <Card
-            card_color="purple"
+            card_color="green"
             icon_url="assets/DataCard-2-1.svg"
             card_title="POS Agnostic"
             card_description="Works with all POS systems and all receipt printers. No new hardware. Works with all POS systems and all receipt printers. No new hardware."
           />
           <Card
-            card_color="purple"
+            card_color="green"
             icon_url="assets/DataCard-2-2.svg"
             card_title="Simple Installation"
             card_description="No POS integration required. Time from testing to install can be weeks."
           />
           <Card
-            card_color="purple"
+            card_color="green"
             icon_url="assets/DataCard-2-3.svg"
             card_title="Easy Management"
             card_description="Campaign creation and management through an intuitive Ecrebo portal."

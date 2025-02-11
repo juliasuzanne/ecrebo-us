@@ -258,3 +258,15 @@ canvas {
 .externalpagedescriptionlink:hover{
   color:var(--light-purple);
 }
+
+@font-face {
+  font-family: "NeuzeitGro-Bol";   /*Can be any text*/
+  src: local("NeuzeitGro-Bol"),
+  url("/NeuzeitGro-Bol.ttf") format("truetype");
+}
+
+@font-face { 
+  font-family: "NeuzeitGro-Lig";
+  src: local("NeuzeitGro-Lig"),
+  url("/NeuzeitGro-Lig.ttf") format("truetype");
+}

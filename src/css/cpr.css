@@ -1,11 +1,10 @@
 .ecrebo-product {
   color: var(--white);
   font-family: 'NeuzeitGro-Lig';
-
   .main_header {
     text-align: left;
     margin: 0;
-    padding: 0;
+    padding: 64px 0 0;
   }
 }
 
@@ -15,8 +14,8 @@
 }
 
 .descriptiontext {
-  font-size: 18px;
-  line-height: 34px;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .clicktosee {
@@ -25,8 +24,7 @@
   font-size: 30px;
   @media only screen and (max-width: 968px) {
     width: 100%;
-      text-align: center;
-  
+    text-align: left;
   }
 }
 
@@ -37,13 +35,14 @@
 }
 
 .demo-buttons {
-  width: 415px;
+  width: calc(50% - 64px);
   justify-self: end;
   position: relative;
   z-index: 100;
+  margin-left: 0px;
   button {
     text-wrap:nowrap;
-    font-size: 24px;
+    font-size: 130%;
     transition: 0.3s;
     background-color: unset;
     color:white;
@@ -56,20 +55,25 @@
       transition: 0.3s;
       margin: 0 15px 0 0;
     }
-    @media only screen and (max-width: 953px) {
+    @media only screen and (max-width: 968px) {
       text-align: center;
-      justify-self: center;
-
+      justify-self: start;
     }
 
     @media only screen and (max-width: 767px) {
       text-align: center;
-      justify-self: center;
       font-size: 15px;
       padding: 10px 0;
 
     }
   }
+  @media only screen and (max-width: 968px) {
+    text-align: center;
+    justify-self: center;
+    width: unset;
+    margin: 0;
+  }
+  
 
   button:hover,
   button:focus,

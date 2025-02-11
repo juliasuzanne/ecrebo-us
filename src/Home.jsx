@@ -14,7 +14,6 @@ export function Home() {
       <div style={{ backgroundColor: "var(--dark-purple)" }}>
         <Hero />
         <div className="personalized-receipts" style={{ backgroundColor: "var(--white)" }}>
-          <img className="purple-circle" src="/assets/Purple-Stripe-Arc_Home.svg" />
           <MainTitle header_color="dark spaced-header-cards">
             Personalized paper receipts are <span className="purple_span">powerful.</span>
           </MainTitle>

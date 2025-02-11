@@ -16,14 +16,15 @@ button.navbar-toggler,
 .navbar-toggler:active,
 .navbar-toggler:hover,
 .navbar-toggler.active {
-  border: none;
+  border: 0;
   box-shadow: none;
 }
 
 .navbar {
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 220;
+  margin: 0 auto;
 
   .navbar-logo {
     height: 40%;
@@ -31,9 +32,13 @@ button.navbar-toggler,
     position: absolute;
     left: 64px;
     top: unset;
+    @media only screen and (max-width: 968px) {
+      left: 32px;
+    }
+
     @media only screen and (max-width: 767px) {
-      top: 19px;
-      height: 2vh;
+      top: 12px;
+      height: 1.5em;
     }
  }
 
@@ -86,25 +91,29 @@ button.navbar-toggler,
   align-items: center;
 }
 
-.navbar-toggler {
+.navbar-toggler[aria-expanded="true"] {
   border: none;
   span.navbar-toggler-icon {
     background-image: url("/assets/menu-toggle-x.svg");
   
     border: none;
     }
-  &.collapsed {
-    span.navbar-toggler-icon {
-      background-image: url("/assets/menu-toggle-hamburger.svg");
-      border: none;
-    
-      }
-  }
+}
+
+.navbar-toggler[aria-expanded="false"] {
+  border: none;
+  span.navbar-toggler-icon {
+    background-image: url("/assets/menu-toggle-hamburger.svg");
+  
+    border: none;
+    }
 }
 
   .dropdown-menu {
     border: 0.1 var(--dark-purple);
+    padding: 12px;
     a {
+      padding: 15px;
       font-size: 15px;
       font-family: 'NeuzeitGro-Lig';
     }

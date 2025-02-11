@@ -18,7 +18,7 @@ export function RiveEvents() {
   // const [scrollPos, setScrollPos] = useState(1200);
 
   const { rive, RiveComponent } = useRive({
-    src: "ecrebocpr-CPR.riv",
+    src: "ecrebocpr-TRM.riv",
     stateMachines: "State Machine 1",
     autoPlay: "false",
     layout: new Layout({
@@ -125,6 +125,16 @@ export function RiveEvents() {
       <div className="row">
         {/* <div className="demo-buttons col-sm-12 col-md-1"></div> */}
 
+        <div className="rivecontainer col-sm-12 col-md-6">
+          <div className="rive-flex">
+            <RiveComponent className="riveBox" />
+            <div hidden={showExtendedDiv}>
+              <p className="clickhere">
+                Scan the QR code or <a href={currentUrl}>click here</a> to see where it goes.
+              </p>
+            </div>
+          </div>
+        </div>
         <div className="demo-buttons col-sm-12 col-md-6">
           <h2 className="clicktosee">
             Click to print a<br /> personalized receipt that:
@@ -141,16 +151,6 @@ export function RiveEvents() {
           <button onClick={() => setCurrentLevel(3)}>
             <span className="arrow"></span> Converts Non-Digital Members To Digital
           </button>
-        </div>
-        <div className="rivecontainer col-sm-6 col-md-6">
-          <div className="rive-flex">
-            <RiveComponent className="riveBox" />
-            <div hidden={showExtendedDiv}>
-              <p className="clickhere">
-                Scan the QR code or <a href={currentUrl}>click here</a> to see where it goes.
-              </p>
-            </div>
-          </div>
         </div>
         <div ref={myRef}></div>
       </div>

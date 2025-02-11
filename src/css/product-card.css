@@ -1,6 +1,6 @@
 .product-card-container {
   border-radius: var(--border-radius);
-  background-color: var(--dark-purple);
+  background-color: var(--light-purple);
   margin-bottom: 20px;
   font-family: 'NeuzeitGro-Lig';
   color: var(--white);
@@ -16,7 +16,7 @@
 
 .product-container {
   border-radius: var(--border-radius);
-  background-color: var(--dark-purple);
+  background: linear-gradient(var(--dark-purple) 60%, var(--bright-purple) 120%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -51,7 +51,7 @@
   padding-bottom: 60px;
   font-family: 'NeuzeitGro-Bol';
   /* background-color: white; */
-  background: linear-gradient(var(--bright-purple) -80%, var(--white) 60%);
+  background: var(--light-purple);
 }
  
 

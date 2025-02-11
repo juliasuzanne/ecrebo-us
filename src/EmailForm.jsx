@@ -43,7 +43,9 @@ export function EmailForm() {
       <form ref={form} onSubmit={sendEmail}>
         <div className="row">
           <div className="email-outsides">
-            <MainTitle header_color="white">Get in touch. Let's put your receipts to work.</MainTitle>
+            <MainTitle header_color="white">
+              Get in touch. <br></br>Let's put your receipts to work.
+            </MainTitle>
           </div>
           <ul hidden={successMessageShow} className="success">
             {successMessage.map((successMessage) => (

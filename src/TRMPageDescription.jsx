@@ -4,14 +4,14 @@ import "/src/css/cpr.css";
 export function TRMPageDescription() {
   return (
     <div className="ecrebo-product">
-      <MainTitle header_color="white">
+      {/* <MainTitle header_color="white">
         {" "}
         Introducing EcreboTRM <br />
         <span style={{ color: "var(--bright-green)" }}>
           Total Receipt Marketing<span id="tm">™</span>
         </span>{" "}
-      </MainTitle>
-      <br></br>
+      </MainTitle> */}
+      {/* <br></br> */}
       <p className="descriptiontext">
         Ecrebo makes delivering personalized, high-impact offers and messages on printed receipts easy. No POS
         integration and no new hardware required.

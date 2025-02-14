@@ -11,26 +11,29 @@ import { RiveEvents } from "./RiveEvents";
 export function Home() {
   return (
     <div style={{ backgroundColor: "var(--white)" }}>
-      <div style={{ backgroundColor: "var(--dark-purple)" }}>
+      <div>
         <Hero />
         <div className="personalized-receipts" style={{ backgroundColor: "var(--white)" }}>
-          <MainTitle header_color="dark spaced-header-cards">
+          <MainTitle header_color="dark">
             Personalized paper receipts are <span className="purple_span">powerful.</span>
           </MainTitle>
           <div className="container-grid">
             <Card
+              icon_color="dark-purple"
               card_color="purple"
               icon_url="assets/DataCard-1-1.svg"
               card_title="1/10th The Cost"
               card_description="Acquire & activate loyalty app user for 1/10th the usual cost."
             />
             <Card
+              icon_color="dark-purple"
               card_color="purple"
               icon_url="assets/DataCard-1-2.svg"
               card_title="100% Reach"
               card_description="Reach 100% of shoppers with bespoke offers and messages."
             />
             <Card
+              icon_color="dark-purple"
               card_color="purple"
               icon_url="assets/DataCard-1-3.svg"
               card_title="15% Lift"
@@ -55,19 +58,22 @@ export function Home() {
         </div>
         <div className="container-grid">
           <Card
-            card_color="green"
+            icon_color="green"
+            card_color="light"
             icon_url="assets/DataCard-2-1.svg"
             card_title="POS Agnostic"
             card_description="Works with all POS systems and all receipt printers. No new hardware. Works with all POS systems and all receipt printers. No new hardware."
           />
           <Card
-            card_color="green"
+            icon_color="green"
+            card_color="light"
             icon_url="assets/DataCard-2-2.svg"
             card_title="Simple Installation"
             card_description="No POS integration required. Time from testing to install can be weeks."
           />
           <Card
-            card_color="green"
+            icon_color="green"
+            card_color="light"
             icon_url="assets/DataCard-2-3.svg"
             card_title="Easy Management"
             card_description="Campaign creation and management through an intuitive Ecrebo portal."

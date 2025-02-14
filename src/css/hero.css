@@ -1,24 +1,26 @@
 .hero-transparent {
   background-color: white;
-  height: 10vh;
+  height: 1px;
   margin: 0;
   position: relative;
   overflow: visible;
   z-index: 1;
-  transform: translateY(20px);
   @media only screen and (max-width: 968px) {
     height: 10px;
-    transform: translateY(20px);
-
   }
+}
+
+.hero-main {
+  background: linear-gradient(var(--dark-purple) -10%, var(--bright-purple) 70%);
 }
 
 .hero-home {
   /* border-image: fill 0 linear-gradient(140deg, rgba(40, 43, 74, .9),rgba(118, 98, 238, 0.5), rgba(118, 98, 238, 0.3)); */
+  max-width: 1200px;
   background-size: cover;
   display: block;
   height: 100%;
-  margin: 0;
+  width: 100%;
   min-height: 52vh;
   padding: 64px 64px 0 64px;
   padding-right: 0;
@@ -26,9 +28,14 @@
   color: white;
   font-size: 20px;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   position:relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  margin: 0 auto 50px;
+
 
   @media only screen and (max-width: 968px) {
     display: flex;
@@ -38,49 +45,28 @@
     transform: translateY(50px);
   }
 
-  .hero-content {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
   .green_span {
     color: var(--bright-green);
   }
   
   .hero-img {
-    position: absolute;
-    z-index: 3;
-    background: url('/assets/HeroImage-Home.jpg');
-    height: 63vh;
-    background-size:cover;
-    margin: 0;
-    border-top-left-radius: 31vh;
-    border-bottom-left-radius: 31vh;
-    width: 55%;
-    float: right;
-    right: 0;
-    top: 64px;
+    max-width: 35%;
+    height: auto;
     @media only screen and (max-width: 968px) {
-      position:relative;
-      border-radius: 0;
-      width: 100vw;
-      align-self: end;
-      height: 55vh;
-      background-position: 50%;
     }
   }
 
-  h3 {
-    max-width: 40%;
+  h1 {
     width: 50%;
-    font-size: 55px;
+    font-size: 60px;
     color: white;
     padding: 0;
     padding-bottom: 20px;
+    text-align: left;
     @media only screen and (max-width: 968px) {
       position: unset;
       max-width: 80%;
-      font-size: 40px;
+      font-size: 42px;
       margin: 0 auto 25px;
       text-align: center;
       width: 100%;
@@ -109,7 +95,7 @@
   height: 35vh;
   width: 100%;
   padding: 64px 32px 64px 64px;
-  background-image: url("/assets/CPR_image.png");
+  background-image: url("/assets/CPR_image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -134,8 +120,6 @@
 }
 
 .product-page {
-  background: var(--dark-purple);
-
   /* .hero-home {
     background-color: var(--light-purple);
     color: var(--dark-purple);
@@ -174,18 +158,16 @@
 
 .hero-home-cpr {
   /* border-image: fill 0 linear-gradient(140deg, rgba(40, 43, 74, .9),rgba(118, 98, 238, 0.5), rgba(118, 98, 238, 0.3)); */
-  background-color: var(--light-purple);
   background-size: cover;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   height: 100%;
   margin: 0;
   min-height: 52vh;
   background-position-y: 25%;
   color: var(--dark-purple);
   font-size: 20px;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: center;
   position:relative;
 
@@ -199,8 +181,7 @@
     width: 100%;
     max-width: 1200px;
     @media only screen and (max-width: 968px) {
-      background-color: var(--light-purple);
-      flex-wrap: wrap-reverse;
+      flex-wrap: wrap;
     }
   }
 
@@ -210,7 +191,8 @@
   }
 
   .hero-content {
-    margin: 32px 32px 32px 64px;
+    width: 50%;
+    margin: 0;
     align-self: center;
     max-width: 1200px;
     width: calc(50% - 96px);
@@ -239,47 +221,25 @@
   .hero-img-cpr {
     position: relative;
     z-index: 3;
-    background: url('/assets/CPR_image.png');
-    background-size: cover;
-    margin: 0;
-    width: 50%;
-    max-width: 100vh;
-    border-radius: 0 0 35vh;
-    background-position: 60%;
-    border-right: 2px solid var(--dark-purple);
+    max-height: 50vh;
+
+  }
+
+  .contain-product {
+    max-width: 1200px;
+    margin: 0 64px;
+    display: flex;
+    gap: 50px;
 
     @media only screen and (max-width: 968px) {
-      max-width: unset;
-      align-self: end;
-      border-radius: 0;
-
-      width: 100%;
-      height: 50%;
-      margin: 0;
+      margin: 0 64px;
     }
   }
 
   .hero-img-trm {
-    position: relative;
-    z-index: 3;
-    background: url('/assets/Grocery_coupon_US.png');
-    background-size: cover;
-    margin: 0;
     width: 50%;
-    max-width: 70vh;
-    border-radius: 0 0 35vh;
-    background-position: 60%;
-    border-right: 2px solid var(--dark-purple);
+    height: auto;
 
-    @media only screen and (max-width: 968px) {
-      max-width: unset;
-      align-self: end;
-      border-radius: 0;
-
-      width: 100%;
-      height: 50%;
-      margin: 0;
-    }
   }
 
 
@@ -305,11 +265,7 @@
   }
 
   .cpr-text {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 25px;
   }
-}
-
-.hero-home-cpr {
-  background-color: white;
 }

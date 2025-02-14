@@ -1,4 +1,4 @@
-// import "../src/css/navbar.css";
+import "../src/css/navbar.css";
 import { useState } from "react";
 import { NavMenu } from "./NavMenu";
 
@@ -21,7 +21,7 @@ export function NavbarDemos() {
 
   return (
     <nav className="navbar navbar-expand-md navbar-light">
-      <img onClick={() => window.location.replace("/")} className="navbar-logo" src="/assets/ecrebo-logo-white.svg" />
+      <img onClick={() => window.location.replace("/")} className="navbar-logo" src="/assets/ecrebo-logo-dark.svg" />
       <button
         className="navbar-toggler"
         type="button"
@@ -37,13 +37,13 @@ export function NavbarDemos() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="nav-fill navbar-nav mr-auto">
           <li className="nav-item">
-            <a className="nav-link" href="/">
+            <a className="nav-link-dark" href="/">
               Home
             </a>
           </li>
           <li className="nav-item dropdown">
             <a
-              className="nav-link dropdown-toggle"
+              className="nav-link-dark dropdown-toggle"
               href="#"
               id="navbarDropdown"
               role="button"

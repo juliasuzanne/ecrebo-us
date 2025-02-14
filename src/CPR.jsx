@@ -7,17 +7,17 @@ import "/src/css/hero.css";
 
 export function CPR() {
   return (
-    <div className="product-page">
-      <CPRHero />
-      <div className="container.fluid" id="circlebackground">
-        <div className="description">
+    <div className="light-to-dark-product">
+      <div className="product-page">
+        <CPRHero />
+        <div className="container.fluid" id="circlebackground">
           <CPRPageDescription></CPRPageDescription>
+          <div>
+            <RiveEvents></RiveEvents>
+          </div>
         </div>
-        <div>
-          <RiveEvents></RiveEvents>
-        </div>
+        <EmailForm></EmailForm>
       </div>
-      <EmailForm></EmailForm>
     </div>
   );
 }

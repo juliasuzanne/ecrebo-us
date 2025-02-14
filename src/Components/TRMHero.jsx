@@ -6,8 +6,9 @@ export function TRMHero(props) {
     <div>
       <NavbarDemos></NavbarDemos>
       <div className="container.fluid hero-home-cpr bg-trm">
-        <div className="row">
-          <div className="hero-content col-lg-6 col-md-12">
+        <div className="contain-product">
+          <img className="hero-img-trm" src="/assets/TRMhero.png" />
+          <div className="hero-content">
             <h3 className="cpr-title">
               Introducing EcreboTRM <br></br>
               <span className="green_span">Total Receipt Marketing™</span>
@@ -21,12 +22,11 @@ export function TRMHero(props) {
               Plus, your receipts look great: clean and organized with compelling graphics.
             </p>
           </div>
-          <div className="col-lg-6 col-md-12 hero-img-trm"></div>
-          <div className="hero-content-purple">
+        </div>
+        {/* <div className="hero-content-purple">
             {" "}
             <img className="purple-background-circle" src="/assets/Purple-Circle_Product.svg"></img>
-          </div>
-        </div>
+          </div> */}
       </div>
     </div>
   );

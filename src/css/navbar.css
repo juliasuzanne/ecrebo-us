@@ -85,9 +85,29 @@ button.navbar-toggler,
   }
 }
 
+.nav-link-dark {
+  color: var(--dark-purple);
+  font-family: 'NeuzeitGro-Lig';
+  text-align: left;
+
+  &.dropdown-toggle::after {
+    background-image: url('https://2579958.fs1.hubspotusercontent-na1.net/hubfs/2579958/Blend01/arrow-down%20(1).svg');
+    background-repeat: no-repeat;
+    border: unset;
+    height: 7px;
+    transform: translateY(3px);
+    width: 12.5px;
+  }
+
+  &.dropdown-toggle.show::after {
+
+    transform: rotate(180deg);
+  }
+}
+
 .navbar-expand-md {
+  max-width: 1200px;
   justify-content: flex-end;
-  background-color: var(--dark-purple);
   align-items: center;
 }
 

@@ -128,6 +128,8 @@ canvas {
 .rivecontainer {
   display: block;
   position: relative;
+  background: linear-gradient(225deg, #5B559A, var(--dark-purple), #282B4A);
+  border-radius: 0 20px 20px 0;
 }
 
 .riveBox{
@@ -185,22 +187,17 @@ canvas {
 }
 
 .riveContent {
-  /* border-left: 10px solid var(--muted-green);
-  border-right: 10px solid var(--muted-green); */
-  background-color: var(--dark-purple);
-  border-radius: 24px;
-  padding-top: 32px;
+  overflow: hidden;
   margin: 0 auto;
   max-width: 1200px;
 
   .row {
-    justify-content:center;
-    flex-wrap: wrap-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
     }
 
     @media only screen and (max-width: 767px) {
       border: none;
-      margin: 32px auto;
     }
 }
 
@@ -269,4 +266,8 @@ canvas {
   font-family: "NeuzeitGro-Lig";
   src: local("NeuzeitGro-Lig"),
   url("/NeuzeitGro-Lig.ttf") format("truetype");
+}
+
+.light-to-dark-product {
+  background: linear-gradient(var(--light-purple) 30%, var(--bright-purple), var(--dark-purple));
 }

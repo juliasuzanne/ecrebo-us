@@ -19,7 +19,7 @@
 }
 
 .clicktosee {
-  color: var(--bright-green);
+  color: var(--dark-purple);
   font-family: 'NeuzeitGro-Bol';
   font-size: 30px;
   @media only screen and (max-width: 968px) {
@@ -35,20 +35,23 @@
 }
 
 .demo-buttons {
+  padding: 30px;
+  background: linear-gradient(225deg, white, white, #c6bfee);
   width: calc(50% - 64px);
   justify-self: end;
   position: relative;
   z-index: 100;
+  border-radius: 20px 0 0 20px;
   margin-left: 0px;
   button {
     text-wrap:nowrap;
-    font-size: 130%;
+    font-size: 90%;
     transition: 0.3s;
     background-color: unset;
-    color:white;
+    color:var(--dark-purple);
     font-family: 'NeuzeitGro-Lig';
     border: none;
-    padding:  25px 0;
+    padding:  15px 0;
     opacity: 1;
     z-index: 100;
     span {

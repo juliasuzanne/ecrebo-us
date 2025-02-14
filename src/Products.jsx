@@ -11,7 +11,7 @@ export function Products() {
         </MainTitle>
         <div className="grid-product">
           <ProductCard
-            image_url="assets/CPR_image.png"
+            image_url="assets/CPR_image.jpg"
             button_url="/cpr"
             product_title="EcreboCPR™ "
             product_subtitle="Clickable Paper Receipts"

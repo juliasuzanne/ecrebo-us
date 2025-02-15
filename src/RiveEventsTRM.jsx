@@ -104,7 +104,7 @@ export function RiveEventsTRM() {
   return (
     <div className="riveContent container.fluid">
       <div ref={scrollRef}></div>
-      <div className="row">
+      <div className="row rive-row">
         {/* <div className="demo-buttons col-sm-12 col-md-1"></div> */}
 
         <div className="demo-buttons col-sm-12 col-md-6">
@@ -112,19 +112,21 @@ export function RiveEventsTRM() {
             Click to print a<br /> personalized receipt that:
           </h2>
           <button onClick={() => setCurrentLevel(3)}>
-            <span className="arrow"></span> Delivers A Store Offer To A Valuable Customer
+            Delivers A Store Offer To A Valuable Customer <span className="arrow"></span>
           </button>
+
           <button onClick={() => setCurrentLevel(0)}>
-            <span className="arrow"></span> Delivers A Targeted Manufacturer’s Coupon
+            Delivers A Targeted Manufacturer’s Coupon <span className="arrow"></span>
           </button>
           <button onClick={() => setCurrentLevel(2)}>
-            <span className="arrow"></span> Promotes A Holiday Special
+            Promotes A Holiday Special<span className="arrow"></span>
           </button>
           <button onClick={() => setCurrentLevel(1)}>
-            <span className="arrow"></span> Promotes A Charity Event
+            Promotes A Charity Event<span className="arrow"></span>
           </button>
         </div>
         <div className="rivecontainer col-sm-12 col-md-6">
+          <img src="/assets/GreenHalfCircle.svg" className="riveCircle" />
           <RiveComponent className="riveBox" />
         </div>
       </div>

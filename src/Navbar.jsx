@@ -42,7 +42,7 @@ export function Navbar() {
     //   </ul>
     // </div>
     <nav className="navbar navbar-expand-md navbar-light">
-      <img onClick={() => window.location.replace("/")} className="navbar-logo" src="/assets/ecrebo-logo-white.svg" />
+      <img onClick={() => window.location("/")} className="navbar-logo" src="/assets/ecrebo-logo-white.svg" />
       <button
         className="navbar-toggler"
         type="button"

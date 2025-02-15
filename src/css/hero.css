@@ -177,7 +177,7 @@
     right: 0;
     top: 100px;
   }
-  .row {
+  .cpr-row {
     width: 100%;
     max-width: 1200px;
     @media only screen and (max-width: 968px) {
@@ -191,14 +191,16 @@
   }
 
   .hero-content {
-    width: 50%;
+    flex: 10 0 auto;
+    min-width: 50%;
     margin: 0;
     align-self: center;
     max-width: 1200px;
     width: calc(50% - 96px);
     float: left;
+    
     @media only screen and (max-width: 968px) {
-      margin: 32px;
+
       width: calc(100% - 96px);
     }
 
@@ -221,8 +223,15 @@
   .hero-img-cpr {
     position: relative;
     z-index: 3;
-    max-height: 50vh;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    max-height: 80vh;
+    align-self: end;
 
+    @media only screen and (max-width: 968px) {
+      max-height: 65vh;
+    }
   }
 
   .contain-product {
@@ -230,15 +239,24 @@
     margin: 0 64px;
     display: flex;
     gap: 50px;
+    flex-wrap: wrap-reverse;
 
     @media only screen and (max-width: 968px) {
-      margin: 0 64px;
+      margin: 36px 24px 0;
+      justify-content: center;
     }
   }
 
   .hero-img-trm {
-    width: 50%;
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
     height: auto;
+    max-height: 70vh;
+    align-self: end;
+    @media only screen and (max-width: 968px) {
+      max-height: 65vh;
+    }
 
   }
 
@@ -255,7 +273,7 @@
     @media only screen and (max-width: 968px) {
       text-align: left;
       position: unset;
-      font-size: 40px;
+      font-size: 50px;
       margin: 0;
       width: 100%;
     }
@@ -265,7 +283,7 @@
   }
 
   .cpr-text {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 25px;
   }
 }

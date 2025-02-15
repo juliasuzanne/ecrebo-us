@@ -112,16 +112,16 @@ export function RiveEvents() {
             Click to print a<br /> personalized receipt that:
           </h2>
           <button onClick={() => setCurrentLevel(0)}>
-            <span className="arrow"></span> Acquires New Loyalty App Users
+            Acquires New Loyalty App Users<span className="arrow"></span>
           </button>
           <button onClick={() => setCurrentLevel(1)}>
-            <span className="arrow"></span> Introduces A New Pharmacy Feature
+            Introduces A New Pharmacy Feature<span className="arrow"></span>
           </button>
           <button onClick={() => setCurrentLevel(2)}>
-            <span className="arrow"></span> Drives More Digital Engagement
+            Drives More Digital Engagement<span className="arrow"></span>
           </button>
           <button onClick={() => setCurrentLevel(3)}>
-            <span className="arrow"></span> Converts Non-Digital Members To Digital
+            Converts Non-Digital Members To Digital<span className="arrow"></span>
           </button>
         </div>
         <div className="rivecontainer col-sm-12 col-md-6">

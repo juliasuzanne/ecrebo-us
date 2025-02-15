@@ -51,36 +51,39 @@ export function Home() {
       <div
         style={{ backgroundColor: "var(--dark-purple)", borderRadius: "var(--border-radius) var(--border-radius) 0 0" }}
       >
-        <div className="gradient-background2">
+        {" "}
+        <div className="light-to-dark-home">
+          {/* <div className="gradient-background2"> */}
           <MainTitle extra_class="round-div" header_color="white">
             Ecrebo's software-only solution is <span className="green_span">pain-free.</span>
           </MainTitle>
-        </div>
-        <div className="container-grid">
-          <Card
-            icon_color="green"
-            card_color="light"
-            icon_url="assets/DataCard-2-1.svg"
-            card_title="POS Agnostic"
-            card_description="Works with all POS systems and all receipt printers. No new hardware. Works with all POS systems and all receipt printers. No new hardware."
-          />
-          <Card
-            icon_color="green"
-            card_color="light"
-            icon_url="assets/DataCard-2-2.svg"
-            card_title="Simple Installation"
-            card_description="No POS integration required. Time from testing to install can be weeks."
-          />
-          <Card
-            icon_color="green"
-            card_color="light"
-            icon_url="assets/DataCard-2-3.svg"
-            card_title="Easy Management"
-            card_description="Campaign creation and management through an intuitive Ecrebo portal."
-          />
-        </div>
+          {/* </div> */}
+          <div className="container-grid">
+            <Card
+              icon_color="green"
+              card_color="light"
+              icon_url="assets/DataCard-2-1.svg"
+              card_title="POS Agnostic"
+              card_description="Works with all POS systems and all receipt printers. No new hardware. Works with all POS systems and all receipt printers. No new hardware."
+            />
+            <Card
+              icon_color="green"
+              card_color="light"
+              icon_url="assets/DataCard-2-2.svg"
+              card_title="Simple Installation"
+              card_description="No POS integration required. Time from testing to install can be weeks."
+            />
+            <Card
+              icon_color="green"
+              card_color="light"
+              icon_url="assets/DataCard-2-3.svg"
+              card_title="Easy Management"
+              card_description="Campaign creation and management through an intuitive Ecrebo portal."
+            />
+          </div>
 
-        <EmailForm></EmailForm>
+          <EmailForm></EmailForm>
+        </div>
       </div>
     </div>
   );

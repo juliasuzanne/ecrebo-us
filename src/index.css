@@ -67,11 +67,10 @@ p {
 }
 
 .arrow {
-  background-image: url("/assets/Arrow.svg");
-  height: 20px;
+  background-image: url("/assets/ArrowPurple.svg");
+  height: 18px;
   width: 30px;
   background-repeat: no-repeat;
-  padding: 5px;
 }
 
 button,
@@ -130,6 +129,10 @@ canvas {
   position: relative;
   background: linear-gradient(225deg, #5B559A, var(--dark-purple), #282B4A);
   border-radius: 0 20px 20px 0;
+  @media only screen and (max-width: 986px) {
+    border-radius: 0 0 20px 20px; 
+    width: 90%;
+  }
 }
 
 .riveBox{
@@ -191,7 +194,7 @@ canvas {
   margin: 0 auto;
   max-width: 1200px;
 
-  .row {
+  .rive-row {
     justify-content: center;
     flex-wrap: wrap;
     }

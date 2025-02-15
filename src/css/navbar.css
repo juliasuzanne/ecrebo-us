@@ -21,37 +21,30 @@ button.navbar-toggler,
 }
 
 .navbar {
-  position: relative;
-  width: 100%;
   z-index: 220;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 
   .navbar-logo {
-    height: 40%;
+    height: 100%;
+    max-height: 45px;
+    padding: 5px 0;
+    width: auto;
     z-index: 200;
-    position: absolute;
-    left: 64px;
-    top: unset;
-    @media only screen and (max-width: 968px) {
-      left: 32px;
-    }
-
-    @media only screen and (max-width: 767px) {
-      top: 12px;
-      height: 1.5em;
-    }
  }
 
   ul {
     color: white;
     gap: 64px;
-    margin-right: 64px;
-    font-size: 17px;
+    font-size: 20px;
     @media only screen and (max-width: 767px) {
       align-items: start;
       gap: 32px;
       margin: 64px;
+    }
 
+    > * {
+      padding: 0;
     }
   }
 
@@ -60,28 +53,33 @@ button.navbar-toggler,
 
   }
 
-  .nav-link {
-    color: white;
-    font-family: 'NeuzeitGro-Lig';
-    text-align: left;
-
-    &.dropdown-toggle::after {
-      background-image: url('https://2579958.fs1.hubspotusercontent-na1.net/hubfs/2579958/Blend01/arrow-down%20(1).svg');
-      background-repeat: no-repeat;
-      border: unset;
-      height: 7px;
-      transform: translateY(3px);
-      width: 12.5px;
+  .navbar-nav {
+    .nav-link {
+      color: white;
+      font-family: 'NeuzeitGro-Lig';
+      text-align: left;
+      padding-right: 0;
+      padding-left: 0;
+      padding: 0;
+  
+      &.dropdown-toggle::after {
+        background-image: url('https://2579958.fs1.hubspotusercontent-na1.net/hubfs/2579958/Blend01/arrow-down%20(1).svg');
+        background-repeat: no-repeat;
+        border: unset;
+        height: 7px;
+        transform: translateY(3px);
+        width: 12.5px;
+      }
+  
+      &.dropdown-toggle.show::after {
+  
+        transform: rotate(180deg);
+      }
     }
-
-    &.dropdown-toggle.show::after {
-
-      transform: rotate(180deg);
+  
+    .nav-link:hover {
+      color: var(--bright-green);
     }
-  }
-
-  .nav-link:hover {
-    color: var(--bright-green);
   }
 }
 
@@ -107,8 +105,8 @@ button.navbar-toggler,
 
 .navbar-expand-md {
   max-width: 1200px;
-  justify-content: flex-end;
   align-items: center;
+  margin: 0 64px;
 }
 
 .navbar-toggler[aria-expanded="true"] {

@@ -25,8 +25,3 @@ h1 {
 .white {
   color: var(--white);
 }
-
-.round-div {
-  border-radius: var(--border-radius);
-  background-color: var(--dark-purple);
-}

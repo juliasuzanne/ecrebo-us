@@ -69,7 +69,7 @@ export function Navbar() {
             >
               Solutions
             </a>
-            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div className="dropdown-menu custom-menu" aria-labelledby="navbarDropdown">
               <a className="dropdown-item" href="/cpr">
                 EcreboCPR
               </a>

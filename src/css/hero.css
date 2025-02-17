@@ -230,6 +230,7 @@
     width: auto;
     max-height: 80vh;
     align-self: end;
+    padding: 100px 30px 0;
 
     @media only screen and (max-width: 968px) {
       max-height: 65vh;

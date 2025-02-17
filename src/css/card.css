@@ -45,7 +45,7 @@
   flex-direction: column;
   align-content: space-around;
   border-radius: var(--border-radius);
-  background-color: #D7D2FA;
+  background-color: rgba(240,	242,	246, 0.9);
   padding: 13px;
   padding-top: 5.5rem;
   transform: translateY(-60px);

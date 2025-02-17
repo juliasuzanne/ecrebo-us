@@ -1,12 +1,15 @@
 :root {
   --dark-purple: rgb(40, 43, 74);
   --white: rgb(255, 255, 255);
-  --light-purple: rgb(240, 237, 243);
+  /* --light-purple: rgb(240, 237, 243); */
   --bright-green: rgb(44, 245, 208);
-  --bright-purple: hwb(249 38% 7%);
-  --border-radius: 12px;
+  /* --bright-purple: hwb(249 38% 7%); */
+  --light-purple: #F0F2F6;
+  --bright-purple: #4f44c8;
+  --border-radius: 5px;
   --default-margin: 64px;
-  --muted-green: rgb(84,214,190);
+  --muted-green: #3ECC9C;
+  --ecrebo-red: #282B4A;
   font-family: 'NeuzeitGro-Bol';
 }
 
@@ -64,6 +67,11 @@ p {
     padding-bottom: 0;
   }
 
+}
+
+.main_header {
+  max-width: 900px;
+  margin: 20px auto;
 }
 
 .arrow {
@@ -272,5 +280,5 @@ canvas {
 }
 
 .light-to-dark-product {
-  background: linear-gradient(var(--light-purple) 30%, var(--bright-purple), var(--dark-purple));
+  background: linear-gradient(white 30%, var(--bright-purple), var(--dark-purple));
 }

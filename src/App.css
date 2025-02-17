@@ -23,7 +23,7 @@
 @font-face {
   font-family: "NeuzeitGro-Bol";   /*Can be any text*/
   src: local("NeuzeitGro-Bol"),
-  url("/NeuzeitGro-Bol.ttf") format("truetype");
+  url("/NeuzeitGro-Bol.otf") format("truetype");
 }
 
 @font-face { 

@@ -13,6 +13,7 @@ export function Products() {
           <ProductCard
             image_url="assets/CPR_image.jpg"
             button_url="/cpr"
+            icon_url="assets/cpricon.svg"
             product_title="EcreboCPR™ "
             product_subtitle="Clickable Paper Receipts"
             product_description="Grow your retail media business. Efficiently acquire and activate loyalty app users by adding customized QR codes to paper receipts."
@@ -20,6 +21,7 @@ export function Products() {
           <ProductCard
             image_url="assets/Grocery_coupon_US.png"
             button_url="/trm"
+            icon_url="assets/trmicon.svg"
             product_title="EcreboTRM™ "
             product_subtitle="Total Receipt Marketing"
             product_description="Cost-effectively reach every customer with personalized, high-response marketing on sharp-looking printed receipts."

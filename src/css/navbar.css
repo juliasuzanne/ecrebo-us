@@ -40,7 +40,7 @@ button.navbar-toggler,
     @media only screen and (max-width: 767px) {
       align-items: start;
       gap: 32px;
-      margin: 64px;
+      margin: 64px 0 64px;
     }
 
     > * {
@@ -106,7 +106,15 @@ button.navbar-toggler,
 .navbar-expand-md {
   max-width: 1200px;
   align-items: center;
-  margin: 0 64px;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 767px) {
+    margin: 0 24px;
+  }
+
+  @media only screen and (max-width: 1400px) {
+    margin: 0 64px;
+  }
 }
 
 .navbar-toggler[aria-expanded="true"] {

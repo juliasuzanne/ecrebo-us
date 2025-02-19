@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import "./css/email.css";
 import { MainTitle } from "./Components/MainTitle";
 
-export function EmailForm() {
+export function EmailForm(props) {
   const form = useRef();
   const [errors, setErrors] = useState([]);
   const [errorShow, setErrorShow] = useState(true);
@@ -39,7 +39,7 @@ export function EmailForm() {
   };
 
   return (
-    <div id="contact-us">
+    <div id="contact-us" className={props.email_class}>
       <form ref={form} onSubmit={sendEmail}>
         <div className="row">
           <div className="email-outsides">

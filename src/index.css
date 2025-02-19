@@ -3,10 +3,11 @@
   --white: rgb(255, 255, 255);
   /* --light-purple: rgb(240, 237, 243); */
   --bright-green: rgb(44, 245, 208);
+  --secondary-red: #F94554;
   /* --bright-purple: hwb(249 38% 7%); */
   --light-purple: #F0F2F6;
   --bright-purple: #4f44c8;
-  --border-radius: 5px;
+  --border-radius: 10px;
   --default-margin: 64px;
   --muted-green: #3ECC9C;
   --ecrebo-red: #282B4A;
@@ -64,7 +65,9 @@ p {
   margin: 0;
 
   .main_header {
-    padding-bottom: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    max-width: 60%;
   }
 
 }
@@ -72,6 +75,7 @@ p {
 .main_header {
   max-width: 900px;
   margin: 20px auto;
+  padding: 20px;
 }
 
 .arrow {

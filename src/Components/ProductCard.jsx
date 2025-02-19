@@ -13,10 +13,14 @@ export function ProductCard(props) {
           <span id="product-card-subtitle">{props.product_subtitle}</span>
         </h2>
         <p className="product-card-description">{props.product_description}</p>
-        <button onClick={() => window.open(`${props.button_url}`)} className="demo-button">
-          {" "}
-          See Demo
-        </button>
+        <div className="demo-button-container">
+          <h5 onClick={() => window.open(`${props.button_url}`)} className="demo-button">
+            {" "}
+            See Demo
+          </h5>
+          <span className="arrow"></span>
+          <img className="product-icon" src={`${props.icon_url}`} />
+        </div>
       </div>
     </div>
   );

@@ -2,13 +2,16 @@ import "../css/card.css";
 export function Card(props) {
   return (
     <div className="card-container">
-      <div className={`card-icon ${props.icon_color}`}>
-        <img src={props.icon_url} />
-      </div>
       <div className={`card-content ${props.card_color}`}>
-        <h2 className="card-title">{props.card_title}</h2>
-        <br></br>
+        <div className="card-title">
+          <h3>{props.card_pretitle}</h3>
+          <h2>{props.card_title}</h2>
+        </div>
+        <div className={`card-icon ${props.icon_color}`}>
+          <img src={props.icon_url} />
+        </div>
         <p className="card-description">{props.card_description}</p>
+        <div className="card-grid">{props.children}</div>
       </div>
     </div>
   );

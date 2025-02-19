@@ -1,14 +1,14 @@
 .card-icon {
   position: absolute;
-  top: -95px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
   border-radius: 100%;
   z-index: 2;
-  margin: auto;
+  top: 2rem;
+  right: 20px;
 
   img {
     height: auto;
@@ -18,6 +18,17 @@
 
 .card-container {
   position: relative;
+  align-items: space-around;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 3;
+}
+
+.card-container-2 {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
   align-items: space-around;
   justify-content: space-around;
   display: flex;
@@ -37,36 +48,173 @@
   background-color: var(--bright-purple);
 }
 
+.red {
+  background-color: var(--secondary-red);
+  opacity: 0.8;
+}
+
+.green-cols {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.green-col-1 {
+  height: 100px;
+  width: 40px;
+  background-color: var(--bright-green);
+  opacity: 0.5;
+}
+
+.green-col-2 {
+  align-self: end;
+  height: 10px;
+  width: 40px;
+  background-color: var(--bright-green);
+}
+
+.purple-cols {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.purple-col-1 {
+  align-self: end;
+  height: 100px;
+  width: 40px;
+  background-color: var(--bright-purple);
+  opacity: 0.5;
+}
+
+.purple-col-2 {
+  height: 115px;
+  width: 40px;
+  background-color: var(--bright-purple);
+}
+
 .card-content {
   justify-content: stretch;
-  align-content: stretch;
+  position: relative;
   text-align: center;
   display: flex;
+  box-shadow: 0px 2px 2px lightgrey;
   flex-direction: column;
   align-content: space-around;
   border-radius: var(--border-radius);
-  background-color: rgba(240,	242,	246, 0.9);
+  background-color: #F6F7F8;
   padding: 13px;
-  padding-top: 5.5rem;
-  transform: translateY(-60px);
+  padding-top: 2rem;
+  padding-bottom: 0;
   z-index: 0;
   color: var(--dark-purple);
 
   &.light {
     background: var(--white);
   }
+
+  h3 {
+    padding: 0;
+  }
+}
+
+.reach-img {
+  padding-bottom: 8px;
+  max-width: 55%;
+}
+
+.red-cols {
+  display: flex;
+  justify-content: center;
+
+  p {
+    align-self: end;
+    padding-left: 15px;
+    font-size: 20px;
+    font-family: 'NeuzeitGro-Lig';
+    color: var(--secondary-red);
+  }
 }
 
 .card-title {
+  padding: 0 15px;
+  float: left;
+  text-align: left;
   font-family: 'NeuzeitGro-Bol';
+
+  h2 {
+    font-size: 27px;
+  }
 }
 
 .card-description {
   flex: 1 0 auto;
-  text-align: center;
+  text-align: left;
   align-content: start;
   align-self: stretch;
   font-family: 'NeuzeitGro-Lig';
   padding: 10px 15px;
-  border-top: 4px solid rgba(255, 255, 255, 0.456);
+}
+
+.card-row {
+  flex: 0 0 50%;
+  padding: 0 40px;
+  width: 50%;
+  justify-self: end;
+}
+
+.card-content-2 {
+  position: relative;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  box-shadow: 0px 2px 2px lightgrey;
+  flex-direction: row;
+  align-content: space-around;
+  border-radius: var(--border-radius);
+  background-color: #F6F7F8;
+  padding: 13px;
+  padding-bottom: 0;
+  z-index: 0;
+  color: var(--dark-purple);
+  height: 200px;
+
+  &.light {
+    background: var(--white);
+    align-items: center;
+
+  }
+
+  h3 {
+    padding: 0;
+  }
+}
+
+.card-description-2 {
+  flex: 1 0 auto;
+  width: 80%;
+  text-align: left;
+  align-content: start;
+  align-self: stretch;
+  font-family: 'NeuzeitGro-Lig';
+  padding: 10px 15px;
+  margin: 0;
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.card2-image {
+  max-width: 80%;
+  max-height: 650px;
+  height: auto;
+  width: auto;
+  padding: 20px;
+}
+
+.card2-image-container {
+  flex: 0 0 50%;
 }

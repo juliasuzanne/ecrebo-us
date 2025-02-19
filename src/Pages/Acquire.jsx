@@ -2,12 +2,12 @@ import "./Css/appstoremimic.css";
 import "./Css/acquire.css";
 import "./Css/appstoremimic.css";
 import { AppStoreMimic } from "./AppStoreMimic";
-import { CPRHero } from "../Components/CPRHero";
+import { NavbarExternalCPR } from "../NavbarExternalCPR";
 
 export function Acquire() {
   return (
     <div className="appstoreborder">
-      <CPRHero></CPRHero>
+      <NavbarExternalCPR></NavbarExternalCPR>
       <div className="appstorecontainer">
         <div id="externalpagebackground">
           <p className="externalpagedescription">

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { NavMenu } from "./NavMenu";
 
-export function Navbar() {
+export function NavbarExternalCPR() {
   const [showNavMenu, setShowNavMenu] = useState(true);
 
   const toggleShowNavMenu = () => {
@@ -57,6 +57,11 @@ export function Navbar() {
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="nav-fill navbar-nav mr-auto">
+          <li className="nav-item">
+            <a className="nav-link" href="/">
+              Home
+            </a>
+          </li>
           <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle"
@@ -79,7 +84,7 @@ export function Navbar() {
             </div>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#contact-us ">
+            <a className="nav-link" href="#contact-us">
               <button>Contact Us</button>
             </a>
           </li>

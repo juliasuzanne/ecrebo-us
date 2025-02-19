@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { ItemContainer } from "./ItemContainer";
 import { MMNavbar } from "./MMNavbar";
 import { CPRHero } from "../Components/CPRHero";
+import { NavbarExternalCPR } from "../NavbarExternalCPR";
 
 function getDate() {
   const today = new Date();
@@ -18,8 +19,8 @@ export function Engage() {
 
   return (
     <div>
-      <CPRHero></CPRHero>
       <div className="engageborder">
+        <NavbarExternalCPR></NavbarExternalCPR>
         <div id="engagecontainer">
           <div id="externalpagebackground">
             <p className="externalpagedescription">

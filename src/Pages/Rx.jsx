@@ -2,12 +2,14 @@ import "./Css/rx.css";
 import { MMNavbar } from "./MMNavbar";
 import { Footer } from "./Footer";
 import { CPRHero } from "../Components/CPRHero";
+import { NavbarExternalCPR } from "../NavbarExternalCPR";
 
 export function Rx() {
   return (
     <div>
-      <CPRHero />
       <div className="rxborder">
+        <NavbarExternalCPR></NavbarExternalCPR>
+
         <div id="externalpagebackground">
           <p className="externalpagedescription">
             Simulates sending a known pharmacy customer to a page in the retailer’s app explaining a new time and

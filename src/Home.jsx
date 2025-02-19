@@ -70,13 +70,14 @@ export function Home() {
       </div>
 
       <div
+        className="light-to-dark-container"
         style={{ backgroundColor: "var(--dark-purple)", borderRadius: "var(--border-radius) var(--border-radius) 0 0" }}
       >
         {" "}
         <div className="light-to-dark-home">
           {/* <div className="gradient-background2"> */}
-          <MainTitle extra_class="round-div" header_color="white">
-            Ecrebo's software-only solution is <span className="green_span">pain-free.</span>
+          <MainTitle extra_class="round-div" header_color="dark">
+            Ecrebo's software-only solution is <span className="purple_span">pain-free.</span>
           </MainTitle>
           {/* </div> */}
           <div className="container-grid-2">

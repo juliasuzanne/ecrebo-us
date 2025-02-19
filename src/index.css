@@ -6,7 +6,7 @@
   --secondary-red: #F94554;
   /* --bright-purple: hwb(249 38% 7%); */
   --light-purple: #F0F2F6;
-  --bright-purple: #4f44c8;
+  --bright-purple: rgb(79, 68, 200);
   --border-radius: 10px;
   --default-margin: 64px;
   --muted-green: #3ECC9C;
@@ -59,6 +59,16 @@ p {
   line-height: 30px;
 }
 
+.footer {
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  font-family: 'NeuzeitGro-Lig';
+  background-color: rgba(79, 68, 200, 0.6);
+  color: var(--white);
+  margin-top: 30px;
+}
+
 .white-background {
   padding: 20px 0;
   background-color: var(--white);
@@ -71,6 +81,21 @@ p {
   }
 
 }
+
+.white-background-product {
+  padding: 20px 0;
+  background: linear-gradient(var(--dark-purple), var(--bright-purple));
+  margin: 0;
+
+  .main_header {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    max-width: 60%;
+  }
+
+}
+
+
 
 .main_header {
   max-width: 900px;
@@ -155,7 +180,7 @@ canvas {
   height: 90vh;
   min-height: 500px;
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1000px) {
     min-height: 500px;
     height: 60vh;
   }
@@ -204,7 +229,7 @@ canvas {
 .riveContent {
   overflow: hidden;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1000px;
 
   .rive-row {
     justify-content: center;

@@ -16,7 +16,7 @@
 
 .hero-home {
   /* border-image: fill 0 linear-gradient(140deg, rgba(40, 43, 74, .9),rgba(118, 98, 238, 0.5), rgba(118, 98, 238, 0.3)); */
-  max-width: 1200px;
+  max-width: 1000px;
   background-size: cover;
   display: block;
   height: 100%;
@@ -183,7 +183,7 @@
   }
   .cpr-row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     @media only screen and (max-width: 968px) {
       flex-wrap: wrap;
     }
@@ -198,7 +198,7 @@
     flex: 10 0 auto;
     min-width: 50%;
     align-self: center;
-    max-width: 1200px;
+    max-width: 1000px;
     width: calc(50% - 96px);
     float: left;
     
@@ -239,7 +239,7 @@
   }
 
   .contain-product {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 64px;
     display: flex;
     gap: 50px;

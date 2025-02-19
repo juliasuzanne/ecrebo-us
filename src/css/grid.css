@@ -5,16 +5,8 @@
   grid-auto-rows: 1fr;
   margin: 0 auto;
   align-items: stretch;
-  max-width: 1200px;
+  max-width: 1000px;
   padding-bottom: 50px;
-}
-
-
-
-@media only screen and (max-width: 1328px) {
-  .container-grid {
-    margin: 0 64px; 
-  }
 }
 
 @media only screen and (max-width: 968px) {
@@ -46,13 +38,12 @@
 }
 
 .home_email {
-  background-color: var(--light-purple);
+  background-color: var(--dark-purple);
   width: 100%;
   margin: 0;
 
   .main_header {
     text-align: left;
-    color: var(--dark-purple);
     padding: 0;
     margin-left: 0;
     margin-top: 20px;
@@ -69,16 +60,8 @@
   gap: 48px;
   margin: 0 auto;
   align-items: stretch;
-  max-width: 1200px;
+  max-width: 1000px;
   padding-bottom: 50px;
-}
-
-
-
-@media only screen and (max-width: 1328px) {
-  .container-grid-2 {
-    margin: 0 64px; 
-  }
 }
 
 @media only screen and (max-width: 968px) {
@@ -98,4 +81,11 @@
       justify-items: center; */
     }
   }
+}
+
+.light-to-dark-home {
+  /* background-image: url("assets/bg-img.jpg");
+  background-size: cover; */
+  background-color: var(--light-purple);
+  padding-top: 10px;
 }

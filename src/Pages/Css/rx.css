@@ -4,6 +4,8 @@
   margin: auto;
   font-family: "Gilroy-Regular";
   background-color: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
 }
 
 .rxcontentcontainer{
@@ -33,26 +35,27 @@
   }
 
   .subtitlemmlogo{
-    height: 4.7vh;
+    height: 40px;
     padding-left: 0;
-    padding-bottom: 1.2vh;
+    padding-bottom: 8px;
   }
 
   .titlemmlogo{
-    height: 9.3vh;
+    height: 100px;
     padding-left: 0;
-    padding-bottom: 1.5vh;
+    padding-bottom: 20px;
   }
 
   .rxtitle{
     font-family:"PulpDisplay-SemiBold", Georgia;
-    font-size: 5vw;
+    font-size: 80px;
     color:rgb(5,51,28);
   }
   
   .rxsubtitle{
     font-family:"Corda";
-    font-size: 2vw;
+    font-size: 30px;
+    line-height: 50px;
     padding-bottom: 5vh;
     margin-bottom: 0;
     width: 90%;
@@ -144,7 +147,7 @@
   }
 
   .subtitlemmlogo{
-    height: 3.7vh;
+    height: 40px;
     padding-left: 0;
     padding-bottom: .95vh;
   }
@@ -273,7 +276,7 @@ ul {
 
 
   .titlemmlogo{
-    height: 6.2vh;
+    height: 100px;
     padding-left: 0;
     padding-bottom: .95vh;
   }

@@ -21,18 +21,18 @@ export function Engage() {
     <div>
       <div className="engageborder">
         <NavbarExternalCPR></NavbarExternalCPR>
+        <div id="externalpagebackground">
+          <p className="externalpagedescription">
+            Simulates sending a declining/lapsed loyalty app user to a page loaded with personalized offers to emphasize
+            the app’s money-saving benefits.
+            <br></br>
+            <br></br>
+            <a className="externalpagedescriptionlink" href="/cpr">
+              Back
+            </a>
+          </p>
+        </div>
         <div id="engagecontainer">
-          <div id="externalpagebackground">
-            <p className="externalpagedescription">
-              Simulates sending a declining/lapsed loyalty app user to a page loaded with personalized offers to
-              emphasize the app’s money-saving benefits.
-              <br></br>
-              <br></br>
-              <a className="externalpagedescriptionlink" href="/cpr">
-                Back
-              </a>
-            </p>
-          </div>
           <MMNavbar></MMNavbar>
           <div>
             <div className="mmengagetitle">

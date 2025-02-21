@@ -1,6 +1,7 @@
 
 
 .engageborder{
+  padding-bottom: 40px;
   background-color:rgb(40,43,74);
   min-width: 100%;
   min-height: 100vh;
@@ -12,7 +13,9 @@
   margin: auto;
   min-height: 98vh;
   background-color: white;
-
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  max-width: 1000px;
 }
 
 .mmnavbar{

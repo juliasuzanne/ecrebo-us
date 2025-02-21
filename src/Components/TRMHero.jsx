@@ -6,7 +6,7 @@ export function TRMHero(props) {
     <div>
       <NavbarDemos></NavbarDemos>
       <div className="container.fluid hero-home-cpr bg-trm">
-        <img className="hero-img-trm" src="/assets/TRMhero.png" />
+        <img className="hero-img-trm" src="/assets/receipt_mock-up.webp" />
         <div className="hero-content">
           <h3 className="cpr-title">
             Introducing EcreboTRM <br></br>

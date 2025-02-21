@@ -6,6 +6,8 @@
   background-color: white;
   border-radius: var(--border-radius);
   overflow: hidden;
+  max-width: 1000px;
+  margin-bottom: 50px;
 }
 
 .rxcontentcontainer{

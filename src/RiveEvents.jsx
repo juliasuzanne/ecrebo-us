@@ -125,6 +125,7 @@ export function RiveEvents() {
           </button>
         </div>
         <div className="rivecontainer col-sm-12 col-md-6">
+          <img src="/assets/GreenHalfCircle.svg" className="riveCircle2" />
           <RiveComponent className="riveBox" />
         </div>
       </div>

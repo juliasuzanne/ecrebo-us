@@ -89,7 +89,7 @@ export function Home() {
             />
           </div>
 
-          <EmailForm email_class="home_email"></EmailForm>
+          <EmailForm header_color="white" email_class="home_email"></EmailForm>
         </div>
       </div>
     </div>

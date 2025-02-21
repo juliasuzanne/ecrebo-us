@@ -43,7 +43,7 @@ export function EmailForm(props) {
       <form ref={form} onSubmit={sendEmail}>
         <div className="row">
           <div className="email-outsides">
-            <MainTitle header_color="white">
+            <MainTitle header_color={props.header_color}>
               Get in touch. <br></br>Let's put your receipts to work.
             </MainTitle>
           </div>

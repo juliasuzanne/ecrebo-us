@@ -84,7 +84,6 @@ button.navbar-toggler,
 }
 
 .nav-link-dark {
-  color: var(--dark-purple);
   font-family: 'NeuzeitGro-Lig';
   text-align: left;
 
@@ -98,9 +97,15 @@ button.navbar-toggler,
   }
 
   &.dropdown-toggle.show::after {
-
     transform: rotate(180deg);
   }
+}
+
+.navbar-demos {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: var(--dark-purple);
 }
 
 .navbar-expand-md {
@@ -197,7 +202,7 @@ li:focus {
   flex-direction: column;
   text-align: center;
   overflow: hidden;
-  @media only screen and (max-width: 968px) {
+  @media only screen and (max-width: 986px) {
     background-color: var(--light-purple);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.481);
   }
@@ -229,7 +234,7 @@ li:focus {
 }
 
 ul {
-  @media only screen and (max-width: 968px) {
+  @media only screen and (max-width: 986px) {
    top: 140px; 
    justify-content: space-around;
   }

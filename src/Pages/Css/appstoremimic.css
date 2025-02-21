@@ -4,12 +4,9 @@
 }
 
 .appstoreheadercontainer {
-
   margin: auto;
   align-content: center;
   width: 80%;
- 
-
 }
 
 .appstoreborder{
@@ -29,6 +26,8 @@
   background-color: rgb(255, 255, 255); 
   border-radius: var(--border-radius);
   padding: 20px;
+  margin-bottom: 50px;
+
 }
 
 
@@ -313,7 +312,7 @@ font-family: "SF Pro Display","SF Pro Icons","Apple WebExp Icons Custom","Helvet
 
 }
 
-@media screen and (max-width: 968px){
+@media screen and (max-width: 986px){
 
   #mmtitle {
     font-size: 1.2em;

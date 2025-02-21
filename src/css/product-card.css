@@ -4,7 +4,6 @@
   max-width: 420px;
   border-radius: var(--border-radius);
   background-color: var(--white);
-  margin-bottom: 50px;
   font-family: 'NeuzeitGro-Lig';
   color: var(--white);
   overflow:hidden;
@@ -12,13 +11,23 @@
   button:hover {
     color: var(--dark-purple);
   }
-}
 
+  @media only screen and (max-width: 987px){
+    margin: 0;
+  }
+
+}
 
 #product-card-subtitle {
   font-weight: normal;
-  font-size: 24px;
+  font-size: 28px;
   font-family: 'NeuzeitGro-Lig';
+}
+
+.product-card-title {
+  h2 {
+    font-size: 36px;
+  }
 }
 
 .product-container {
@@ -32,6 +41,11 @@
   background-size: cover;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+
+.grid-product:nth-child(2) {
+  margin-bottom: 50px;
 }
 
 .grid-product {
@@ -48,6 +62,7 @@
 
   @media only screen and (max-width: 987px){
     margin: 0 var(--default-margin);
+    gap: 48px;
 
   }
 

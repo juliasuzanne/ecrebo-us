@@ -6,7 +6,7 @@
   overflow: visible;
   z-index: 1;
   @media only screen and (max-width: 968px) {
-    height: 10px;
+    height: 1px;
   }
 }
 
@@ -167,12 +167,13 @@
   display: flex;
   flex-direction: row;
   height: 100%;
-  margin: 0 64px;
+  margin: 0 auto;
   color: var(--dark-purple);
   font-size: 20px;
   flex-wrap: wrap-reverse;
   justify-content: center;
   position:relative;
+  max-width: 1200px;
 
   .purple-background-circle {
     z-index: 0;
@@ -197,12 +198,12 @@
     flex: 10 0 auto;
     min-width: 50%;
     align-self: center;
+    padding: 40px;
     max-width: 1000px;
     width: calc(50% - 96px);
     float: left;
     
     @media only screen and (max-width: 968px) {
-
       width: calc(100% - 96px);
     }
 

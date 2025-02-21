@@ -19,7 +19,7 @@
 }
 
 .clicktosee {
-  color: var(--dark-purple);
+  color: white;
   font-family: 'NeuzeitGro-Bol';
   font-size: 30px;
   @media only screen and (max-width: 968px) {
@@ -36,7 +36,7 @@
 
 .demo-buttons {
   padding: 30px;
-  background: linear-gradient(225deg, white, white, #c6bfee);
+  background: linear-gradient(205deg, var(--dark-purple) 20%, #565091);
   width: calc(50% - 64px);
   justify-self: end;
   position: relative;
@@ -48,7 +48,7 @@
     font-size: 1.5vw;
     transition: 0.3s;
     background-color: unset;
-    color:var(--dark-purple);
+    color: white;
     font-family: 'NeuzeitGro-Lig';
     border: none;
     padding:  1.5vw 0;

@@ -19,7 +19,7 @@ export function RiveEventsTRM() {
     stateMachines: "State Machine 1",
     autoPlay: "false",
     layout: new Layout({
-      fit: Fit.FitHeight,
+      fit: Fit.FitContent,
       alignment: Alignment.TopCenter,
     }),
   });

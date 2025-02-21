@@ -11,7 +11,6 @@ export function CPR() {
       <div className="product-page">
         <CPRHero />
         <div className="container.fluid" id="circlebackground">
-          <CPRPageDescription></CPRPageDescription>
           <div>
             <RiveEvents></RiveEvents>
           </div>

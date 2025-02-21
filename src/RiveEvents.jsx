@@ -15,11 +15,11 @@ export function RiveEvents() {
   // const [scrollPos, setScrollPos] = useState(1200);
 
   const { rive, RiveComponent } = useRive({
-    src: "ecrebocpr-TRM.riv",
+    src: "ecrebocpr-CPR.riv",
     stateMachines: "State Machine 1",
     autoPlay: "false",
     layout: new Layout({
-      fit: Fit.FitHeight,
+      fit: Fit.Contain,
       alignment: Alignment.TopCenter,
     }),
   });
@@ -111,7 +111,7 @@ export function RiveEvents() {
           <h2 className="clicktosee">
             Click to print a<br /> personalized receipt that:
           </h2>
-          <button onClick={() => setCurrentLevel(0)}>
+          <button onClick={() => setCurrentLevel(3)}>
             Acquires New Loyalty App Users<span className="arrow"></span>
           </button>
           <button onClick={() => setCurrentLevel(1)}>
@@ -120,7 +120,7 @@ export function RiveEvents() {
           <button onClick={() => setCurrentLevel(2)}>
             Drives More Digital Engagement<span className="arrow"></span>
           </button>
-          <button onClick={() => setCurrentLevel(3)}>
+          <button onClick={() => setCurrentLevel(0)}>
             Converts Non-Digital Members To Digital<span className="arrow"></span>
           </button>
         </div>

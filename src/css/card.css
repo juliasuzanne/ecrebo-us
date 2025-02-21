@@ -7,12 +7,16 @@
   width: 60px;
   border-radius: 100%;
   z-index: 2;
-  top: 2rem;
   right: 20px;
 
   img {
     height: auto;
     width: 90%;
+  }
+
+  @media only screen and (max-width: 987px) {
+    height: 50px;
+    width: 50px;
   }
 }
 
@@ -52,48 +56,6 @@
   opacity: 0.8;
 }
 
-.green-cols {
-  padding-left: 15px;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-
-.green-col-1 {
-  height: 100px;
-  width: 40px;
-  background-color: var(--bright-green);
-  opacity: 0.5;
-}
-
-.green-col-2 {
-  align-self: end;
-  height: 10px;
-  width: 40px;
-  background-color: var(--bright-green);
-}
-
-.purple-cols {
-  padding-left: 15px;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-
-.purple-col-1 {
-  align-self: end;
-  height: 100px;
-  width: 40px;
-  background-color: var(--bright-purple);
-  opacity: 0.5;
-}
-
-.purple-col-2 {
-  height: 115px;
-  width: 40px;
-  background-color: var(--bright-purple);
-}
-
 .card-content {
   justify-content: stretch;
   position: relative;
@@ -105,7 +67,7 @@
   border-radius: var(--border-radius);
   background-color: #F6F7F8;
   padding: 13px;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 0;
   z-index: 0;
   color: var(--dark-purple);
@@ -119,32 +81,33 @@
   }
 }
 
-.reach-img {
-  padding-bottom: 8px;
-  max-width: 55%;
-}
-
-.red-cols {
-  display: flex;
-  justify-content: center;
-
-  p {
-    align-self: end;
-    padding-left: 15px;
-    font-size: 20px;
-    font-family: 'NeuzeitGro-Lig';
-    color: var(--secondary-red);
-  }
-}
-
 .card-title {
   padding: 0 15px;
   float: left;
   text-align: left;
   font-family: 'NeuzeitGro-Bol';
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
 
   h2 {
     font-size: 32px;
+  }
+
+  h3 {
+    font-size: 56px;
+  }
+
+  @media only screen and (max-width: 987px) {
+    max-width: 70%;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    h2, h3 {
+      font-size: 35px;
+      padding-left: 0;
+      line-height: 40px;
+    }
   }
 }
 
@@ -155,6 +118,7 @@
   align-self: stretch;
   font-family: 'NeuzeitGro-Lig';
   padding: 10px 15px;
+  padding-top: 20px;
 }
 
 .card-row {

@@ -107,6 +107,14 @@ button.navbar-toggler,
   max-width: 1000px;
   align-items: center;
   margin: 0 auto;
+
+  @media only screen and (max-width: 1128px) {
+    margin: 0 64px;
+  }
+
+  @media only screen and (max-width: 967px) {
+    margin: 0 24px;
+  }
 }
 
 .navbar-toggler[aria-expanded="true"] {

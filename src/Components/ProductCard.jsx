@@ -19,7 +19,6 @@ export function ProductCard(props) {
             See Demo
           </h5>
           <span className="arrow"></span>
-          <img className="product-icon" src={`${props.icon_url}`} />
         </div>
       </div>
     </div>

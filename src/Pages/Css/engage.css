@@ -54,10 +54,10 @@
 
 @media screen and (max-width: 10092px){
   .titlemmrewardsimage{
-    height: 13vh;
+    height: 80px;
     margin: auto;
-    padding-top: 1vw;
-    padding-bottom: 2vw;
+    padding-top: 10px;
+    padding-bottom: 20px;
   
   }
   .personalizedheader{
@@ -81,38 +81,36 @@
   
 
   .titlebox{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.89);
     margin: auto;
-    width: 50%;
+    width: 70%;
     height: 30%;
     border-radius: 15px;
 
   }
   .titlemmrewardstext{
-    font-size: 3vw;
+    font-size: 30px;
     font-family: "PulpDisplay-SemiBold";
     margin: auto;
     color: rgb(24,67,37);
     padding-bottom: 0;
     padding-bottom: 20px;
-
-
+    padding-top: 20px;
   }
   .engagedescription{
     font-family: "Corda";
     color: rgb(24,67,37);
-    padding-bottom: 5vh;
     font-size: 20px;
     text-align: left;
     margin: auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.952);
+    padding: 10px;
+    padding-bottom: 30px;
   }
   .subtitlemmrewardsimage{
-    height: 2.5vw;
-    padding-top: 0vw;
-    padding-left: .5rem;
-    padding-bottom: .8vw;
+    height: 29px;
+    padding-top: 0;
+    padding-left: 1.5px;
+    padding-bottom: 9px;
     
   }
   .personalizedheader{
@@ -139,17 +137,17 @@
 
 @media screen and (max-width: 992px){
   .titlemmrewardsimage{
-    height: 8vw;
+    height: 66px;
     margin: auto;
-    padding-top: 1vw;
-    padding-bottom: 2vw;
+    padding-top: 10px;
+    padding-bottom: 20px;
   
   }
 
   .titlebox{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.89);
     margin: auto;
-    width: 60%;
+    width: 70%;
     height: 30%;
   }
   .titlemmrewardstext{
@@ -165,12 +163,11 @@
   .engagedescription{
     font-family: "Corda";
     color: rgb(24,67,37);
-    padding-bottom: 5vh;
     font-size: 20px;
     text-align: left;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.952);
-    padding-top: 0vh;
+    padding-top: 0;
+    padding-bottom: 30px;
   }
   .subtitlemmrewardsimage{
     height: 5vw;
@@ -193,8 +190,8 @@
 
 @media screen and (max-width: 738px){
   .titlemmrewardsimage{
-    height: 10vw;
-    padding-top: 1vw;
+    height: 57px;
+    padding-top: 10px;
     margin: auto;
   
   }
@@ -212,9 +209,9 @@
   
 
   .titlebox{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.89);
     margin: auto;
-    width: 80%;
+    width: 90%;
     height: 30%;
   }
 
@@ -234,8 +231,7 @@
     font-size: clamp(2vw, 16px, 20px);
     text-align: left;
     margin: auto;
-    width: 96%;
-    background-color: rgba(255, 255, 255, 0.952);
+    padding-bottom: 30px;
 
 
   }
@@ -243,11 +239,11 @@
  
 
   .subtitlemmrewardsimage{
-    height: 6.4vw;
+    height: 30px;
     padding-left: 0;
     margin: auto;
-    padding-top: 1vw;
-    padding-bottom: 1.85vw;
+    padding-top: 2px;
+    padding-bottom: 9px;
 
   
   }

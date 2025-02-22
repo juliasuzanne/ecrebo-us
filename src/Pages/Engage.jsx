@@ -40,8 +40,7 @@ export function Engage() {
 
               <div className="titlebox">
                 <h1 className="col-sm-12 col-md-10 titlemmrewardstext">
-                  Hi Sofia!<br></br>
-                  <span className="titlemmrewardstext">Thank you for being an </span>
+                  <span className="titlemmrewardstext">Thank you for being an</span>
                   <br></br>
                   <img
                     className="titlemmrewardsimage"

@@ -119,7 +119,8 @@
 
   button:hover,
   button:focus,
-  button.active {
+  button.active,
+  button.active-button {
     span {
       margin: 0 0 0 15px;
     }

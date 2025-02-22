@@ -92,6 +92,12 @@ export function RiveEvents() {
   const [currentLink, setCurrentLink] = useState("/cpr");
   const [hiddenRef, setHiddenRef] = useState(true);
   const [mobileHiddenRef, setMobileHiddenRef] = useState(true);
+  const buttons = document.querySelectorAll("button.button-rive");
+
+  function changeCurrentButton(index) {
+    buttons.forEach((el) => el.classList.remove("active-button"));
+    buttons[index].classList.add("active-button");
+  }
 
   useEffect(() => {
     if (level) {
@@ -99,17 +105,21 @@ export function RiveEvents() {
       if (currentLevel === 0) {
         setCurrentLink("/cpr/digital");
         startAnimation();
+        changeCurrentButton(3);
       } else if (currentLevel === 1) {
         setCurrentLink("/cpr/rx_link");
         startAnimation();
+        changeCurrentButton(1);
       }
       if (currentLevel === 2) {
         setCurrentLink("/cpr/engage");
         startAnimation();
+        changeCurrentButton(2);
       }
       if (currentLevel === 3) {
         setCurrentLink("/cpr/acquire");
         startAnimation();
+        changeCurrentButton(0);
       }
     }
   }, [currentLevel, level]);
@@ -128,16 +138,16 @@ export function RiveEvents() {
           <h2 className="clicktosee">
             Click to print a<br /> personalized receipt that:
           </h2>
-          <button onClick={() => setCurrentLevel(3)}>
+          <button className="button-rive" onClick={() => setCurrentLevel(3)}>
             Acquires New Loyalty App Users<span className="arrow"></span>
           </button>
-          <button onClick={() => setCurrentLevel(1)}>
+          <button className="button-rive" onClick={() => setCurrentLevel(1)}>
             Introduces A New Pharmacy Feature<span className="arrow"></span>
           </button>
-          <button onClick={() => setCurrentLevel(2)}>
+          <button className="button-rive" onClick={() => setCurrentLevel(2)}>
             Drives More Digital Engagement<span className="arrow"></span>
           </button>
-          <button onClick={() => setCurrentLevel(0)}>
+          <button className="button-rive" onClick={() => setCurrentLevel(0)}>
             Converts Non-Digital Members To Digital<span className="arrow"></span>
           </button>
           <div hidden={hiddenRef} className="click-ref">

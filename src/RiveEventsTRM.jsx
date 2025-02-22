@@ -84,20 +84,31 @@ export function RiveEventsTRM() {
 
   const level = useStateMachineInput(rive, "State Machine 1", "level");
   const [currentLevel, setCurrentLevel] = useState(10);
+  const buttons = document.querySelectorAll("button.button-rive");
+
+  function changeCurrentButton(index) {
+    buttons.forEach((el) => el.classList.remove("active-button"));
+    buttons[index].classList.add("active-button");
+  }
 
   useEffect(() => {
     if (level) {
       level.value = currentLevel;
+
       if (currentLevel === 0) {
         startAnimation();
+        changeCurrentButton(1);
       } else if (currentLevel === 1) {
         startAnimation();
+        changeCurrentButton(3);
       }
       if (currentLevel === 2) {
         startAnimation();
+        changeCurrentButton(2);
       }
       if (currentLevel === 3) {
         startAnimation();
+        changeCurrentButton(0);
       }
     }
   }, [currentLevel, level]);
@@ -116,17 +127,17 @@ export function RiveEventsTRM() {
           <h2 className="clicktosee">
             Click to print a<br /> personalized receipt that:
           </h2>
-          <button onClick={() => setCurrentLevel(3)}>
+          <button className="button-rive" onClick={() => setCurrentLevel(3)}>
             Delivers A Store Offer To A Valuable Customer <span className="arrow"></span>
           </button>
 
-          <button onClick={() => setCurrentLevel(0)}>
+          <button className="button-rive" onClick={() => setCurrentLevel(0)}>
             Delivers A Targeted Manufacturer’s Coupon <span className="arrow"></span>
           </button>
-          <button onClick={() => setCurrentLevel(2)}>
+          <button className="button-rive" onClick={() => setCurrentLevel(2)}>
             Promotes A Holiday Special<span className="arrow"></span>
           </button>
-          <button onClick={() => setCurrentLevel(1)}>
+          <button className="button-rive" onClick={() => setCurrentLevel(1)}>
             Promotes A Charity Event<span className="arrow"></span>
           </button>
         </div>

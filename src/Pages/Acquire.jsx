@@ -15,8 +15,8 @@ export function Acquire() {
             program.
             <br></br>
             <br></br>
-            <a className="externalpagedescriptionlink">
-              <button onClick={() => window.location.replace("http://localhost:5173/cpr#cpr")}>Back</button>
+            <a className="externalpagedescriptionlink" href="/cpr#cpr">
+              <button>Back</button>
             </a>
           </p>
           <AppStoreMimic></AppStoreMimic>

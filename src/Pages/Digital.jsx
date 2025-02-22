@@ -15,7 +15,7 @@ export function Digital() {
             page to install the app.
             <br></br>
             <br></br>
-            <a className="externalpagedescriptionlink" href="/cpr">
+            <a className="externalpagedescriptionlink" href="/cpr#cpr">
               <button>Back</button>
             </a>
           </p>

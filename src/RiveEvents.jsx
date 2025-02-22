@@ -24,7 +24,6 @@ export function RiveEvents() {
     }),
   });
   const scrollRef = useRef(null);
-  const clickRef = useRef(null);
 
   const executeScroll = () => {
     if (
@@ -142,14 +141,14 @@ export function RiveEvents() {
             Converts Non-Digital Members To Digital<span className="arrow"></span>
           </button>
           <div hidden={hiddenRef} className="click-ref">
-            Viewing on mobile? <a href={`${currentLink}`}>Click here</a> to see where the receipt goes.
+            Scan or <a href={`${currentLink}`}>click here</a> to see where the QR code goes.
           </div>
         </div>
-        <div ref={clickRef} className="rivecontainer col-sm-12 col-md-6">
+        <div className="rivecontainer col-sm-12 col-md-6">
           <img src="/assets/GreenHalfCircle.svg" className="riveCircle2" />
           <RiveComponent className="riveBox" />
           <div hidden={mobileHiddenRef} className="click-ref-mobile">
-            Viewing on mobile? <a href={`${currentLink}`}>Click here</a> to see where the receipt goes.
+            Scan or <a href={`${currentLink}`}>click here</a> to see where the QR code goes.
           </div>
         </div>
       </div>

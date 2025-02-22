@@ -59,6 +59,11 @@ export function RiveEventsTRM() {
       if (eventData.type === RiveEventType.General) {
         console.log("Event name" + eventData.name);
         if (eventData.name == "EndAnimation") {
+          if (window.innerWidth < 986) {
+            document.querySelector(".rivecontainer").scrollIntoView({
+              behavior: "smooth",
+            });
+          }
           console.log("end animation");
           executeScroll();
         } else if (eventData.name == "Scroller") {

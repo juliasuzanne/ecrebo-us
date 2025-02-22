@@ -27,19 +27,6 @@
   display: flex;
   flex-wrap: wrap;
   z-index: 3;
-  .card-icon {
-    img {
-      transition: transform 0.2s ease-in-out;
-    }
-  }
-}
-
-.card-container:hover {
-  .card-icon {
-    img {
-      transform: scale(1.125);
-    }
-  }
 }
 
 .card-container-2 {

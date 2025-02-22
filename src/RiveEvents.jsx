@@ -24,6 +24,7 @@ export function RiveEvents() {
     }),
   });
   const scrollRef = useRef(null);
+  const clickRef = useRef(null);
 
   const executeScroll = () => {
     if (
@@ -40,6 +41,8 @@ export function RiveEvents() {
     });
 
   const startAnimation = () => {
+    setHiddenRef(true);
+    setMobileHiddenRef(true);
     document.querySelector(".riveContent").scrollIntoView({
       behavior: "smooth",
     });
@@ -59,6 +62,14 @@ export function RiveEvents() {
       if (eventData.type === RiveEventType.General) {
         console.log("Event name" + eventData.name);
         if (eventData.name == "EndAnimation") {
+          if (window.innerWidth >= 986) {
+            setHiddenRef(false);
+          } else {
+            setMobileHiddenRef(false);
+            document.querySelector(".rivecontainer").scrollIntoView({
+              behavior: "smooth",
+            });
+          }
           console.log("end animation");
           executeScroll();
         } else if (eventData.name == "Scroller") {
@@ -79,19 +90,26 @@ export function RiveEvents() {
 
   const level = useStateMachineInput(rive, "State Machine 1", "level");
   const [currentLevel, setCurrentLevel] = useState(10);
+  const [currentLink, setCurrentLink] = useState("/cpr");
+  const [hiddenRef, setHiddenRef] = useState(true);
+  const [mobileHiddenRef, setMobileHiddenRef] = useState(true);
 
   useEffect(() => {
     if (level) {
       level.value = currentLevel;
       if (currentLevel === 0) {
+        setCurrentLink("/cpr/digital");
         startAnimation();
       } else if (currentLevel === 1) {
+        setCurrentLink("/cpr/rx_link");
         startAnimation();
       }
       if (currentLevel === 2) {
+        setCurrentLink("/cpr/engage");
         startAnimation();
       }
       if (currentLevel === 3) {
+        setCurrentLink("/cpr/acquire");
         startAnimation();
       }
     }
@@ -123,10 +141,16 @@ export function RiveEvents() {
           <button onClick={() => setCurrentLevel(0)}>
             Converts Non-Digital Members To Digital<span className="arrow"></span>
           </button>
+          <div hidden={hiddenRef} className="click-ref">
+            Viewing on mobile? <a href={`${currentLink}`}>Click here</a> to see where the receipt goes.
+          </div>
         </div>
-        <div className="rivecontainer col-sm-12 col-md-6">
+        <div ref={clickRef} className="rivecontainer col-sm-12 col-md-6">
           <img src="/assets/GreenHalfCircle.svg" className="riveCircle2" />
           <RiveComponent className="riveBox" />
+          <div hidden={mobileHiddenRef} className="click-ref-mobile">
+            Viewing on mobile? <a href={`${currentLink}`}>Click here</a> to see where the receipt goes.
+          </div>
         </div>
       </div>
     </div>

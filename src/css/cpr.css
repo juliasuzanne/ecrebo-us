@@ -8,6 +8,35 @@
   }
 }
 
+.click-ref {
+  color: white;
+  margin-top: 100px;
+
+  a {
+    color: var(--bright-green);
+  }
+
+  a:hover {
+    color: var(--white);
+  }
+}
+
+.click-ref-mobile {
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 100;
+
+  a {
+    color: var(--bright-green);
+  }
+
+  a:hover {
+    color: var(--white);
+  } 
+}
+
 .container-fluid {
   width: 100%;
   max-width: 1000px;
@@ -111,4 +140,5 @@
   bottom: 0;
   right: 0;
   transform: rotate(90deg);
+  z-index: 0;
 }

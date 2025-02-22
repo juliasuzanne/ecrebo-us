@@ -70,7 +70,7 @@ export function Home() {
               icon_color="purple"
               card_color="light"
               card_title="POS Agnostic"
-              icon_url="assets/DataCard-2-1.svg"
+              icon_url="assets/DataCard-2-3.svg"
               card_description="Works with all POS systems and all receipt printers. No new hardware."
             />
             <Card
@@ -83,7 +83,7 @@ export function Home() {
             <Card
               icon_color="purple"
               card_color="light"
-              icon_url="assets/DataCard-2-3.svg"
+              icon_url="assets/DataCard-2-1.svg"
               card_title="Easy Management"
               card_description="Campaign creation and management through an intuitive Ecrebo portal."
             />

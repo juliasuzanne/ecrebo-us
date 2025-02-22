@@ -6,7 +6,7 @@ export function Hero() {
     <div className="hero-main">
       <Navbar></Navbar>
       <div className="container hero-home">
-        <img width="375px" height="450px" src="/assets/Hero-img.png" className="hero-img" />
+        <img width="375px" height="450px" src="/assets/hero-v3.png" className="hero-img" />
 
         <h1>
           Turn humble paper receipts into <span className="green_span">powerful marketing</span>.

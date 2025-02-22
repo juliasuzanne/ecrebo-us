@@ -31,6 +31,15 @@
   padding-left: 1em;
 }
 
+.purple-arrow {
+  background-image: url("/assets/ArrowPurple.svg");
+  height: 18px;
+  width: 30px;
+  background-repeat: no-repeat;
+  height: 15px;
+  transform: translateY(4px);
+}
+
 .inputsearch {
   padding: 20px;
   padding-left: 150px;
@@ -484,8 +493,8 @@ input[type="checkbox"]:checked:before {
   color: rgb(0, 0, 0);
   padding: 10px;
   margin-bottom: 5vh;
-  border-radius: 30px;
-  text-decoration: underline;
+  border-radius: 40px;
+  margin-left: 30px;
 }
 
 .engagebrowsemore:hover{

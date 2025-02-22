@@ -28,7 +28,7 @@ export function Engage() {
             <br></br>
             <br></br>
             <a className="externalpagedescriptionlink" href="/cpr">
-              Back
+              <button>Back</button>
             </a>
           </p>
         </div>
@@ -111,7 +111,7 @@ export function Engage() {
               points="18"
             ></ItemContainer>
           </div>
-          <button className="engagebrowsemore">Browse more great offers and manufacturer's coupons</button>
+          <p className="engagebrowsemore">Browse more great offers and manufacturer's coupons &#8594;</p>
         </div>
       </div>
       <Footer></Footer>

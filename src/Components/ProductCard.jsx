@@ -18,7 +18,7 @@ export function ProductCard(props) {
             {" "}
             See Demo
           </h5>
-          <span className="arrow"></span>
+          <span className="purple-arrow"></span>
         </div>
       </div>
     </div>

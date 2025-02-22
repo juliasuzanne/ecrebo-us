@@ -288,10 +288,11 @@ canvas {
 }
 
 .externalpagedescription{
-  max-width: 80%;
+  max-width: 60%;
   margin:auto;
   padding-top: 25px;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .externalpagedescriptionlink{
@@ -300,6 +301,8 @@ canvas {
   margin: 0 auto;
   font-size: 15px;
   text-align: center;
+  justify-content: center;
+  display: flex;
 }
 
 .externalpagedescriptionlink:hover{

@@ -57,7 +57,7 @@ export function Engage() {
                     className="subtitlemmrewardsimage"
                     src="https://res.cloudinary.com/dytb4ayqj/image/upload/v1710183079/2xmmlogorewards_qbtnh9.png"
                   ></img>
-                  . <br></br>Your personalized offers expire on 7/31/24.
+                  . <br></br>Your personalized offers expire on 7/31/25.
                 </p>
               </div>
 

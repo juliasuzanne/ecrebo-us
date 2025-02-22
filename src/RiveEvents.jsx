@@ -119,7 +119,7 @@ export function RiveEvents() {
   };
 
   return (
-    <div className="riveContent container.fluid">
+    <div className="riveContent container.fluid" id="cpr">
       <div ref={scrollRef}></div>
       <div className="row">
         {/* <div className="demo-buttons col-sm-12 col-md-1"></div> */}

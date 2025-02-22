@@ -77,15 +77,15 @@ export function Home() {
               icon_color="purple"
               card_color="light"
               icon_url="assets/DataCard-2-2.svg"
-              card_title="Easy Management"
-              card_description="Campaign creation and management through an intuitive Ecrebo portal."
+              card_title="Simple Installation"
+              card_description="No POS integration required. Time from testing to install can be weeks."
             />
             <Card
               icon_color="purple"
               card_color="light"
               icon_url="assets/DataCard-2-3.svg"
-              card_title="Simple Installation"
-              card_description="No POS integration required. Time from testing to install can be weeks."
+              card_title="Easy Management"
+              card_description="Campaign creation and management through an intuitive Ecrebo portal."
             />
           </div>
 

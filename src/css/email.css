@@ -76,6 +76,10 @@ form {
   width: 100%;
 }
 
+textarea.form-control {
+  min-height: 100px;
+}
+
 .disclaimer {
   position: relative;
   line-height: 20px;

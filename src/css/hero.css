@@ -235,6 +235,7 @@
     position: relative;
     z-index: 3;
     max-width: 100%;
+    min-height: 350px;
     height: auto;
     width: auto;
     max-height: 50vh;
@@ -242,6 +243,8 @@
 
     @media only screen and (max-width: 986px) {
       align-self: center;
+      min-height: unset;
+
     }
   }
 
@@ -263,12 +266,15 @@
     z-index: 3;
     max-width: calc(50% - 64px);
     height: auto;
+    width: auto;
     max-height: 70vh;
+    min-height: 400px;
     align-self: end;
     @media only screen and (max-width: 986px) {
       max-height: 65vh;
       align-self: center;
       max-width: 90%;
+      min-height: unset;
       margin: 30px 0 0 0;
     }
 

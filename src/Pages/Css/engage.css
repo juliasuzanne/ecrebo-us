@@ -102,9 +102,6 @@
     color: rgb(24,67,37);
     font-size: 20px;
     text-align: left;
-    margin: auto;
-    padding: 10px;
-    padding-bottom: 30px;
   }
   .subtitlemmrewardsimage{
     height: 29px;
@@ -165,9 +162,6 @@
     color: rgb(24,67,37);
     font-size: 20px;
     text-align: left;
-    margin: auto;
-    padding-top: 0;
-    padding-bottom: 30px;
   }
   .subtitlemmrewardsimage{
     height: 5vw;
@@ -230,10 +224,6 @@
     color: rgb(24,67,37);
     font-size: clamp(2vw, 16px, 20px);
     text-align: left;
-    margin: auto;
-    padding-bottom: 30px;
-
-
   }
 
  
@@ -499,4 +489,30 @@ input[type="checkbox"]:checked:before {
   padding: 10px;
   margin-bottom: 5vh;
   border-radius: 30px;
+}
+
+.engagebackground-mobile {
+  background-image: url("/assets/grocery_background.jpg");
+  background-size: cover;
+  height: 300px;
+  background-position: 70% 100%;
+  display: none;
+
+  @media only screen and (max-width: 986px) {
+    display: block;
+  }
+}
+
+.engagebackground{
+  background-image: url("/assets/grocery_background.jpg");
+  background-size: cover;
+  background-position: 70% 100%;
+  height: 60vh;
+  width: 100%;
+  margin-left: auto;
+
+  @media only screen and (max-width: 986px) {
+    display: none;
+  }
+
 }

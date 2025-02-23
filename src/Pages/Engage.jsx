@@ -5,6 +5,7 @@ import { ItemContainer } from "./ItemContainer";
 import { MMNavbar } from "./MMNavbar";
 import { CPRHero } from "../Components/CPRHero";
 import { NavbarExternalCPR } from "../NavbarExternalCPR";
+import "./Css/rx.css";
 
 function getDate() {
   const today = new Date();
@@ -32,21 +33,23 @@ export function Engage() {
             </a>
           </p>
         </div>
-        <div id="engagecontainer">
+        <div id="engagecontainer" className="rxcontainer">
           <MMNavbar></MMNavbar>
-          <div>
-            <div className="mmengagetitle">
+          <div className="rxcontentcontainer">
+            <div className="engagebackground-mobile"></div>
+
+            <div className="rxheadercontainer">
+              <div className="engagebackground"></div>
+
               <br></br>
 
-              <div className="titlebox">
-                <h1 className="col-sm-12 col-md-10 titlemmrewardstext">
-                  <span className="titlemmrewardstext">Thank you for being an</span>
-                  <br></br>
-                  <img className="titlemmrewardsimage" src="/assets/mmlogorewards.svg" /> <br></br>
-                  <span className="titlemmrewardstext">Member</span>
+              <div className="rxheader">
+                <h1 className="rxtitle">
+                  Thank you for being an <img className="titlemmlogo" src="/assets/mmlogorewards.svg" />{" "}
+                  <span className="titlemmlogo">Member</span>
                 </h1>
 
-                <p className="col-sm-12 col-md-10 engagedescription">
+                <p className="rxsubtitle engagedescription">
                   Below we’ve handpicked some amazing offers to help you save! Buy these items on an upcoming trip to
                   (or online order from) Modern Markets and enjoy
                   <img
@@ -56,10 +59,9 @@ export function Engage() {
                   . <br></br>Your personalized offers expire on 7/31/25.
                 </p>
               </div>
-
-              <hr></hr>
             </div>
           </div>
+
           <br></br>
           <h1 className="personalizedheader">Your Personalized Offers</h1>
           <hr></hr>

@@ -17,11 +17,11 @@ export function ItemContainer(props) {
         <div className="col-sm-5">
           <div id="engageitemdescription">
             <p className="itemtitle" id="engagehead">
-              {props.title} &nbsp;
+              {props.title}{" "}
             </p>
             <p className="itemtitle" id="price">
               {" "}
-              ${props.newprice}&nbsp;
+              ${props.newprice}{" "}
               <span className="itemtitle" id="strikethrough">
                 {" "}
                 ${props.oldprice}{" "}

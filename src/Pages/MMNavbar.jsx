@@ -5,8 +5,7 @@ export function MMNavbar() {
     <div className="mmnavbar-custom navbar-expand-lg navbar-light">
       <div className="mmnavbarimage">
         <img src="/assets/mmnavbar-logo.svg" height="40vw"></img>
-      </div>
-      &nbsp; &nbsp;
+      </div>{" "}
     </div>
   );
 }

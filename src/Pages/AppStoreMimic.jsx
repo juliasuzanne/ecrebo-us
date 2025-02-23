@@ -9,8 +9,7 @@ export function AppStoreMimic() {
         <br></br>
         <div className="previewcontainer">
           {" "}
-          <h5 className="appstoretitle">App Store </h5> &nbsp;
-          <h5 className="appstorepreview"> Preview</h5>
+          <h5 className="appstoretitle">App Store </h5> <h5 className="appstorepreview"> Preview</h5>
         </div>
         <hr></hr>
         <div className="appstoreheadercontainer">

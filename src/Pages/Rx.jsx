@@ -45,10 +45,8 @@ export function Rx() {
           </div>
           <ul className="rxmainlist">
             <p>
-              Now you can use the &nbsp;
-              <img className="subtitlemmlogo" src="/assets/mmlogorewards.svg" /> &nbsp;
-              <img className="subtitlemmlogo" src="/assets/mmlogorewards-rxlink.svg" />
-              &nbsp; app to:
+              Now you can use the <img className="subtitlemmlogo" src="/assets/mmlogorewards.svg" />{" "}
+              <img className="subtitlemmlogo" src="/assets/mmlogorewards-rxlink.svg" /> app to:
             </p>
             <div className="listtextonly">
               <li>Place orders for prescriptions (for pickup or delivery)</li>
@@ -62,9 +60,7 @@ export function Rx() {
               <li> Even set reminders to take pills</li>
               <li>
                 {" "}
-                And, enjoy&nbsp;
-                <img className="listmmlogo" src="/assets/mmlogorewards-2x.svg" />
-                &nbsp;
+                And, enjoy <img className="listmmlogo" src="/assets/mmlogorewards-2x.svg" />{" "}
                 <img className="listmmlogo" src="/assets/mmlogorewards-rxlink.svg" />
               </li>
             </div>

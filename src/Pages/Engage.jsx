@@ -42,11 +42,7 @@ export function Engage() {
                 <h1 className="col-sm-12 col-md-10 titlemmrewardstext">
                   <span className="titlemmrewardstext">Thank you for being an</span>
                   <br></br>
-                  <img
-                    className="titlemmrewardsimage"
-                    src="https://res.cloudinary.com/dytb4ayqj/image/upload/v1709865627/mmfontdarkgreen_nnrqnd.png"
-                  />{" "}
-                  <br></br>
+                  <img className="titlemmrewardsimage" src="/assets/mmlogorewards.svg" /> <br></br>
                   <span className="titlemmrewardstext">Member</span>
                 </h1>
 

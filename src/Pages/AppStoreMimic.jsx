@@ -21,10 +21,7 @@ export function AppStoreMimic() {
           <div className="appstorepanel"></div>
           <hr className="appstorebannerhr"></hr>
           <div className="appstorebanner">
-            <img
-              className="appstoreinfo"
-              src="https://res.cloudinary.com/dytb4ayqj/image/upload/v1709927584/appmimic-03_pfgbgy.png"
-            ></img>
+            <img className="appstoreinfo" src="/assets/appmimic-03_pfgbgy.png"></img>
           </div>
 
           <hr></hr>
@@ -41,10 +38,7 @@ export function AppStoreMimic() {
               Screenshots
             </h5>
             <div className="screenshotcontainer">
-              <img
-                className="screenshots"
-                src="https://res.cloudinary.com/dytb4ayqj/image/upload/w_1400,f_auto/v1710011906/phonescreenshots_epihcj.png"
-              />
+              <img className="screenshots" src="/assets/phonescreenshots_epihcj.webp" />
             </div>
           </div>
         </div>

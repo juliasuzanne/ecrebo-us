@@ -129,14 +129,14 @@
 }
 
 .riveCircle {
-  max-width: 100%;
+  max-width: 50%;
   position: absolute;
   top: 0;
   right: 0;
 }
 
 .riveCircle2 {
-  max-width: 100%;
+  max-width: 50%;
   position: absolute;
   top: 0;
   left: 0;

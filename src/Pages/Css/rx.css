@@ -1,6 +1,5 @@
 .rxcontainer{
   width: 90%;
-  min-height: 80vh;
   margin: auto;
   font-family: "Gilroy-Regular";
   background-color: white;
@@ -13,55 +12,60 @@
 .rxcontentcontainer{
   width: 100%;
   overflow-y: hidden;
-  min-height: 80vh;
   overflow-x: hidden;
   font-family: "Gilroy-Regular";
 }
 
-.rxheaderbackground{
-  background-image: url("https://res.cloudinary.com/dytb4ayqj/image/upload/v1710074922/AdobeStock_26321728_h6mkxa.jpg");
+.rxheaderbackground-mobile {
+  background-image: url("/assets/pharmacy-app.jpg");
   background-size: cover;
+  height: 300px;
+  background-position: 70% 100%;
+  display: none;
+
+  @media only screen and (max-width: 986px) {
+    display: block;
+  }
 }
 
+.rxheaderbackground{
+  background-image: url("/assets/pharmacy-app.jpg");
+  background-size: cover;
+  background-position: 70% 100%;
+  height: 60vh;
+  width: 100%;
+  margin-left: auto;
 
+  @media only screen and (max-width: 986px) {
+    display: none;
+  }
+
+}
+
+.rxheadercontainer {
+  position: relative;
+  height: fit-content;
+}
 
 @media screen and (max-width: 3908px){
-  .rxbackground{
-    padding: 0;
-    margin: 0;
-    min-height: 40vh;
-    background-image: url("https://res.cloudinary.com/dytb4ayqj/image/upload/v1710074726/AdobeStock_42545852_upedxc.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display:flex;
-  }
-
-  .subtitlemmlogo{
-    height: 40px;
-    padding-left: 0;
-    padding-bottom: 8px;
-  }
-
-  .titlemmlogo{
-    height: 100px;
-    padding-left: 0;
-    padding-bottom: 20px;
-  }
 
   .rxtitle{
     font-family:"PulpDisplay-SemiBold", Georgia;
-    font-size: 80px;
+    font-size: 40px;
     color:rgb(5,51,28);
+    h1 {
+      padding: 20px;
+    }
   }
   
   .rxsubtitle{
-    font-family:"Corda";
-    font-size: 30px;
-    line-height: 50px;
-    padding-bottom: 5vh;
+    font-family: sans-serif;
+    font-size: 20px;
     margin-bottom: 0;
     width: 90%;
-    margin:auto;
+    @media only screen and (max-width: 986px) {
+      width: 100%;
+    }
   }
 
 
@@ -75,52 +79,11 @@
      background-position-x: -50px;
      overflow-y: hidden;
   } */
-
-  .rxmainlist {
-    padding-top: 5vh;
-    font-size: 3vh;
-    display:inline-block;
-  }
   
   
   .rxsublist {
     list-style: square;
     font-size: 3.0vh;
-  
-  }
-  
-
-
-.listtextonly{
-  max-width: 80%;
-  margin:auto;
-}
-
-
-  .rxactivate{
-    margin-top: 5vh;
-    font-family: "PulpDisplay-SemiBold";
-    color: white;
-    padding: 10px;
-    margin-bottom: 5vh;
-    border-radius: 30px;
-    border: 2px solid rgb(4, 65, 4);
-    background-color: rgb(4, 65, 4);
-  }
-  
-  .rxactivate:hover{
-    font-family: "PulpDisplay-SemiBold";
-    background-color: white;
-      border: 2px solid rgb(4, 65, 4);
-      color:  rgb(4, 65, 4);
-    padding: 10px;
-    margin-bottom: 5vh;
-    border-radius: 30px;
-  }
-
-  .listmmlogo{
-    height: 4.2vh;
-    padding-bottom: 1vh;
   
   }
 }
@@ -138,31 +101,6 @@
   
   }
 
-  .listmmlogo{
-    height: 3.4vh;
-    padding-bottom: .4vh;
-  
-  }
-  .rxtitle{
-    font-family:"PulpDisplay-SemiBold", Georgia;
-    font-size: 7vw;
-  }
-
-  .subtitlemmlogo{
-    height: 40px;
-    padding-left: 0;
-    padding-bottom: .95vh;
-  }
-  
-  .rxsubtitle{
-    font-family:"Corda";
-    font-size: 3.5vw;
-    padding-bottom: 5vh;
-    margin-bottom: 0;
-    width: 90%;
-    margin:auto;
-  }
-
   .listbackground{
     
      background-size: cover;
@@ -174,54 +112,12 @@
      overflow-y: hidden;
 
   }
-
-  .rxmainlist {
-    padding-top: 0;
-    font-size: 3vh;
-    display:inline-block;
-    
-  }
-  
   
   .rxsublist {
     list-style: square;
     font-size: 2.5vh;
   
   }
-
-  .rxactivate{
-    margin-top: 5vh;
-    font-family: "PulpDisplay-SemiBold";
-    color: white;
-    padding: 7px;
-    margin-bottom: 5vh;
-    border-radius: 30px;
-    border: 2px solid rgb(4, 65, 4);
-    background-color: rgb(4, 65, 4);
-  }
-  
-  .rxactivate:hover{
-    font-family: "PulpDisplay-SemiBold";
-    background-color: white;
-      border: 2px solid rgb(4, 65, 4);
-      color:  rgb(4, 65, 4);
-    padding: 7px;
-    margin-bottom: 5vh;
-    border-radius: 30px;
-  }
-  .listmmlogo{
-    height: 4vh;
-    padding-bottom: 1vh;
-  
-  }
-
-  .listtextonly{
-    max-width: 96%;
-    font-size: 3vh;    
-  }
-  
-  
-  
 }
 
 
@@ -248,24 +144,26 @@ ul {
 }
 
 .rxheader{
-  background-color: rgba(255, 255, 255, 0.891);
-  width: 70%;
-  border-radius: 15px;
-  padding: auto;
-  margin: auto;
-  /* background-image: url("https://res.cloudinary.com/dytb4ayqj/image/upload/v1709839633/AdobeStock_100459285_urvd4m.png"); */
-  background-size: 50%;
+  width: 90%;
+  max-width: 60%;
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: 54vw;
+  background-position: 70%;
   color: rgb(24,67,37);
-  background-position-y: 6vh;
+  transform: translateY(-52vh);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  position: absolute;
+
+
+  @media only screen and (max-width: 986px) {
+    position: relative;
+    max-width: 100%;
+    transform: translateY(-75px);
+  }
 
 }
-
-
-
-
-
 
 .activatebutton {
   list-style: none;
@@ -273,32 +171,129 @@ ul {
   color: rgb(248,247,245);
 }
 
-
-@media screen and (max-width: 618px){
-
-
-  .titlemmlogo{
-    height: 100px;
-    padding-left: 0;
-    padding-bottom: .95vh;
+.titlemmlogo{
+  height: 75px;
+  padding-left: 0;
+  padding-bottom: 20px;
+  @media screen and (max-width: 986px){
+      height: 68px;
   }
-  
 }
 
-
-
-@media screen and (max-width: 418px){
-
-
-  .titlemmlogo{
-    height: 5.2vh;
-    padding-left: 0;
-    padding-bottom: .95vh;
+.rxtitle{
+  font-family:"PulpDisplay-SemiBold", Georgia;
+  font-size: 50px;
+  h1 {
+    padding-top: 20px;
   }
-  
 }
-
 
 .rxborder {
   background-color: var(--dark-purple);
+}
+
+.subtitlemmlogo{
+  height: 33px;
+  padding: 0 2px 10px;
+}
+
+.listtextonly {
+  font-family: sans-serif;
+  font-size: 15px;
+  > * {
+    font-size: 15px;
+  }
+}
+
+.rxmainlist {
+  font-family: sans-serif;
+  width: 100%;
+  padding: 0 32px;
+  color: #184325;
+
+  p {
+    font-family: 'PulpDisplay-SemiBold';
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .subtitlemmlogo {
+    height: 50px;
+    padding-bottom: 15.8px;
+    @media only screen and (max-width: 986px) {
+    height: 37px;
+    padding-bottom: 12px;
+    }
+  }
+
+  @media only screen and (max-width: 986px) {
+    transform: translateY(-50px);
+
+    p {
+      font-family: 'PulpDisplay-SemiBold';
+      font-size: 22px;
+      width: 90%;
+    }
+  }
+}
+
+.listtextonly {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+  grid-auto-rows: 1fr;
+  list-style-type: none;
+  vertical-align: middle;
+
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #ebf4ed;
+    list-style-type: none;
+    border-radius: 9px;
+    padding: 14px;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 986px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+
+
+  }
+
+  @media only screen and (max-width: 786px) {
+    grid-template-columns: 1fr;
+
+  }
+}
+
+.listmmlogo{
+  height: 25px;
+  padding-bottom: 7px;
+}
+
+.rxactivate{
+  font-family: "PulpDisplay-SemiBold";
+  color: white;
+  padding: 10px;
+  margin-bottom: 5vh;
+  margin-left: 32px;
+  border-radius: 30px;
+  border: 2px solid rgb(4, 65, 4);
+  background-color: rgb(4, 65, 4);
+  padding: 20px;
+  margin: 32px auto;
+}
+
+.rxactivate:hover{
+  font-family: "PulpDisplay-SemiBold";
+  background-color: white;
+    border: 2px solid rgb(4, 65, 4);
+    color:  rgb(4, 65, 4);
+  margin-bottom: 5vh;
+  border-radius: 30px;
 }

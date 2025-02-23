@@ -25,73 +25,53 @@ export function Rx() {
         <div className="rxcontainer">
           <MMNavbar></MMNavbar>
           <div className="rxcontentcontainer">
-            <div className="rxheaderbackground">
+            <div className="rxheaderbackground-mobile"></div>
+            <div className="rxheadercontainer">
+              <div className="rxheaderbackground"></div>
               <br></br>
               <div className="rxheader">
                 <h1 className="rxtitle">
                   Introducing <br></br>
-                  <img
-                    className="titlemmlogo"
-                    src="https://res.cloudinary.com/dytb4ayqj/image/upload/v1710073797/mmlogorewards-03_q5v2lm.png"
-                  />{" "}
-                  <img
-                    className="titlemmlogo"
-                    src="https://res.cloudinary.com/dytb4ayqj/image/upload/v1710073797/mmlogorewards-02_xxmxql.png"
-                  />
+                  <img className="titlemmlogo" src="/assets/mmlogorewards.svg" />{" "}
+                  <img className="titlemmlogo" src="/assets/mmlogorewards-rxlink.svg" />
                 </h1>
                 <p className="rxsubtitle">
                   We hear you. Ordering prescriptions can be a real hassle. And, re-filling them in-store, or over the
-                  phone, is hard too. Our new{" "}
-                  <img
-                    className="subtitlemmlogo"
-                    src="https://res.cloudinary.com/dytb4ayqj/image/upload/v1710185106/mmlogorewardsnewgreen_wvj0up.png"
-                  />{" "}
-                  feature makes everything pharmacy fast and easy. Now you can use the{" "}
-                  <img
-                    className="subtitlemmlogo"
-                    src="https://res.cloudinary.com/dytb4ayqj/image/upload/v1710185021/mmlogorewardslinksmall_wryeyn.png"
-                  />{" "}
-                  app to:
+                  phone, is hard too. Our new <img className="subtitlemmlogo" src="/assets/mmlogorewards.svg" /> feature
+                  makes everything pharmacy fast and easy.
                 </p>
-              </div>
-              <br></br>
-              <br></br>
-            </div>
-            <div className="container.fluid rxlist">
-              <div className="row rxrow">
-                <div className="col-sm-12 col-md-5 rxbackground"></div>
-                <ul className="col-sm-12 col-md-7 rxmainlist">
-                  <div className="listbackground">
-                    <div className="listtextonly">
-                      <li>Place orders for prescriptions (for pickup or delivery)</li>
-                      <li> Receive notifications when prescriptions are filled</li>
-                      <li>Keep track of all your prescriptions and refills</li>
-                      <li> Upload and update insurance info</li>
-                      <li>Safely and securely see all your prescription info in one place:</li>
-                      <ul className="rxsublist">
-                        <li>Dosages</li>
-                        <li>Medication guidelines</li>
-                        <li> Interaction warnings</li>
-                      </ul>
-                      <li> Even set reminders to take pills</li>
-                      <li>
-                        {" "}
-                        And, enjoy
-                        <img
-                          className="listmmlogo"
-                          src="https://res.cloudinary.com/dytb4ayqj/image/upload/v1710185022/mmlogorewards2xrxlink_prowc5.png"
-                        />
-                      </li>
-                      <li className="activatebutton">
-                        <button className="rxactivate">Activate Now</button>
-                      </li>
-                    </div>
-                  </div>
-                </ul>
               </div>
             </div>
           </div>
+          <ul className="rxmainlist">
+            <p>
+              Now you can use the &nbsp;
+              <img className="subtitlemmlogo" src="/assets/mmlogorewards.svg" /> &nbsp;
+              <img className="subtitlemmlogo" src="/assets/mmlogorewards-rxlink.svg" />
+              &nbsp; app to:
+            </p>
+            <div className="listtextonly">
+              <li>Place orders for prescriptions (for pickup or delivery)</li>
+              <li> Receive notifications when prescriptions are filled</li>
+              <li>Keep track of all your prescriptions and refills</li>
+              <li> Upload and update insurance info</li>
+              <li>
+                Safely and securely see all your prescription info in one place: <br></br> Dosages, Medication
+                guidelines, and Interaction warnings
+              </li>
+              <li> Even set reminders to take pills</li>
+              <li>
+                {" "}
+                And, enjoy&nbsp;
+                <img className="listmmlogo" src="/assets/mmlogorewards-2x.svg" />
+                &nbsp;
+                <img className="listmmlogo" src="/assets/mmlogorewards-rxlink.svg" />
+              </li>
+            </div>
+          </ul>
+          <button className="rxactivate">Activate Now</button>
         </div>
+
         <Footer></Footer>
       </div>
     </div>

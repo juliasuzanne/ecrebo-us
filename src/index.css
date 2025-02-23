@@ -332,5 +332,5 @@ canvas {
 }
 
 .light-to-dark-product {
-  background: linear-gradient(#f1effc 30%, var(--light-purple)40%, var(--light-purple));
+  background: linear-gradient(#faf9fd 30%, var(--light-purple)40%, var(--light-purple));
 }

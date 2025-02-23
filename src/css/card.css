@@ -91,11 +91,11 @@
   flex-direction: column;
 
   h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   h3 {
-    font-size: 56px;
+    font-size: calc(1.375rem + 1.5vw);
   }
 
   @media only screen and (max-width: 987px) {
@@ -104,9 +104,8 @@
     align-items: flex-end;
     flex-wrap: wrap;
     h2, h3 {
-      font-size: 35px;
+      font-size: calc(1.175rem + 1.5vw);
       padding-left: 0;
-      line-height: 40px;
     }
   }
 }

@@ -369,14 +369,15 @@ font-family: "SF Pro Display","SF Pro Icons","Apple WebExp Icons Custom","Helvet
   }
 
   .appstoreinfo{
-    height: 14vw;
+    height: 100%;
+    width: auto;
   }
   .appstorebanner{    
     overflow-x: scroll;
     /* background-image: url("https://res.cloudinary.com/dytb4ayqj/image/upload/v1709927584/appmimic-03_pfgbgy.png"); */
     width: 100%;
     height: 13vw;
-    visibility: initial;
+    visibility: visible;
 
   }
 

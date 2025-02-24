@@ -57,8 +57,8 @@
   }
   @media only screen and (max-width: 768px) {
     width: 100%;
-    font-size: 22px;
-
+    font-size: 26px;
+    line-height: 46px;
     text-align: left;
   }
 }
@@ -94,9 +94,14 @@
       margin: 0 0 0 8px;
     }
 
+    @media only screen and (max-width: 986px) {
+      font-size: 28px;
+      padding: 26px 0;
+    }
+
     @media only screen and (max-width: 786px) {
       text-align: left;
-      font-size: 16px;
+      font-size: 17px;
       padding: 10px 0;
     }
     

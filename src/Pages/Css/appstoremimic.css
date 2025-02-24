@@ -1,6 +1,5 @@
 .modernmarketslogo{
   height: 100px;
-
 }
 
 .appstoreheadercontainer {
@@ -14,8 +13,6 @@
   min-height: 100vh;
 }
 
-
-
 #appstorecontainer{
   max-width: 1000px;
   width: 90%;
@@ -26,9 +23,7 @@
   border-radius: var(--border-radius);
   padding: 20px;
   margin-bottom: 50px;
-
 }
-
 
 .ratingbutton{
   position: relative;
@@ -219,7 +214,7 @@ font-family: "SF Pro Display","SF Pro Icons","Apple WebExp Icons Custom","Helvet
     letter-spacing: .027em;
     font-family: "SF Pro Text","SF Pro Icons","Apple WebExp Icons Custom","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #393939;
-    font-size: 1.3vw;
+    font-size: 25px;
     text-align: left;
     padding: 10px;
     padding-bottom: 30px;
@@ -297,7 +292,7 @@ font-family: "SF Pro Display","SF Pro Icons","Apple WebExp Icons Custom","Helvet
     letter-spacing: .027em;
     font-family: "SF Pro Text","SF Pro Icons","Apple WebExp Icons Custom","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #393939;
-    font-size: 1.7vw;
+    font-size: 20px;
     text-align: left;
     padding: 10px;
     padding-bottom: 30px;
@@ -334,7 +329,7 @@ font-family: "SF Pro Display","SF Pro Icons","Apple WebExp Icons Custom","Helvet
     letter-spacing: .027em;
     font-family: "SF Pro Text","SF Pro Icons","Apple WebExp Icons Custom","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #393939;
-    font-size: 2.7vw;
+    font-size: 16px;
     text-align: left;
     padding: 0px;
     padding-bottom: 0px;

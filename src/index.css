@@ -74,9 +74,7 @@ p {
   margin: 0;
 
   .main_header {
-    padding-bottom: 20px;
-    padding-top: 20px;
-    max-width: 60%;
+    max-width: 1000px;
     text-align: center;
 
     @media only screen and (max-width: 787px) {
@@ -92,8 +90,6 @@ p {
   margin: 0;
 
   .main_header {
-    padding-bottom: 20px;
-    padding-top: 20px;
     max-width: 60%;
     text-align: center;
 
@@ -114,11 +110,11 @@ p {
 .main_header {
   max-width: 900px;
   margin: 20px auto;
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
 
   @media only screen and (max-width: 986px) {
-    font-size: 30px;
+    font-size: 37px;
   }
 }
 
@@ -348,6 +344,10 @@ canvas {
 
 .light-to-dark-product {
   background: linear-gradient(#faf9fd 30%, var(--light-purple)40%, var(--light-purple));
+
+  .disclaimer {
+    color: var(--dark-purple);
+  }
 }
 
 @font-face { 

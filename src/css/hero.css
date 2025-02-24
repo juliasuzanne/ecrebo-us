@@ -51,9 +51,11 @@
   
   .hero-img {
     max-width: 40%;
-    height: auto;
+    height: 100%;
     @media only screen and (max-width: 986px) {
-      max-width: 80%;
+      width: 65%;
+      height: auto;
+      max-width: unset;
     }
   }
 
@@ -67,7 +69,7 @@
     @media only screen and (max-width: 986px) {
       position: unset;
       max-width: 80%;
-      font-size: 42px;
+      font-size: 58px;
       margin: 0 auto 25px;
       text-align: center;
       width: 100%;

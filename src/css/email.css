@@ -37,6 +37,17 @@
   }
 }
 
+.email-header {
+  .main_header {
+    @media only screen and (max-width: 986px) {
+      font-size: 30px;
+    }
+    @media only screen and (max-width: 786px) {
+      text-align: left;
+    }
+  }
+}
+
 form {
   max-width: 1000px;
   margin: 0 auto;

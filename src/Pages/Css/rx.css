@@ -196,6 +196,7 @@ width: 97.25%;
   font-family: sans-serif;
   width: 100%;
   color: #184325;
+  padding: 24px;
 
   ul {
     font-size: 2.3vh;
@@ -246,6 +247,7 @@ width: 97.25%;
   p.rx-cards {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     align-items: center;
     justify-content: center;
     align-content: space-evenly;

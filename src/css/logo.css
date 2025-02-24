@@ -31,10 +31,12 @@
   
   @media only screen and (max-width: 960px) {
     width: calc(25% - 20px);
+    padding: 20px;
   }
 
   @media only screen and (max-width: 765px) {
-    width: calc(50% - 48px);
+    width: calc(33% - 48px);
+    padding: 0;
   }
 
   img {

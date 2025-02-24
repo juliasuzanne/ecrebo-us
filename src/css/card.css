@@ -103,8 +103,12 @@
     flex-direction: row;
     align-items: flex-end;
     flex-wrap: wrap;
-    h2, h3 {
-      font-size: calc(1.175rem + 1.5vw);
+    h3 {
+      font-size: 30px;
+      padding-left: 0;
+    }
+    h2 {
+      font-size: 30px;
       padding-left: 0;
     }
   }

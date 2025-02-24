@@ -116,6 +116,10 @@ p {
   margin: 20px auto;
   padding: 20px;
   text-align: center;
+
+  @media only screen and (max-width: 986px) {
+    font-size: 30px;
+  }
 }
 
 .arrow {

@@ -30,8 +30,9 @@
 }
 
 .product-card-title {
-  h2 {
     font-size: 36px;
+  @media only screen and (max-width: 986px) {
+      font-size: 30px;
   }
 }
 

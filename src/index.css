@@ -361,3 +361,7 @@ canvas {
   src: local("pulp-display-medium"),
   url("/pulp-display-medium.ttf") format("truetype");
 }
+
+a {
+  color: var(--dark-purple);
+}

@@ -50,33 +50,33 @@ export function Rx() {
             </p>
             <div className="listtextonly">
               <p className="rx-cards">
-                <img src="/assets/rx_icon-02.svg" height="50px" />
+                <img className="wrap-icon" src="/assets/rx_icon-02.svg" height="50px" />
                 Place orders for prescriptions (for pickup or delivery)
               </p>
               <p className="rx-cards">
-                <img src="/assets/rx_icon-03.svg" height="50px" />
+                <img className="wrap-icon" src="/assets/rx_icon-03.svg" height="50px" />
                 Receive notifications when prescriptions are filled
               </p>
               <p className="rx-cards">
-                <img src="/assets/rx_icon-04.svg" height="50px" />
+                <img className="wrap-icon" src="/assets/rx_icon-04.svg" height="50px" />
                 Keep track of all your prescriptions and refills
               </p>
               <p className="rx-cards">
-                <img src="/assets/rx_icon-05.svg" height="50px" />
+                <img className="wrap-icon" src="/assets/rx_icon-05.svg" height="50px" />
                 Upload and update insurance info
               </p>
               <p className="rx-cards">
-                <img src="/assets/rx_icon-08.svg" height="50px" />
+                <img className="wrap-icon" src="/assets/rx_icon-08.svg" height="50px" />
                 Safely and securely see all your prescription info in one place.
                 {/* : <br></br> Dosages, Medication
                 guidelines, and Interaction warnings */}
               </p>
               <p className="rx-cards">
-                <img src="/assets/rx_icon-07.svg" height="50px" />
+                <img className="wrap-icon" src="/assets/rx_icon-07.svg" height="50px" />
                 Even set reminders to take pills
               </p>
               <p className="rx-cards">
-                <img className="gift-icon" src="/assets/rx_icon-06.svg" height="50px" />
+                <img className="wrap-icon" src="/assets/rx_icon-06.svg" height="50px" />
                 And, enjoy <img className="listmmlogo" src="/assets/mmlogorewards-2x.svg" />{" "}
                 <img className="listmmlogo" src="/assets/mmlogorewards-rxlink.svg" />
               </p>

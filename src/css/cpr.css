@@ -35,6 +35,14 @@
   a:hover {
     color: var(--white);
   } 
+
+  &.true {
+    visibility: hidden;
+  }
+
+  &.false {
+    visibility: visible;
+  }
 }
 
 .container-fluid {

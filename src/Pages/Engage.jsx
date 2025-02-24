@@ -51,12 +51,9 @@ export function Engage() {
 
                 <p className="rxsubtitle engagedescription">
                   Below we’ve handpicked some amazing offers to help you save! Buy these items on an upcoming trip to
-                  (or online order from) Modern Markets and enjoy
-                  <img
-                    className="subtitlemmrewardsimage"
-                    src="https://res.cloudinary.com/dytb4ayqj/image/upload/v1710183079/2xmmlogorewards_qbtnh9.png"
-                  ></img>
-                  . <br></br>Your personalized offers expire on 7/31/25.
+                  (or online order from) Modern Markets and enjoy{" "}
+                  <img className="subtitlemmrewardsimage" src="/assets/mmlogorewards-2x.svg"></img>. <br></br>Your
+                  personalized offers expire on 7/31/25.
                 </p>
               </div>
             </div>

@@ -121,11 +121,8 @@
 }
 
 .mmengagetitle{
-  background-image: url("https://res.cloudinary.com/dytb4ayqj/image/upload/w_1000/v1709349538/grocery_sfh8ho.png");
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position-x: 45vw;
-  background-position-y: -15vh; */
   background-color: rgb(248,247,245);
 }
 

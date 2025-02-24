@@ -91,7 +91,7 @@ export function RiveEvents() {
   const [currentLevel, setCurrentLevel] = useState(10);
   const [currentLink, setCurrentLink] = useState("/cpr");
   const [hiddenRef, setHiddenRef] = useState(true);
-  const [mobileHiddenRef, setMobileHiddenRef] = useState(true);
+  const [mobileHiddenRef, setMobileHiddenRef] = useState("true");
   const buttons = document.querySelectorAll("button.button-rive");
 
   function changeCurrentButton(index) {
@@ -157,7 +157,7 @@ export function RiveEvents() {
         <div className="rivecontainer col-sm-12 col-md-6">
           <img src="/assets/GreenHalfCircle.svg" className="riveCircle2" />
           <RiveComponent className="riveBox" />
-          <div hidden={mobileHiddenRef} className="click-ref-mobile">
+          <div className={`click-ref-mobile ${mobileHiddenRef}`}>
             Scan or <a href={`${currentLink}`}>click here</a> to see where the QR code goes.
           </div>
         </div>

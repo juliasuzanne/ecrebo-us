@@ -191,13 +191,6 @@
     }
   }
 
-  @media only screen and (max-width: 986px) {
-    .cpr-title {
-      text-align: center;
-    }
-  }
-
-
   .hero-content {
     width: 50%;
     align-self: center;
@@ -206,7 +199,7 @@
     
     @media only screen and (max-width: 986px) {
       width: calc(100% - 96px);
-      text-align: center;
+      text-align: left;
     }
 
     @media only screen and (max-width: 786px) {

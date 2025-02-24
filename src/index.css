@@ -123,6 +123,11 @@ p {
   height: 18px;
   width: 30px;
   background-repeat: no-repeat;
+
+  @media only screen and (max-width: 986px) {
+    height: 12px;
+    width: 24px;
+  }
 }
 
 button,
@@ -339,4 +344,10 @@ canvas {
 
 .light-to-dark-product {
   background: linear-gradient(#faf9fd 30%, var(--light-purple)40%, var(--light-purple));
+}
+
+@font-face { 
+  font-family: "PulpDisplay-SemiBold";
+  src: local("pulp-display-medium"),
+  url("/pulp-display-medium.ttf") format("truetype");
 }

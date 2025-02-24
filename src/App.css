@@ -31,3 +31,9 @@
   src: local("NeuzeitGro-Lig"),
   url("/NeuzeitGro-Lig.ttf") format("truetype");
 }
+
+@font-face { 
+  font-family: "PulpDisplay-SemiBold";
+  src: local("pulp-display-medium"),
+  url("/pulp-display-medium.ttf") format("truetype");
+}

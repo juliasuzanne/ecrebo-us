@@ -3,7 +3,7 @@
   <defs>
     <style>
       .cls-1 {
-        font-family: PulpDisplay-SemiBold, 'Pulp Display';
+        font-family: PulpDisplay-SemiBold, 'PulpDisplay-SemiBold', 'Pulp Display';
         font-size: 136px;
       }
 

@@ -37,3 +37,9 @@
   src: local("pulp-display-medium"),
   url("/pulp-display-medium.ttf") format("truetype");
 }
+
+@font-face { 
+  font-family: "Pulp Display";
+  src: local("pulp-display-medium"),
+  url("/pulp-display-medium.ttf") format("truetype");
+}

@@ -14,12 +14,16 @@
   animation: call 2s infinite linear;
 }
 
-li.nav-item {
-  align-self: center;
-}
-
 .navbarimage{
   padding: 1em;
+}
+
+li.nav-item {
+  align-self: center;
+
+  @media only screen and (max-width: 986px) {
+    align-self: flex-start;
+  }
 }
 
   .navbar-nav {

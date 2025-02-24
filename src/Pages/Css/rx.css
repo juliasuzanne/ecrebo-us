@@ -125,20 +125,6 @@ display: inline-flex;
 width: 97.25%;
 }
 
-
-
-ul {
-  font-size: 2.3vh;
-  float: top;
-  text-align: left;
-  list-style: circle;
-  align-items: center;
-
-  @media only screen and (max-width: 986px) {
-    transform: translateY(-180px);
-  }
-}
-
 .rxheader{
   width: 90%;
   max-width: 60%;
@@ -210,6 +196,18 @@ ul {
   font-family: sans-serif;
   width: 100%;
   color: #184325;
+
+  ul {
+    font-size: 2.3vh;
+    float: top;
+    text-align: left;
+    list-style: circle;
+    align-items: center;
+
+    @media only screen and (max-width: 986px) {
+      transform: translateY(-180px);
+    }
+  }
 
   p {
     font-family: 'PulpDisplay-SemiBold';

@@ -37,10 +37,12 @@ button.navbar-toggler,
     color: white;
     gap: 64px;
     font-size: 20px;
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 768px) {
       align-items: start;
       gap: 32px;
       margin: 64px 0 64px;
+      position: absolute;
+      top: 150px;
     }
 
     > * {
@@ -53,6 +55,10 @@ button.navbar-toggler,
 
   }
 
+  li.nav-item {
+    align-self: center;
+  }
+
   .navbar-nav {
     .nav-link {
       color: white;
@@ -61,6 +67,7 @@ button.navbar-toggler,
       padding-right: 0;
       padding-left: 0;
       padding: 0;
+      align-self: center;
   
       &.dropdown-toggle::after {
         background-image: url('https://2579958.fs1.hubspotusercontent-na1.net/hubfs/2579958/Blend01/arrow-down%20(1).svg');

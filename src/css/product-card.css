@@ -25,15 +25,13 @@
 
 #product-card-subtitle {
   font-weight: normal;
-  font-size: 28px;
+  font-size: var(--typography-x-md);
   font-family: 'NeuzeitGro-Lig';
 }
 
 .product-card-title {
-    font-size: 36px;
-  @media only screen and (max-width: 986px) {
-      font-size: 30px;
-  }
+  font-size: var(--typography-lg);
+
 }
 
 .product-container {

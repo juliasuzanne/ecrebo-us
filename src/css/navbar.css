@@ -36,11 +36,12 @@ button.navbar-toggler,
   ul {
     color: white;
     gap: 64px;
-    font-size: 20px;
+    font-size: var(--typography-sm);
     @media only screen and (max-width: 768px) {
-      align-items: start;
       gap: 32px;
       margin: 64px 0 64px;
+      font-size: var(--typography-md);
+
     }
 
     > * {
@@ -50,14 +51,22 @@ button.navbar-toggler,
 
   button {
     font-family: 'NeuzeitGro-Bol';
+    font-size: 18px;
+
+    @media only screen and (max-width: 767px) {
+      font-size: var(--typography-md);
+
+    }
+
 
   }
 
   li.nav-item {
     align-self: center;
   
-    @media only screen and (max-width: 986px) {
+    @media only screen and (max-width: 767px) {
       align-self: flex-start;
+      font-size: var(--typography-md);
     }
   }
 
@@ -118,9 +127,8 @@ button.navbar-toggler,
 }
 
 .navbar-expand-md {
-  max-width: 1000px;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 64px;
 
   @media only screen and (max-width: 1128px) {
     margin: 0 64px;
@@ -163,7 +171,7 @@ button.navbar-toggler,
 
     a {
       padding: 15px;
-      font-size: 15px;
+      font-size: var(--typography-sm);
       font-family: 'NeuzeitGro-Lig';
     }
     a:hover {
@@ -192,22 +200,14 @@ button.navbar-toggler,
   padding: 1em;
 }
 
-li.nav-item {
-  align-self: center;
-
-  @media only screen and (max-width: 986px) {
-    align-self: flex-start;
-  }
-}
-
   .navbar-nav {
     .dropdown-menu {
       box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-      padding: 12px;
+      padding: 10px 12px;
   
       a {
-        padding: 15px;
-        font-size: 15px;
+        padding: 13px;
+        font-size: 16px;
         font-family: 'NeuzeitGro-Lig';
       }
       a:hover {

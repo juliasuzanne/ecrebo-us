@@ -24,7 +24,7 @@
   padding-right: 0;
   background-position-y: 25%;
   color: white;
-  font-size: 20px;
+  font-size: var(--typography-sm);
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
@@ -59,7 +59,7 @@
 
   h1 {
     width: 50%;
-    font-size: 60px;
+    font-size: var(--typography-xxl);
     color: white;
     padding: 0;
     padding-bottom: 20px;
@@ -67,14 +67,10 @@
     @media only screen and (max-width: 986px) {
       position: unset;
       max-width: 80%;
-      font-size: 58px;
       margin: 0 auto 25px;
       text-align: center;
       width: 100%;
     }
-  }
-  .cpr-title {
-    max-width: 90%;
   }
 }
 
@@ -127,16 +123,21 @@
 
 .hero_subtitle {
   color: white;
-  font-size: 39px;
+  font-size: var(--typography-lg);
   padding-top: 18px;
   padding-left: 3px;
   font-family: "NeuzeitGro-Lig";
 }
 
 .descriptiontext {
-  font-size: 24px;
+  font-size: var(--typography-sm);
   line-height: 36px;
   font-family: 'NeuzeitGro-Lig';
+
+  @media only screen and (max-width: 986px) {
+    max-width:550px;
+    margin: 0 auto 30px;
+  }
 }
 
 .hero-home-cpr {
@@ -146,10 +147,17 @@
   height: 100%;
   margin: 64px auto;
   color: var(--dark-purple);
-  font-size: 20px;
+  font-size: var(--typography-sm);
   justify-content: center;
   position:relative;
-  max-width: 1200px;
+
+  @media only screen and (max-width: 986px) {
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+    flex-direction: column;
+    margin: 0;
+  }
 
   .purple-background-circle {
     z-index: 0;
@@ -165,20 +173,9 @@
     }
   }
 
-  @media only screen and (max-width: 986px) {
-    display: flex;
-    padding: 20px;
-    flex-direction: column;
-    margin: 0;
-    @media only screen and (max-width: 986px) {
-      text-align: center;
-    }
-  }
-
   .hero-content {
     width: 50%;
     align-self: center;
-    padding: 40px;
     float: left;
     
     @media only screen and (max-width: 986px) {
@@ -188,8 +185,6 @@
 
     @media only screen and (max-width: 786px) {
       width: 100%;
-      padding: 20px;
-
     }
 
   }
@@ -216,11 +211,13 @@
     height: auto;
     width: auto;
     max-height: 50vh;
-    align-self: end;
+    align-self: center;
+    padding-right: 30px;
 
     @media only screen and (max-width: 986px) {
       align-self: center;
       min-height: unset;
+      padding-right: 0;
 
     }
   }
@@ -246,13 +243,16 @@
     width: auto;
     max-height: 70vh;
     min-height: 400px;
-    align-self: end;
+    align-self: center;
+    padding-right: 30px;
+  
     @media only screen and (max-width: 986px) {
       max-height: 65vh;
       align-self: center;
       max-width: 90%;
       min-height: unset;
       margin: 30px 0 0 0;
+      padding-right: 0;
     }
 
   }
@@ -262,32 +262,27 @@
     color: var(--bright-purple);
   }
   
-  h3 {
-    font-size: 45px;
+  .cpr-title {
+    font-size: var(--typography-xl);
     font-family: 'NeuzeitGro-Bol';
     padding: 0;
     padding-bottom: 20px;
+
     @media only screen and (max-width: 986px) {
       text-align: left;
       position: unset;
-      font-size: 50px;
       margin: 0;
       width: 100%;
     }
     @media only screen and (max-width: 768px) {
       text-align: left;
       position: unset;
-      font-size: 40px;
       margin: 0;
       width: 100%;
     }
   }
-  .cpr-title {
-    max-width: 100%;
-  }
 
   .cpr-text {
-    font-size: 18px;
-    line-height: 25px;
+    font-size: var(--typography-sm);
   }
 }

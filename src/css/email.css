@@ -4,7 +4,12 @@
   color: var(--dark-purple);
   margin: 0 auto;
   z-index: -20;
-  padding: 32px 64px;
+  padding: 15px 64px 40px;
+
+  
+  @media only screen and (max-width: 1228px){
+    padding: 15px 64px 40px;
+  }
 
   .row > * {
     padding-left: 0;
@@ -13,17 +18,16 @@
   button {
     position: relative;
     z-index: 10;
+    margin-left: auto;
+    margin-right: 0.75rem;
   }
 
-  @media only screen and (max-width: 1328px) {
-  }
-  
   @media only screen and (max-width: 986px) {
-    padding: 0 24px 24px;
+    padding: 15px 64px 40px;
   }
 
   @media only screen and (max-width: 765px) {
-    padding: 0 24px 64px;
+    padding: 15px 24px 40px;
   }
 
   button:hover {
@@ -37,21 +41,16 @@
   }
 }
 
-.email-header {
-  .main_header {
-    @media only screen and (max-width: 986px) {
-      font-size: 30px;
-    }
-    @media only screen and (max-width: 786px) {
-      text-align: left;
-    }
+.email-outsides {
+  h1 {
+    font-size: var(--typography-x-md);
+    padding: 0;
+    text-align: left;
+    margin-left: 0;
   }
 }
 
 form {
-  max-width: 1000px;
-  margin: 0 auto;
-
   @media only screen and (max-width: 986px) {
     margin: 0;
   }
@@ -89,10 +88,14 @@ textarea.form-control {
   z-index: 0;
   float: left;
   font-family: "NeuzeitGro-Lig";
-  font-size: 13px;
+  font-size: var(--typography-xs);
   margin: 0 0 20px;
   opacity: 1;
   color: var(--light-purple);
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0.75rem;
+  float: right;
 }
 
 .success {

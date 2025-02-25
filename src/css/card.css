@@ -74,21 +74,21 @@
   flex-direction: column;
 
   h2 {
-    font-size: 30px;
+    font-size: var(--typography-md);
   }
 
   h3 {
-    font-size: calc(1.375rem + 1.5vw);
+    font-size: var(--typography-lg);
   }
 
-  @media only screen and (max-width: 987px) {
+  @media only screen and (max-width: 986px) {
     max-width: 70%;
     flex-direction: row;
     align-items: flex-end;
     flex-wrap: wrap;
     h3,
     h2 {
-      font-size: 30px;
+      font-size: var(--typography-x-md);
       padding-left: 0;
     }
   }

@@ -76,7 +76,6 @@ export function EmailForm(props) {
             <p>
               <textarea placeholder="Message" type="text" className="form-control"></textarea>
             </p>
-            {/* <input name="message" className="textarea form-control" type="text" /> */}
           </div>
         </div>
 

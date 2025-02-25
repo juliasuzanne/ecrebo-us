@@ -51,21 +51,20 @@
 }
 
 .descriptiontext {
-  font-size: 24px;
+  font-size: var(--typography-md);
   line-height: 36px;
 }
 
 .clicktosee {
   color: white;
   font-family: 'NeuzeitGro-Bol';
-  font-size: 30px;
+  font-size: var(--typography-x-md);
   @media only screen and (max-width: 986px) {
     width: 100%;
     text-align: left;
   }
   @media only screen and (max-width: 768px) {
     width: 100%;
-    font-size: 26px;
     line-height: 46px;
     text-align: left;
   }
@@ -74,7 +73,7 @@
 .clickto {
   color: var(--bright-green);
   font-family: 'NeuzeitGro-Bol';
-  font-size: 32px;
+  font-size: var(--typography-x-md);
 }
 
 .demo-buttons {
@@ -102,13 +101,13 @@
 
   button {
     text-wrap:nowrap;
-    font-size: 20px;
+    font-size: var(--typography-md);
     transition: 0.3s;
     background-color: unset;
     color: white;
     font-family: 'NeuzeitGro-Lig';
     border: none;
-    padding:  20px 0;
+    padding:  25px 0;
     opacity: 1;
     z-index: 100;
     span {
@@ -116,14 +115,18 @@
       margin: 0 0 0 8px;
     }
 
+    @media only screen and (max-width: 1167px) {
+      font-size: var(--typography-sm);
+    }
+
     @media only screen and (max-width: 986px) {
-      font-size: 28px;
+      font-size: var(--typography-md);
       padding: 26px 0;
     }
 
     @media only screen and (max-width: 786px) {
       text-align: left;
-      font-size: 17px;
+      font-size: var(--typography-sm);
       padding: 10px 0;
     }
     

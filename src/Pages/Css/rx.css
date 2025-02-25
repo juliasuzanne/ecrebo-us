@@ -50,7 +50,7 @@
 
   .rxtitle{
     font-family:"PulpDisplay-SemiBold", Georgia;
-    font-size: 40px;
+    font-size: var(--typography-lg);
     color:rgb(5,51,28);
     h1 {
       padding: 20px;
@@ -59,7 +59,7 @@
   
   .rxsubtitle{
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 0;
   }
   

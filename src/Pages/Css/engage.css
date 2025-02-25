@@ -61,11 +61,11 @@
   }
   .personalizedheader{
     padding: 5px;
-    font-size: 4.5vh;
+    font-size: var(--typography-lg);
   }
 
   #points{
-    font-size: 2.2vh;
+    font-size: var(--typography-sm);
     text-align: center;
     font-weight: bold;
     color: white;
@@ -88,7 +88,7 @@
 
   }
   .titlemmrewardstext{
-    font-size: 30px;
+    font-size: var(--typography-x-md);
     font-family: "PulpDisplay-SemiBold";
     margin: auto;
     color: rgb(24,67,37);
@@ -99,7 +99,7 @@
   .engagedescription{
     font-family: "Corda";
     color: rgb(24,67,37);
-    font-size: 20px;
+    font-size: var(--typography-sm);
     text-align: left;
   }
   .subtitlemmrewardsimage{
@@ -113,7 +113,7 @@
     padding: 5px;
     padding-left: 6vw;
     text-align: left;
-    font-size: 4.25vh;
+    font-size: var(--typography-lg);
   }
 
   
@@ -128,7 +128,7 @@
 
 
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 986px){
   .titlemmrewardsimage{
     height: 66px;
     margin: auto;
@@ -144,7 +144,7 @@
     height: 30%;
   }
   .titlemmrewardstext{
-    font-size: 4vw;
+    font-size: var(--typography-x-md);
     margin: auto;
     font-family: "PulpDisplay-SemiBold";
     color: rgb(24,67,37);
@@ -156,7 +156,7 @@
   .engagedescription{
     font-family: "Corda";
     color: rgb(24,67,37);
-    font-size: 20px;
+    font-size: var(--typography-sm);
     text-align: left;
   }
   .subtitlemmrewardsimage{
@@ -178,7 +178,7 @@
   
 }
 
-@media screen and (max-width: 738px){
+@media screen and (max-width: 786px){
   .titlemmrewardsimage{
     height: 57px;
     padding-top: 10px;
@@ -189,7 +189,6 @@
   .personalizedheader{
     padding: 5px;
     text-align: center;
-    font-size: 4.25vh;
   }
 
   #points{

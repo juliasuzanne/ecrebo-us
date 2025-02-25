@@ -10,6 +10,34 @@
   --muted-green: #3ECC9C;
   --ecrebo-red: #282B4A;
   font-family: 'NeuzeitGro-Bol';
+
+  --typography-xxl: 60px;
+  --typography-xl: 45px;
+  --typography-lg: 36px;
+  --typography-x-md: 30px;
+  --typography-md: 24px;
+  --typography-sm: 20px;
+  --typography-xs: 14px;
+  --typography-disclaimer: 10px;
+
+  @media only screen and (max-width: 986px) {
+    --typography-xxl: 50px;
+    --typography-xl: 40px;
+    --typography-lg: 30px;
+    --typography-x-md: 30px;
+    --typography-md: 25px;
+    --typography-sm: 20px;
+    --typography-xs: 12px;
+    --typography-disclaimer: 10px;  
+  }
+
+  @media only screen and (max-width: 786px) {
+    --typography-xxl: 40px;
+    --typography-xl: 35px;
+    --typography-lg: 30px;
+    --typography-md: 20px;
+    --typography-sm: 18px;
+  }
 }
 
 h3 {
@@ -53,7 +81,7 @@ canvas {
   max-width: 100vw;
 }
 p {
-  font-size: 18px;
+  font-size: var(--typography-sm);
   line-height: 30px;
 }
 
@@ -112,7 +140,7 @@ p {
   text-align: center;
 
   @media only screen and (max-width: 986px) {
-    font-size: 37px;
+    font-size: var(--typography-lg);
   }
 }
 
@@ -137,9 +165,9 @@ button,
   border-radius: 500px;
   border: 2px var(--bright-green) solid;
   background-color: var(--bright-green);
-  padding: 1.3em 1.3em;
+  padding: 22px;
   font-family: 'NeuzeitGro-Bol';
-  font-size: 16px;
+  font-size: var(--typography-sm);
   color: var(--dark-purple);
 }
 
@@ -147,7 +175,7 @@ a {
   text-decoration: none;
   color: white;
   font-family: 'NeuzeitGro-Bol';
-  font-size: 18px;
+  font-size: var(--typography-sm);
 }
 
 button:hover{
@@ -274,9 +302,9 @@ canvas {
   text-align: center;
   margin: 0 auto;
   color: white;
-  font-size: 24px;
+  font-size: var(--typography-md);
   a {
-    font-size: 24px;
+    font-size: var(--typography-md);
     color: var(--bright-green);
   }
 }
@@ -295,7 +323,7 @@ canvas {
   max-width: 60%;
   margin:auto;
   padding-top: 25px;
-  font-size: 20px;
+  font-size: var(--typography-sm);
   line-height: 30px;
   background-color: var(--dark-purple);
   border: 0;
@@ -318,7 +346,7 @@ canvas {
   max-width: 70%;
   color:rgb(44,245,208);
   margin: 0 auto;
-  font-size: 15px;
+  font-size: var(--typography-sm);
   text-align: center;
   justify-content: center;
   display: flex;
@@ -341,7 +369,7 @@ canvas {
 }
 
 .light-to-dark-product {
-  background: linear-gradient(#faf9fd 30%, var(--light-purple)40%, var(--light-purple));
+  background: linear-gradient(30deg, var(--light-purple), white);
 
   .disclaimer {
     color: var(--dark-purple);

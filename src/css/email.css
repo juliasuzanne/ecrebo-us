@@ -56,14 +56,6 @@ form {
     margin: 0;
   }
 }
-/* 
-.email-circles {
-  position: absolute;
-  left: 0;
-  opacity: 0.6;
-  width: 100%;
-  height: auto;
-} */
 
 .form-control {
   color: var(--dark-purple);

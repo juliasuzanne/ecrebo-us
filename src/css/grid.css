@@ -55,9 +55,6 @@
     margin-top: 20px;
     font-size: 30px;
   }
-
-  form {
-  }
 }
 
 .container-grid-2 {
@@ -90,8 +87,6 @@
 }
 
 .light-to-dark-home {
-  /* background-image: url("assets/bg-img.jpg");
-  background-size: cover; */
   background-color: var(--light-purple);
   padding-top: 10px;
 }

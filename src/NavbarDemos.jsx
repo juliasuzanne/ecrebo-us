@@ -1,24 +1,6 @@
 import "../src/css/navbar.css";
-import { useState } from "react";
-import { NavMenu } from "./NavMenu";
 
 export function NavbarDemos() {
-  const [showNavMenu, setShowNavMenu] = useState(true);
-
-  const toggleShowNavMenu = () => {
-    if (showNavMenu === false) {
-      setShowNavMenu(true);
-    } else {
-      setShowNavMenu(false);
-    }
-  };
-
-  const closeNavMenu = () => {
-    if (window.innerWidth > 968) {
-      setShowNavMenu(true);
-    }
-  };
-
   return (
     <div className="navbar-demos">
       <nav className="navbar navbar-expand-md navbar-light">

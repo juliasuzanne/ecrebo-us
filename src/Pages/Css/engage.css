@@ -1,5 +1,4 @@
 
-
 .engageborder{
   padding-bottom: 40px;
   background-color:rgb(40,43,74);
@@ -256,31 +255,13 @@
 @media screen and (max-width: 570px){
   #points{
     max-width: 100%;
-
-    
+    }
   }
-
-
-  }
-
-
-
-/* 
-.engagedescription{
-  font-family: "Pulp";
-  font-style: oblique;
-  color: rgb(0, 0, 0);
-  padding-bottom: 5vh;
-  font-size: 2vw;
-  margin: auto;
-} */
 
 #engageitemdescription{
   display: inline;
   text-align: left;
-  
 }
-
 
 .engageitemcontainer {
   font-family: "Gilroy-Regular";
@@ -293,8 +274,6 @@
   display: flex;
   flex-wrap: wrap;
 }
-
-
 
 .item{
   font-family: "Gilroy-Regular";
@@ -312,9 +291,7 @@
   width: 100%;
   margin-top: auto;
   flex-wrap: nowrap;
-
 }
-
 
 .itemtitle{
   font-family: "Gilroy-Regular";
@@ -334,22 +311,10 @@ font-size: 3.4vh;
   text-decoration: line-through;
 }
 
-
-/* 
-.titlemmrewardsimage{
-  height: 8vw;
-  margin: auto;
-  padding-top: 1vw;
-  padding-bottom: 2vw;
-
-} */
-
-
 .pointsmmrewardsimage{
   height: 4vh;
   padding-top: 1vh;
   padding-bottom: .5vh;
-
 }
 
 .savingsmmrewardsimage{
@@ -358,10 +323,7 @@ font-size: 3.4vh;
   padding-bottom: .9vh;
   padding-left: 0;
   margin-left: 0;
-
 }
-
-
 
 #engagehead{
 font-size: clamp(2.2vh, 20px, 5vw);
@@ -373,21 +335,12 @@ font-family: "PulpDisplay-SemiBold";
   font-weight: bold;
   color: rgb(4, 65, 4);
   font-size: 2vh;
-
 }
 
-
-
-
-/* This css is for changing checkbox to something prettier */
-
 input[type="checkbox"] {
-  /* Add if not using autoprefixer */
   -webkit-appearance: none;
   appearance: none;
-  /* For iOS < 15 to remove gradient background */
   background-color: rgb(248,247,245);
-  /* Not removed via appearance */
   margin: 0;
 }
 
@@ -413,8 +366,6 @@ input[type="checkbox"]{
 }
 
 input[type="checkbox"] {
-  /* ...existing styles */
-
   display: grid;
   place-content: center;
 }
@@ -429,22 +380,15 @@ input[type="checkbox"]:before  {
 }
 
 input[type="checkbox"]{
-  /* ...existing styles */
   display: grid;
   place-content: center;
-}
-
-input[type="checkbox"]{
   content: "";
   width: 1.1em;
   transform-origin: bottom left;
   height: 1.1em;
   color: rgb(1, 48, 9);
-
   transform: scale(1.25);
   background-color: rgb(219, 249, 219);
-  /* transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--form-control-color); */
 }
 
 input[type="checkbox"]:before{
@@ -456,19 +400,12 @@ input[type="checkbox"]:before{
   box-shadow: inset 1em 1em var(--form-control-color); */
 }
 
-
-
-
 input[type="checkbox"]:checked:before {
-  /* transform: scale(2); */
   background-color: rgb(70,152,64);
   transform: scale(1.8);
-
   transform-origin: middle center;
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
   color: #3a3a3a;
-
-
 }
 
 .engagebrowsemore{
@@ -511,5 +448,4 @@ input[type="checkbox"]:checked:before {
   @media only screen and (max-width: 986px) {
     display: none;
   }
-
 }

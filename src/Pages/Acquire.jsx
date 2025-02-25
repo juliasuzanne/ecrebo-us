@@ -1,6 +1,4 @@
 import "./Css/appstoremimic.css";
-import "./Css/acquire.css";
-import "./Css/appstoremimic.css";
 import { Link } from "react-router-dom";
 import { AppStoreMimic } from "./AppStoreMimic";
 import { NavbarExternalCPR } from "../NavbarExternalCPR";
@@ -17,7 +15,7 @@ export function Acquire() {
             <br></br>
             <br></br>
             <Link to="/cpr#cpr" className="externalpagedescriptionlink">
-              <button>Back</button>
+              <button className="externalpage-back">Back</button>
             </Link>
           </p>
           <AppStoreMimic></AppStoreMimic>

@@ -1,7 +1,6 @@
 import "./Css/rx.css";
 import { MMNavbar } from "./MMNavbar";
 import { Footer } from "./Footer";
-import { CPRHero } from "../Components/CPRHero";
 import { NavbarExternalCPR } from "../NavbarExternalCPR";
 
 export function Rx() {
@@ -17,7 +16,7 @@ export function Rx() {
             <br></br>
             <br></br>
             <a className="externalpagedescriptionlink" href="/cpr#cpr">
-              <button>Back</button>
+              <button className="externalpage-back">Back</button>
             </a>
           </p>
         </div>

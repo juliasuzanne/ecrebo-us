@@ -1,15 +1,10 @@
 import { Card } from "./Components/Card";
 import { MainTitle } from "./Components/MainTitle";
-import { ProductCard } from "./Components/ProductCard";
 import { EmailForm } from "./EmailForm";
 import { Products } from "./Products";
 import { Hero } from "./Hero";
 import "/src/css/grid.css";
-import { Card2 } from "./Components/Card2";
-import { Card3 } from "./Components/Card3";
-
 import { Logos } from "./Logos";
-import { RiveEvents } from "./RiveEvents";
 
 export function Home() {
   return (
@@ -23,7 +18,6 @@ export function Home() {
           <div className="container-grid">
             <Card
               icon_color="purple"
-              card_color="purple"
               icon_url="assets/DataCard-1-1.svg"
               card_pretitle="1/10th&nbsp;"
               card_title="the Cost"
@@ -31,7 +25,6 @@ export function Home() {
             ></Card>
             <Card
               icon_color="purple"
-              card_color="purple"
               icon_url="assets/DataCard-1-2.svg"
               card_pretitle="100%&nbsp;"
               card_title="Reach"
@@ -39,7 +32,6 @@ export function Home() {
             ></Card>
             <Card
               icon_color="purple"
-              card_color="purple"
               icon_url="assets/DataCard-1-3.svg"
               card_pretitle="15%&nbsp;"
               card_title="Lift"

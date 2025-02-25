@@ -1,8 +1,6 @@
 import { EmailForm } from "./EmailForm";
 import { RiveEventsTRM } from "./RiveEventsTRM";
-import { TRMPageDescription } from "./TRMPageDescription";
 import { TRMHero } from "./Components/TRMHero";
-import { NavbarDemos } from "./NavbarDemos";
 import "/src/css/hero.css";
 
 export function TRM() {

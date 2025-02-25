@@ -7,13 +7,11 @@ import {
   Layout,
   Alignment,
 } from "@rive-app/react-canvas";
-import { useCallback, useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 
 import "/src/css/cpr.css";
 
 export function RiveEvents() {
-  // const [scrollPos, setScrollPos] = useState(1200);
-
   const { rive, RiveComponent } = useRive({
     src: "ecrebocpr-CPR.riv",
     stateMachines: "State Machine 1",
@@ -75,10 +73,6 @@ export function RiveEvents() {
           console.log("receipt hit");
           backToTopScroll();
         }
-
-        // Added relevant metadata from the event
-        // console.log("Rating", eventProperties);
-        // console.log("Message", eventProperties);
       }
     };
 

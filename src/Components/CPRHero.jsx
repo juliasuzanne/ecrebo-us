@@ -1,11 +1,7 @@
 import "/src/css/hero.css";
 import { NavbarDemos } from "../NavbarDemos";
-import { Card } from "./Card";
 export function CPRHero() {
   return (
-    // <div className="cpr-hero-div">
-    //   <a href="/cpr"></a>
-    // </div>
     <div>
       <NavbarDemos></NavbarDemos>
       <div className="container.fluid hero-home-cpr">
@@ -23,10 +19,6 @@ export function CPRHero() {
             That’s money in the bank.
           </p>
         </div>{" "}
-        {/* <div className="hero-content-purple">
-            {" "}
-            <img className="purple-background-circle" src="/assets/Purple-Circle_Product.svg"></img>
-          </div> */}
       </div>
     </div>
   );

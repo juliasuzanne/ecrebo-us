@@ -1,8 +1,7 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./css/email.css";
 import { MainTitle } from "./Components/MainTitle";
-import { EmailBuddy } from "./EmailBuddy";
 
 export function EmailForm(props) {
   const form = useRef();
@@ -89,7 +88,6 @@ export function EmailForm(props) {
         <br></br>
 
         <button className="button submit-button">Submit</button>
-        {/* <EmailBuddy></EmailBuddy> */}
       </form>
     </div>
   );

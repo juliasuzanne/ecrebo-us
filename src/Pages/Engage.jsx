@@ -1,9 +1,8 @@
 import "./Css/engage.css";
 import { Footer } from "./Footer";
-import React, { useState } from "react";
+import { useState } from "react";
 import { ItemContainer } from "./ItemContainer";
 import { MMNavbar } from "./MMNavbar";
-import { CPRHero } from "../Components/CPRHero";
 import { NavbarExternalCPR } from "../NavbarExternalCPR";
 import "./Css/rx.css";
 
@@ -16,8 +15,6 @@ function getDate() {
 }
 
 export function Engage() {
-  const [currentDate, setCurrentDate] = useState(getDate());
-
   return (
     <div>
       <div className="engageborder">
@@ -29,7 +26,7 @@ export function Engage() {
             <br></br>
             <br></br>
             <a className="externalpagedescriptionlink" href="/cpr#cpr">
-              <button>Back</button>
+              <button className="externalpage-back">Back</button>
             </a>
           </p>
         </div>

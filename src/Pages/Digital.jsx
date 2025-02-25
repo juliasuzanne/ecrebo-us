@@ -1,6 +1,4 @@
 import "./Css/appstoremimic.css";
-import "./Css/acquire.css";
-import "./Css/appstoremimic.css";
 import { AppStoreMimic } from "./AppStoreMimic";
 import { NavbarExternalCPR } from "../NavbarExternalCPR";
 
@@ -16,7 +14,7 @@ export function Digital() {
             <br></br>
             <br></br>
             <a className="externalpagedescriptionlink" href="/cpr#cpr">
-              <button>Back</button>
+              <button className="externalpage-back">Back</button>
             </a>
           </p>
           <AppStoreMimic></AppStoreMimic>

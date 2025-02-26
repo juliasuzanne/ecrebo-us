@@ -31,7 +31,7 @@
   }
 
   button:hover {
-    background-color: rgba(40,43,74, 0.9);
+    background-color: transparent;
   }
 
   h1 {
@@ -104,4 +104,10 @@ textarea.form-control {
 
 .errors {
   display:none;
+}
+
+.email-header {
+  button {
+    color: var(--dark-purple);
+  }
 }

@@ -74,7 +74,7 @@
 }
 
 .product-image-container {
-  height: 200px;
+  height: 250px;
   overflow:hidden;
 }
 
@@ -115,9 +115,9 @@
 
 .product-image {
   background-size: cover;
-  background-position: 50%;
+  background-position: 40%;
   width: 100%;
-  height: 300px;
+  height: 100%;
   justify-content: center;
   align-items: center;
   overflow: hidden;

@@ -20,7 +20,7 @@ export function Products() {
             product_description="Efficiently acquire and activate loyalty app users with targeted QR codes on millions of paper receipts."
           ></ProductCard>
           <ProductCard
-            image_url="assets/Grocery_coupon_US.png"
+            image_url="assets/Grocery_coupon_US-MMEdit.png"
             button_url="/trm"
             icon_url="assets/trmicon.svg"
             product_title="EcreboTRM™ "

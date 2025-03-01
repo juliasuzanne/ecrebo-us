@@ -5,10 +5,13 @@ import { Products } from "./Products";
 import { Hero } from "./Hero";
 import "/src/css/grid.css";
 import { Logos } from "./Logos";
+import { Navbar } from "./Navbar";
+import { P2PIBadge } from "./P2PIBadge";
 
 export function Home() {
   return (
     <div style={{ backgroundColor: "var(--white)" }}>
+      <Navbar></Navbar>
       <div>
         <Hero />
         <div className="personalized-receipts" style={{ backgroundColor: "var(--white)" }}>
@@ -45,6 +48,7 @@ export function Home() {
         <MainTitle header_color="dark">Leading retailers use Ecrebo.</MainTitle>
         <Logos></Logos>
       </div>
+      {/* <P2PIBadge></P2PIBadge> */}
 
       <div
         className="light-to-dark-container"

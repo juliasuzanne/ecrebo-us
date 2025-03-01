@@ -119,11 +119,21 @@ button.navbar-toggler,
   }
 }
 
-.navbar-demos {
-  position: relative;
+.navbar-demos,
+.navbar-reg {
   width: 100%;
   height: auto;
-  background-color: var(--dark-purple);
+  background: linear-gradient(var(--dark-purple), #2D2E5B);
+}
+
+.navbar-sticky {
+  width: 100%;
+  height: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 100; 
+  top: 0;
+  background: linear-gradient(var(--dark-purple), #2D2E5B);
 }
 
 .navbar-expand-md {

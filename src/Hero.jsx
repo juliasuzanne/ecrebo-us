@@ -1,10 +1,8 @@
 import "./css/hero.css";
-import { Navbar } from "./Navbar";
 
 export function Hero() {
   return (
     <div className="hero-main">
-      <Navbar></Navbar>
       <div className="container hero-home">
         <img width="375px" height="450px" src="/assets/hero-v3.png" className="hero-img" />
 

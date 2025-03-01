@@ -5,6 +5,9 @@
   display: flex;
   flex-wrap: wrap;
   z-index: 3;
+  @media only screen and (max-width: 986px) {
+    display: unset;
+  }
 }
 
 .card-icon {

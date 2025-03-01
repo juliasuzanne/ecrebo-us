@@ -1,7 +1,7 @@
 import "../css/card.css";
 export function Card(props) {
   return (
-    <div className="card-container">
+    <div className={`card-container ${props.additional_class}`}>
       <div className={`card-content ${props.card_color}`}>
         <div className="card-title">
           <h3>{props.card_pretitle}</h3>

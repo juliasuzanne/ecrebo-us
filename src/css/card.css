@@ -180,3 +180,10 @@
   background-color: var(--secondary-red);
   opacity: 0.8;
 }
+
+
+.manual-title-wrap {
+  .card-title {
+      max-width: 50%;
+  }
+}

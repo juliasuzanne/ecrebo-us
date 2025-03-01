@@ -17,8 +17,8 @@ export function TRMHero(props) {
             integration and no new hardware required.
           </p>
           <p className="descriptiontext cpr-text">
-            Receipt marketing boosts the effectiveness of store offers by 15% or more and creates new retail media.
-            Plus, your receipts look great: clean and organized with compelling graphics.
+            Receipt marketing boosts the response to store offers by 15% or more and creates new retail media. Plus,
+            your receipts look great: neatly organized and shorter with compelling graphics.
           </p>
         </div>
       </div>

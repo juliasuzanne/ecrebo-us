@@ -28,7 +28,7 @@ export function Home() {
               icon_url="assets/DataCard-1-2.svg"
               card_pretitle="100%&nbsp;"
               card_title="Reach"
-              card_description="Reach 100% of shoppers with bespoke offers and messages."
+              card_description="Reach 100% of your shoppers with personalized offers and messages."
             ></Card>
             <Card
               icon_color="purple"
@@ -62,6 +62,7 @@ export function Home() {
               icon_color="purple"
               card_color="light"
               card_title="POS Agnostic"
+              additional_class="manual-title-wrap"
               icon_url="assets/DataCard-2-3.svg"
               card_description="Works with all POS systems and all receipt printers. No new hardware."
             />

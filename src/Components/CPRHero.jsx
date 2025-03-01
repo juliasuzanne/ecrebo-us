@@ -15,8 +15,8 @@ export function CPRHero() {
             Add personalized QR codes to your paper receipts to cost-effectively acquire and activate loyalty app users.
           </p>
           <p className="descriptiontext cpr-text">
-            More users, using your app more often, means more retail media to sell and better promotional performance.
-            That’s money in the bank.
+            More customers using your app more often means more retail media to sell and better promotional performance.
+            That’s money in the bank!
           </p>
         </div>{" "}
       </div>

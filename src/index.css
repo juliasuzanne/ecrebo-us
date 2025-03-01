@@ -388,6 +388,12 @@ canvas {
   url("/pulp-display-medium.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: local("Gilroy-Regular"),
+  url("/Gilroy-Regular.ttf") format("truetype");
+}
+
 button {
   color: var(--dark-purple);
 }

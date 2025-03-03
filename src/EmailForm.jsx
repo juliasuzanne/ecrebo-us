@@ -30,6 +30,7 @@ export function EmailForm(props) {
         },
         (error) => {
           console.log("FAILED...", error.text);
+          e.target.reset();
           setSuccessMessage([]);
           setErrorShow(false);
           setSuccessMessageShow(true);
@@ -47,34 +48,24 @@ export function EmailForm(props) {
               Get in touch. <br></br>Let's put your receipts to work.
             </MainTitle>
           </div>
-          <ul hidden={successMessageShow} className="success">
-            {successMessage.map((successMessage) => (
-              <li key={successMessage}>{successMessage}</li>
-            ))}
-          </ul>
-          <ul hidden={errorShow} className="errors">
-            {errors.map((error) => (
-              <li key={error}>{error}</li>
-            ))}
-          </ul>
         </div>
         <div className="row">
           <div>
-            <input name="email" placeholder="E-mail" className="form-control" type="email" />
+            <input name="email" placeholder="E-mail" className="form-control" type="email" required />
           </div>
         </div>
         <div className="row">
           <div className="col-sm-6">
-            <input name="name" placeholder="First Name" className="form-control" type="string" />
+            <input name="name" placeholder="First Name" className="form-control" type="string" required />
           </div>
           <div className="col-sm-6">
-            <input name="last_name" placeholder="Last Name" className="form-control" type="string" />
+            <input name="last_name" placeholder="Last Name" className="form-control" type="string" required />
           </div>
         </div>
         <div className="row">
           <div>
             <p>
-              <textarea placeholder="Message" type="text" className="form-control"></textarea>
+              <textarea placeholder="Message" type="text" className="form-control" required></textarea>
             </p>
           </div>
         </div>
@@ -87,6 +78,16 @@ export function EmailForm(props) {
         <br></br>
 
         <button className="button submit-button">Submit</button>
+        <ul hidden={successMessageShow} className="success">
+          {successMessage.map((successMessage) => (
+            <li key={successMessage}>{successMessage}</li>
+          ))}
+        </ul>
+        <ul hidden={errorShow} className="errors">
+          {errors.map((error) => (
+            <li key={error}>{error}</li>
+          ))}
+        </ul>
       </form>
     </div>
   );

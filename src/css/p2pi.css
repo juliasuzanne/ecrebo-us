@@ -1,18 +1,44 @@
 .p2pi-container {
   height: 100%;
-  background: linear-gradient(black, var(--bright-purple));
+  background: linear-gradient(-90deg, #2D2668, #1B0D36, #2C0B25, #2D2668);
+  /* background-color: var(--dark-purple); */
   margin: 0 auto;
   color: white;
   font-family: 'NeuzeitGro-Lig';
   text-align: center;
   padding-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .p2pi-image {
+  flex: 0 0 40%;
   text-align: center;
   img {
-    max-width: 60%;
     max-height: 300px;
+  }
+  @media only screen and (max-width: 986px) {
+    flex: 0 0 100%;
+  }
+}
+
+.p2pi-content {
+  flex: 0 0 60%;
+  max-width: 80%;
+  padding: 64px 64px;
+  
+  @media only screen and (max-width: 986px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-family: 'NeuzeitGro-Bol';
+    padding-bottom: 24px;
+    color: #FDFAFE;
+    text-shadow: 0px 0px 10px #6F1A96;
   }
 }
 
@@ -30,16 +56,14 @@
 
 .p2pi-event {
   border-radius: var(--border-radius);
-  background-color: white;
-  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.117);
   text-align: left;
-  color: var(--dark-purple);
+  color: white;
   overflow: hidden;
   display: flex;
   flex-wrap: nowrap;
-  max-width: 60%;
-  box-shadow: 0 0 10px 5px #631886;
-
+  width: fit-content;
+  margin: auto;
 
   p {
     font-size: var(--typography-md);
@@ -47,33 +71,42 @@
 }
 
 .p2pi-event-date {
-  background-color: var(--bright-purple);
-  padding: 12px;
+  /* border-right: 1px solid rgba(255, 255, 255, 0.497); */
   text-wrap: nowrap;
-  font-size: var(--typography-xl);
+  font-size: var(--typography-lg);
   text-align: center;
   text-transform: uppercase;
   color: white;
   font-family: 'NeuzeitGro-Bol';
-  align-self: stretch;
+  padding: 0 30px;
+  margin: auto 0;
+  height: 100%;
 
   p {
-    font-size: var(--typography-sm);
     font-family: 'NeuzeitGro-Lig';
     max-width: 120px;
     margin: 0;
-
+    font-size: var(--typography-xs);
   }
 
 }
 
 .p2pi-event-title {
   padding: 12px;
+  border-left: 1px solid rgba(255, 255, 255, 0.497);
+
   justify-self: center;
   align-self: center;
 
   .p2pi-event-title-title {
     font-family: 'NeuzeitGro-Bol';
+    font-size: var(--typography-sm);
+
+  }
+
+  p {
+    font-size: var(--typography-sm);
+    margin: 0;
   }
 }
 

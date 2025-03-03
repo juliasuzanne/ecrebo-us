@@ -7,6 +7,7 @@ import "/src/css/grid.css";
 import { Logos } from "./Logos";
 import { Navbar } from "./Navbar";
 import { P2PIBadge } from "./P2PIBadge";
+import { Link } from "react-router-dom";
 
 export function Home() {
   return (
@@ -48,8 +49,7 @@ export function Home() {
         <MainTitle header_color="dark">Leading retailers use Ecrebo.</MainTitle>
         <Logos></Logos>
       </div>
-      {/* <P2PIBadge></P2PIBadge> */}
-
+      <P2PIBadge></P2PIBadge>
       <div
         className="light-to-dark-container"
         style={{ backgroundColor: "var(--dark-purple)", borderRadius: "var(--border-radius) var(--border-radius) 0 0" }}

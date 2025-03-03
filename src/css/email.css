@@ -99,11 +99,19 @@ textarea.form-control {
 }
 
 .success {
-  display:none;
+  color: var(--bright-green);
+  margin: 15px;
+  width: fit-content;
+  margin-left: auto;
+  list-style: none;
 }
 
 .errors {
-  display:none;
+  color: var(--bright-purple);
+  width: fit-content;
+  margin: 15px;
+  margin-left: auto;
+  list-style: none;
 }
 
 .email-header {

@@ -1,19 +1,40 @@
 import "/src/css/hero.css";
 import { NavbarDemos } from "../NavbarDemos";
+import { ObserverComponent } from "../ObserverComponent";
+import { useState } from "react";
 
 export function TRMHero(props) {
+  const [startAnim, setStartAnim] = useState(false);
+  const [startAnim2, setStartAnim2] = useState(false);
+
+  const startAnimating = () => {
+    setStartAnim(true);
+  };
+
+  const startAnimating2 = () => {
+    setStartAnim2(true);
+  };
+
   return (
     <div>
       <NavbarDemos></NavbarDemos>
+      <ObserverComponent handleStartAnim={startAnimating}></ObserverComponent>
       <div className="container.fluid hero-home-cpr bg-trm">
-        <img className="trm-top-circle" src="/assets/01-top.svg" />
-        <img className="trm-top-cta" src="/assets/circle-cta.svg" />
+        <img
+          className={`${startAnim ? "trm-top-circle box-rotated-left-animate" : "trm-top-circle box-rotated-left"}`}
+          src="/assets/01-top.svg"
+        />
+        <img
+          className={`${startAnim2 ? "trm-top-cta box-right-animate" : "trm-top-cta box-right"}`}
+          src="/assets/circle-cta.svg"
+        />
 
         <img
           className="hero-img-trm"
           src="/assets/TRMHero.svg"
           alt="Image of receipt highlighting personalized, targeted graphic elements including QR code and offer logos"
         />
+
         <div className="hero-content">
           <h3 className="cpr-title">
             Introducing EcreboTRM <br></br>
@@ -23,6 +44,8 @@ export function TRMHero(props) {
             Ecrebo makes delivering personalized, high-impact offers and messages on printed receipts easy. No POS
             integration and no new hardware required.
           </p>
+          <ObserverComponent handleStartAnim={startAnimating2}></ObserverComponent>
+
           <p className="descriptiontext cpr-text">
             Receipt marketing boosts the response to store offers by 15% or more and creates new retail media. Plus,
             your receipts look great: neatly organized and shorter with compelling graphics.

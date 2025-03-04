@@ -8,8 +8,21 @@ import { Logos } from "./Logos";
 import { Navbar } from "./Navbar";
 import { P2PIBadge } from "./P2PIBadge";
 import { Link } from "react-router-dom";
+import { ObserverComponent } from "./ObserverComponent";
+import { useState } from "react";
 
 export function Home() {
+  const [startAnim, setStartAnim] = useState(false);
+  const [startAnim2, setStartAnim2] = useState(false);
+
+  const startAnimating = () => {
+    setStartAnim(true);
+  };
+
+  const startAnimating2 = () => {
+    setStartAnim2(true);
+  };
+
   return (
     <div style={{ backgroundColor: "var(--white)" }}>
       <Navbar></Navbar>
@@ -50,10 +63,18 @@ export function Home() {
       </div>
       <div className="white-background">
         <MainTitle header_color="dark">Leading retailers use Ecrebo.</MainTitle>
+        <ObserverComponent handleStartAnim={startAnimating2}></ObserverComponent>
+
         <Logos></Logos>
-        <img className="bottom-circle" src="/assets/01-bottom.svg" />
+
+        <img
+          className={`${startAnim2 ? "bottom-circle box-right-animate" : "bottom-circle box-right"}`}
+          src="/assets/01-bottom.svg"
+        />
       </div>
       <P2PIBadge></P2PIBadge>
+      <ObserverComponent handleStartAnim={startAnimating}></ObserverComponent>
+
       <div
         className="light-to-dark-container"
         style={{ backgroundColor: "var(--dark-purple)", borderRadius: "var(--border-radius) var(--border-radius) 0 0" }}
@@ -91,9 +112,11 @@ export function Home() {
               card_title="Easy Management"
               card_description="Campaign creation and management through an intuitive Ecrebo portal."
             />
-            <img className="circle-circle" src="/assets/circle-cta.svg" />
           </div>
-
+          <img
+            className={`${startAnim ? "circle-circle box-left-animate" : "circle-circle box-left"}`}
+            src="/assets/circle-cta.svg"
+          />
           <EmailForm header_color="white" email_class="home_email"></EmailForm>
         </div>
       </div>

@@ -1,8 +1,21 @@
 import { MainTitle } from "./Components/MainTitle";
 import { ProductCard } from "./Components/ProductCard";
+import { ObserverComponent } from "./ObserverComponent";
 import "/src/css/product-card.css";
+import { useState } from "react";
 
 export function Products() {
+  const [startAnim, setStartAnim] = useState(false);
+  const [startAnim2, setStartAnim2] = useState(false);
+
+  const startAnimating = () => {
+    setStartAnim(true);
+  };
+
+  const startAnimating2 = () => {
+    setStartAnim2(true);
+  };
+
   return (
     <div className="white-background-product" id="products">
       <div className="product-container">
@@ -10,6 +23,8 @@ export function Products() {
           Grow retail media <span style={{ textDecoration: "underline" }}>and</span>
           <br></br> super-charge promotional lift.
         </MainTitle>
+        <ObserverComponent handleStartAnim={startAnimating}></ObserverComponent>
+
         <div className="grid-product">
           <ProductCard
             image_url="assets/CPR_image.jpg"
@@ -29,9 +44,16 @@ export function Products() {
           ></ProductCard>
         </div>
       </div>
-      <img className="green-cta-circle" src="/assets/circle-cta-green.svg" />
+      <ObserverComponent handleStartAnim={startAnimating2}></ObserverComponent>
 
-      <img className="top-circle" src="/assets/01-top.svg" />
+      <img
+        className={`${startAnim ? "green-cta-circle box-left-animate" : "green-cta-circle box-left"}`}
+        src="/assets/circle-cta-green.svg"
+      />
+      <img
+        className={`${startAnim2 ? "top-circle box-right-animate" : "top-circle box-right"}`}
+        src="/assets/01-top.svg"
+      />
     </div>
   );
 }

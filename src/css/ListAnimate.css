@@ -1,0 +1,83 @@
+
+/* START DESKTOP STYLING */
+  .box-left {
+    transform: translateX(-10%);
+  }
+
+  .box-rotated-left {
+    transform: rotate(180deg) translateX(10%);
+  }
+
+
+  .box-right {
+    transform: translateX(10%);
+  }
+
+  .box-top {
+    transform: translateY(-10%);
+  }
+
+
+  .box-top-animate{
+    transform: translateY(0%);
+    animation-duration: 500ms;
+    animation-name: animate-box-top; 
+  }
+
+  .box-left-animate{
+    transform: translateX(0%);
+    animation-duration: 500ms;
+    animation-name: animate-box-left; 
+  }
+
+  .box-rotated-left-animate{
+    transform: rotate(180deg) translateX(0%);
+    animation-duration: 500ms;
+    animation-name: animate-box-rotated-left; 
+  }
+
+  .box-right-animate{
+    transform: translateX(0%);
+    animation-duration: 500ms;
+    animation-name: animate-box-right; 
+  }
+
+  @keyframes animate-box-left{
+    0%{
+      transform: translateX(-10%);
+    }
+
+    100%{
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes animate-box-top{
+    0%{
+      transform: translateY(-10%);
+    }
+
+    100%{
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes animate-box-right{
+    0%{
+      transform: translateX(10%);
+    }
+  
+    100%{
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes animate-box-rotated-left{
+    0%{
+      transform: rotate(180deg) translateX(10%);
+    }
+  
+    100%{
+      transform: rotate(180deg) translateX(0%);
+    }
+  }

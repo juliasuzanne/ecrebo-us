@@ -38,6 +38,8 @@
     --typography-md: 20px;
     --typography-sm: 18px;
   }
+  overflow-x: hidden;
+
 }
 
 h3 {

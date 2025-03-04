@@ -1,6 +1,13 @@
 import "./css/hero.css";
+import { useState } from "react";
+import { ObserverComponent } from "./ObserverComponent";
 
 export function Hero() {
+  const [startAnim, setStartAnim] = useState(false);
+
+  const startAnimating = () => {
+    setStartAnim(true);
+  };
   return (
     <div className="hero-main">
       <div className="container hero-home">
@@ -16,8 +23,14 @@ export function Hero() {
           Turn humble paper receipts into <span className="green_span">powerful marketing</span>.
         </h1>
       </div>
+      <ObserverComponent handleStartAnim={startAnimating}></ObserverComponent>
+
       <div className="hero-transparent">
-        <img className="purple-circle" src="/assets/Purple-Stripe-Arc_Home.svg" alt="Decorative geometric element" />
+        <img
+          className={`${startAnim ? "purple-circle box-top-animate" : "purple-circle box-top"}`}
+          src="/assets/Purple-Stripe-Arc_Home.svg"
+          alt="Decorative geometric element"
+        />
       </div>
     </div>
   );

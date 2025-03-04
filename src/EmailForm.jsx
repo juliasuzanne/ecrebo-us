@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./css/email.css";
 import { MainTitle } from "./Components/MainTitle";
+import { ObserverComponent } from "./ObserverComponent";
 
 export function EmailForm(props) {
   const form = useRef();
@@ -9,6 +10,11 @@ export function EmailForm(props) {
   const [errorShow, setErrorShow] = useState(true);
   const [successMessageShow, setSuccessMessageShow] = useState(true);
   const [successMessage, setSuccessMessage] = useState([]);
+  const [startAnim, setStartAnim] = useState(false);
+
+  const startAnimating = () => {
+    setStartAnim(true);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -48,6 +54,7 @@ export function EmailForm(props) {
               Get in touch. <br></br>Let's put your receipts to work.
             </MainTitle>
           </div>
+          <ObserverComponent handleStartAnim={startAnimating}></ObserverComponent>
         </div>
         <div className="row">
           <div>
@@ -89,7 +96,11 @@ export function EmailForm(props) {
         </ul>
         <button className="button submit-button">Submit</button>
       </form>
-      <img className="email-circle" src="/assets/Email-Circles.svg" />
+
+      <img
+        className={`${startAnim ? "email-circle box-left-animate" : "email-circle box-left"}`}
+        src="/assets/Email-Circles.svg"
+      />
     </div>
   );
 }

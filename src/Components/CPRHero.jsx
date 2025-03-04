@@ -24,11 +24,13 @@ export function CPRHero() {
           className={`${startAnim ? "trm-top-circle box-rotated-left-animate" : "trm-top-circle box-rotated-left"}`}
           src="/assets/01-top.svg"
         />
-        <img
+        {/* <img
           className={`${startAnim2 ? "trm-top-cta box-right-animate" : "trm-top-cta box-right"}`}
           src="/assets/circle-cta.svg"
-        />
+        /> */}
         <img
+          width="215px"
+          height="350px"
           src="/assets/CPR_Hero.png"
           className="hero-img-cpr"
           alt="Image of a hand using smart phone to scan a QR code on a receipt"

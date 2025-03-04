@@ -24,13 +24,15 @@ export function TRMHero(props) {
           className={`${startAnim ? "trm-top-circle box-rotated-left-animate" : "trm-top-circle box-rotated-left"}`}
           src="/assets/01-top.svg"
         />
-        <img
+        {/* <img
           className={`${startAnim2 ? "trm-top-cta box-right-animate" : "trm-top-cta box-right"}`}
           src="/assets/circle-cta.svg"
-        />
+        /> */}
 
         <img
           className="hero-img-trm"
+          width="452px"
+          height="461px"
           src="/assets/TRMHero.svg"
           alt="Image of receipt highlighting personalized, targeted graphic elements including QR code and offer logos"
         />

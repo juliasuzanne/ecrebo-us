@@ -185,6 +185,7 @@
 
     @media only screen and (max-width: 786px) {
       width: 100%;
+      margin: 0 24px 24px;
     }
 
   }
@@ -283,6 +284,7 @@
 
   .cpr-text {
     font-size: var(--typography-sm);
+    margin-bottom: 12px;
   }
 
   .trm-top-circle {

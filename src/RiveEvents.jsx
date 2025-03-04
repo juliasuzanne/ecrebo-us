@@ -101,7 +101,7 @@ export function RiveEvents() {
         startAnimation();
         changeCurrentButton(3);
       } else if (currentLevel === 1) {
-        setCurrentLink("/cpr/rx_link");
+        setCurrentLink("/cpr/rx");
         startAnimation();
         changeCurrentButton(1);
       }

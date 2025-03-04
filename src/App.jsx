@@ -18,7 +18,7 @@ function App() {
           <Route path="/cpr/acquire" element={<Acquire />} />
           <Route path="/cpr/digital" element={<Digital />} />
           <Route path="/cpr/engage" element={<Engage />} />
-          <Route path="/cpr/rx_link" element={<Rx />} />
+          <Route path="/cpr/rx" element={<Rx />} />
         </Routes>
       </BrowserRouter>
     </div>

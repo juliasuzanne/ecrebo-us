@@ -369,7 +369,7 @@ canvas {
 }
 
 .light-to-dark-product {
-  background: linear-gradient(30deg, var(--light-purple), white);
+  background: linear-gradient(50deg, var(--light-purple), var(--white));
 
   .disclaimer {
     color: var(--dark-purple);

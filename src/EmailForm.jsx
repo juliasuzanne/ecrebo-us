@@ -75,9 +75,8 @@ export function EmailForm(props) {
           Ecrebo’s products and solutions.
         </p>
         <br></br>
-        <br></br>
 
-        <button className="button submit-button">Submit</button>
+        <br></br>
         <ul hidden={successMessageShow} className="success">
           {successMessage.map((successMessage) => (
             <li key={successMessage}>{successMessage}</li>
@@ -88,6 +87,7 @@ export function EmailForm(props) {
             <li key={error}>{error}</li>
           ))}
         </ul>
+        <button className="button submit-button">Submit</button>
       </form>
     </div>
   );

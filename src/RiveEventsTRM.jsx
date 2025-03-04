@@ -142,7 +142,7 @@ export function RiveEventsTRM() {
           </button>
         </div>
         <div className="rivecontainer col-sm-12 col-md-6">
-          <img src="/assets/GreenHalfCircle.svg" className="riveCircle" />
+          <img alt="Decorative green geometric element" src="/assets/GreenHalfCircle.svg" className="riveCircle" />
           <RiveComponent className="riveBox" />
         </div>
       </div>

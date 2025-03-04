@@ -6,7 +6,7 @@ export function P2PIBadge() {
     <div className="p2pi-container" id="p2pi">
       <div className="p2pi-image">
         <a href="https://events.p2pi.com/retailmediasummit2025/681603" target="_blank">
-          <img src="/assets/P2PIBadge.png" />
+          <img src="/assets/P2PIBadge.png" alt="P2PI Badge for Retail Media Summit event in 2025" />
         </a>
       </div>
       <div className="p2pi-content">
@@ -19,11 +19,11 @@ export function P2PIBadge() {
           <div className="p2pi-event-title">
             <p className="p2pi-event-title-title">How Loblaw is Rethinking Loyalty and Engagement</p>
             <p>
-              <img className="p2pi-map-icon" src="/assets/map-icon.svg" />
+              <img className="p2pi-map-icon" alt="Icon of map symbol" src="/assets/map-icon.svg" />
               Rosemont, IL
             </p>
             <p>
-              <img className="p2pi-map-icon" src="/assets/clock-icon.svg" />
+              <img className="p2pi-map-icon" alt="Icon of clock" src="/assets/clock-icon.svg" />
               9:40-10:10 AM US CST
             </p>
           </div>

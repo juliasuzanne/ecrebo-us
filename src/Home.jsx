@@ -25,6 +25,7 @@ export function Home() {
               icon_url="assets/DataCard-1-1.svg"
               card_pretitle="1/10th&nbsp;"
               card_title="the Cost"
+              image_alt="Icon of money going back into the hand"
               card_description="Acquire & activate loyalty app user for 1/10th the usual cost."
             ></Card>
             <Card
@@ -32,6 +33,7 @@ export function Home() {
               icon_url="assets/DataCard-1-2.svg"
               card_pretitle="100%&nbsp;"
               card_title="Reach"
+              image_alt="Icon of crowd of people"
               card_description="Reach 100% of your shoppers with personalized offers and messages."
             ></Card>
             <Card
@@ -39,6 +41,7 @@ export function Home() {
               icon_url="assets/DataCard-1-3.svg"
               card_pretitle="15%&nbsp;"
               card_title="Lift"
+              image_alt="Icon of arrow pointing up indicating lift"
               card_description="Boost redemption of your specials and offers by 15% or more."
             ></Card>
           </div>
@@ -67,12 +70,14 @@ export function Home() {
               card_color="light"
               card_title="POS Agnostic"
               additional_class="manual-title-wrap"
+              image_alt="Icon of POS system"
               icon_url="assets/DataCard-2-3.svg"
               card_description="Works with all POS systems and all receipt printers. No new hardware."
             />
             <Card
               icon_color="purple"
               card_color="light"
+              image_alt="Icon of simple integration"
               icon_url="assets/DataCard-2-2.svg"
               card_title="Simple Installation"
               card_description="No POS integration required. Time from testing to install can be weeks."
@@ -80,6 +85,7 @@ export function Home() {
             <Card
               icon_color="purple"
               card_color="light"
+              image_alt="Icon of laptop"
               icon_url="assets/DataCard-2-1.svg"
               card_title="Easy Management"
               card_description="Campaign creation and management through an intuitive Ecrebo portal."

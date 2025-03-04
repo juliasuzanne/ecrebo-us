@@ -8,7 +8,7 @@ export function Card(props) {
           <h2>{props.card_title}</h2>
         </div>
         <div className={`card-icon ${props.icon_color}`}>
-          <img src={props.icon_url} />
+          <img alt={props.image_alt} src={props.icon_url} />
         </div>
         <p className="card-description">{props.card_description}</p>
         <div className="card-grid">{props.children}</div>

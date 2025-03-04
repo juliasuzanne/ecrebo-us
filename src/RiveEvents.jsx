@@ -149,7 +149,7 @@ export function RiveEvents() {
           </div>
         </div>
         <div className="rivecontainer col-sm-12 col-md-6">
-          <img src="/assets/GreenHalfCircle.svg" className="riveCircle2" />
+          <img src="/assets/GreenHalfCircle.svg" alt="Decorative green geometric element" className="riveCircle2" />
           <RiveComponent className="riveBox" />
           <div className={`click-ref-mobile ${mobileHiddenRef}`}>
             Scan or <a href={`${currentLink}`}>click here</a> to see where the QR code goes.

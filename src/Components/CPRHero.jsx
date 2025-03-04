@@ -5,7 +5,11 @@ export function CPRHero() {
     <div>
       <NavbarDemos></NavbarDemos>
       <div className="container.fluid hero-home-cpr">
-        <img src="/assets/CPR_Hero.png" className="hero-img-cpr" />
+        <img
+          src="/assets/CPR_Hero.png"
+          className="hero-img-cpr"
+          alt="Image of a hand using smart phone to scan a QR code on a receipt"
+        />
         <div className="hero-content">
           <h3 className="cpr-title">
             Introducing EcreboCPR <br></br>

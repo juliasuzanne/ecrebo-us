@@ -25,7 +25,12 @@ export function Navbar() {
   return (
     <div className={`${scrolledUp}`}>
       <nav className="navbar navbar-expand-md navbar-light">
-        <img onClick={() => window.location.replace("/")} className="navbar-logo" src="/assets/ecrebo-logo-white.svg" />
+        <img
+          onClick={() => window.location.replace("/")}
+          className="navbar-logo"
+          src="/assets/ecrebo-logo-white.svg"
+          alt="Ecrebo logo that acts as home page link"
+        />
         <button
           className="navbar-toggler"
           type="button"

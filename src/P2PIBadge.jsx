@@ -14,7 +14,8 @@ export function P2PIBadge() {
         <a href="https://events.p2pi.com/retailmediasummit2025/programoverview" target="_blank">
           <div className="p2pi-event">
             <div className="p2pi-event-date">
-              May<br></br>8
+              May<span className="p2pi-event-space">&nbsp;</span>
+              <br className="p2pi-event-br"></br>8
             </div>
             <div className="p2pi-event-title">
               <p className="p2pi-event-title-title">How Loblaw is Rethinking Loyalty and Engagement</p>

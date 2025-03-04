@@ -52,7 +52,20 @@
 
 .descriptiontext {
   font-size: var(--typography-md);
-  line-height: 36px;
+  line-height: 25px;
+  margin: 0;
+  width: 100%;
+}
+
+.descriptiontext-cpr {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.description-icon {
+  height: 25px;
+  padding-right: 20px;
 }
 
 .clicktosee {

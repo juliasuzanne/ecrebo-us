@@ -51,6 +51,7 @@ export function Home() {
       <div className="white-background">
         <MainTitle header_color="dark">Leading retailers use Ecrebo.</MainTitle>
         <Logos></Logos>
+        <img className="bottom-circle" src="/assets/01-bottom.svg" />
       </div>
       <P2PIBadge></P2PIBadge>
       <div
@@ -90,6 +91,7 @@ export function Home() {
               card_title="Easy Management"
               card_description="Campaign creation and management through an intuitive Ecrebo portal."
             />
+            <img className="circle-circle" src="/assets/circle-cta.svg" />
           </div>
 
           <EmailForm header_color="white" email_class="home_email"></EmailForm>

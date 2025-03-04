@@ -6,9 +6,12 @@ export function TRMHero(props) {
     <div>
       <NavbarDemos></NavbarDemos>
       <div className="container.fluid hero-home-cpr bg-trm">
+        <img className="trm-top-circle" src="/assets/01-top.svg" />
+        <img className="trm-top-cta" src="/assets/circle-cta.svg" />
+
         <img
           className="hero-img-trm"
-          src="/assets/TRMhero.png"
+          src="/assets/TRMHero.svg"
           alt="Image of receipt highlighting personalized, targeted graphic elements including QR code and offer logos"
         />
         <div className="hero-content">

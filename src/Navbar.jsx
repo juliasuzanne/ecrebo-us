@@ -7,7 +7,11 @@ export function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      if (currentScrollY < lastScrollY && currentScrollY < document.documentElement.scrollHeight - window.innerHeight) {
+      if (
+        currentScrollY < lastScrollY &&
+        currentScrollY < document.documentElement.scrollHeight - window.innerHeight &&
+        window.innerWidth > 986
+      ) {
         setScrolledUp("navbar-sticky");
       } else {
         setScrolledUp("navbar-reg");
@@ -32,6 +36,7 @@ export function Navbar() {
           alt="Ecrebo logo that acts as home page link"
         />
         <button
+          onClick={() => setScrolledUp("navbar-sticky")}
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"

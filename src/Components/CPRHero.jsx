@@ -5,6 +5,8 @@ export function CPRHero() {
     <div>
       <NavbarDemos></NavbarDemos>
       <div className="container.fluid hero-home-cpr">
+        <img className="trm-top-circle" src="/assets/01-top.svg" />
+        <img className="trm-top-cta" src="/assets/circle-cta.svg" />
         <img
           src="/assets/CPR_Hero.png"
           className="hero-img-cpr"

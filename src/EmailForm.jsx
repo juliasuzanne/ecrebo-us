@@ -89,6 +89,7 @@ export function EmailForm(props) {
         </ul>
         <button className="button submit-button">Submit</button>
       </form>
+      <img className="email-circle" src="/assets/Email-Circles.svg" />
     </div>
   );
 }

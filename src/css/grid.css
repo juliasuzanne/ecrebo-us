@@ -89,4 +89,12 @@
 .light-to-dark-home {
   background-color: var(--light-purple);
   padding-top: 10px;
+  position: relative;
+}
+
+.circle-circle {
+  position: absolute;
+  top: -25%;
+  right: 66%;
+  height: 500px;
 }

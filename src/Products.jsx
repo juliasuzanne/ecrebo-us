@@ -29,6 +29,9 @@ export function Products() {
           ></ProductCard>
         </div>
       </div>
+      <img className="green-cta-circle" src="/assets/circle-cta-green.svg" />
+
+      <img className="top-circle" src="/assets/01-top.svg" />
     </div>
   );
 }

@@ -3,10 +3,10 @@
   /* background: linear-gradient(0deg, var(--dark-purple), var(--bright-purple)); */
   color: var(--dark-purple);
   margin: 0 auto;
-  z-index: -20;
   padding: 15px 64px 40px;
   max-width: 1200px;
-
+  z-index: 10;
+  position: relative;
   
   @media only screen and (max-width: 1228px){
     padding: 15px 64px 40px;
@@ -48,6 +48,7 @@
     padding: 0;
     text-align: left;
     margin-left: 0;
+    
   }
 }
 
@@ -64,6 +65,8 @@ form {
   border-radius: 4px;
   border: 0.2px solid lightgrey;
   margin: 12px 0;
+  z-index: 10;
+
 
   resize: vertical;
 }
@@ -119,4 +122,12 @@ textarea.form-control {
   button {
     color: var(--dark-purple);
   }
+}
+
+.email-circle {
+  position: absolute;
+  bottom: 0;
+  height: 450px;
+  z-index: -1;
+  left: -200px;
 }

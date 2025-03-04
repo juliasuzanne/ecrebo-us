@@ -135,7 +135,6 @@
   font-family: 'NeuzeitGro-Lig';
 
   @media only screen and (max-width: 986px) {
-    max-width:550px;
     margin: 0 auto 30px;
   }
 }
@@ -283,5 +282,28 @@
 
   .cpr-text {
     font-size: var(--typography-sm);
+  }
+
+  .trm-top-circle {
+    position: absolute;
+    top: -64px;
+    transform: rotate(180deg);
+    left: 0;
+    width: 450px;
+    @media only screen and (max-width: 986px) {
+      top: 0px;
+
+    }
+  }
+
+  .trm-top-cta {
+    position: absolute;
+    bottom: -10px;
+    right: -100px;
+    width: 300px;
+    @media only screen and (max-width: 986px) {
+      bottom: -100px;
+
+    }
   }
 }

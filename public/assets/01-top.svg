@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="430px" height="265px" viewBox="0 0 430 265" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>01-top</title>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1170.000000, -1188.000000)" id="shape-right">
+            <g transform="translate(1170.000000, 1187.999837)" id="01-top">
+                <path d="M265,0 L265,265.000163 L530,265.000163 C530,118.644825 411.355248,0 265,0" id="Fill-1" fill="#55D6BE"></path>
+                <path d="M0,265.000163 L265,265.000163 C265,118.644825 146.355248,0 0,0 L0,265.000163 Z" id="Fill-1-Copy" fill="#2BF6D0" transform="translate(132.500000, 132.500081) scale(-1, 1) translate(-132.500000, -132.500081) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

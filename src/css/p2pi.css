@@ -13,6 +13,8 @@
   width: 90%;
   border-radius: 18px;
   margin-bottom: 48px;
+  position: relative;
+  z-index: 10;
   
 }
 

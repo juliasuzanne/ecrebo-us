@@ -32,16 +32,18 @@
   
   @media only screen and (max-width: 986px) {
     width: calc(25% - 20px);
-    padding: 20px;
+    margin: 24px 0;    
   }
 
   @media only screen and (max-width: 768px) {
-    width: calc(33% - 48px);
+    width: calc(33% - 44px);
+    margin: 16px 0;
     padding: 0;
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 635px) {
     width: calc(50% - 44px);
+    margin: 12px 0;
     padding: 0;
   }
 

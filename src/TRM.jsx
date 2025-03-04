@@ -13,7 +13,7 @@ export function TRM() {
             <RiveEventsTRM></RiveEventsTRM>
           </div>
         </div>
-        <EmailForm email_class="email-header"></EmailForm>
+        <EmailForm header_color="white" email_class="email-home"></EmailForm>
       </div>
     </div>
   );

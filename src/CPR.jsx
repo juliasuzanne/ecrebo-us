@@ -13,7 +13,7 @@ export function CPR() {
             <RiveEvents></RiveEvents>
           </div>
         </div>
-        <EmailForm email_class="email-header"></EmailForm>
+        <EmailForm header_color="white" email_class="email-header"></EmailForm>
       </div>
     </div>
   );

@@ -20,26 +20,30 @@
 
   .box-top-animate{
     transform: translateY(0%);
-    animation-duration: 500ms;
+    animation-duration: 350ms;
     animation-name: animate-box-top; 
+    animation-timing-function: ease-in-out;
   }
 
   .box-left-animate{
     transform: translateX(0%);
-    animation-duration: 500ms;
-    animation-name: animate-box-left; 
+    animation-duration: 350ms;
+    animation-name: animate-box-left;
+    animation-timing-function: ease-in-out;
   }
 
   .box-rotated-left-animate{
     transform: rotate(180deg) translateX(0%);
-    animation-duration: 500ms;
+    animation-duration: 350ms;
     animation-name: animate-box-rotated-left; 
+    animation-timing-function: ease-in-out;
   }
 
   .box-right-animate{
     transform: translateX(0%);
-    animation-duration: 500ms;
+    animation-duration: 350ms;
     animation-name: animate-box-right; 
+    animation-timing-function: ease-in-out;
   }
 
   @keyframes animate-box-left{

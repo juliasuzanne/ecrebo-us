@@ -5,6 +5,7 @@
   margin: 0 auto;
   z-index: -20;
   padding: 15px 64px 40px;
+  max-width: 1200px;
 
   
   @media only screen and (max-width: 1228px){

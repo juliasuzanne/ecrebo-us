@@ -1,12 +1,12 @@
 .logo-container {
   display: flex;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   justify-content: center;
   column-gap: 64px;
   flex-wrap: wrap;
-  max-width: 1000px;
+  max-width: 1200px;
   padding-bottom: 32px;
 
   @media only screen and (max-width: 1328px) {
@@ -27,7 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(20% - 64px);
+  width: calc(21% - 64px);
   flex-wrap: wrap;
   
   @media only screen and (max-width: 986px) {

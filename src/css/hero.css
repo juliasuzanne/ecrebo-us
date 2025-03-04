@@ -15,7 +15,7 @@
 }
 
 .hero-home {
-  max-width: 1000px;
+  max-width: 1200px;
   background-size: cover;
   display: block;
   height: 100%;
@@ -167,7 +167,7 @@
   }
   .cpr-row {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     @media only screen and (max-width: 986px) {
       flex-wrap: wrap;
     }
@@ -223,7 +223,7 @@
   }
 
   .contain-product {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 64px;
     display: flex;
     gap: 50px;

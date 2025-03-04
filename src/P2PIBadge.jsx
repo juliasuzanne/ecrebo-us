@@ -11,23 +11,24 @@ export function P2PIBadge() {
       </div>
       <div className="p2pi-content">
         <h2>Be sure to see our case study with Loblaw at the Retail Media Summit in May.</h2>
-
-        <div className="p2pi-event">
-          <div className="p2pi-event-date">
-            May<br></br>8
+        <a href="https://events.p2pi.com/retailmediasummit2025/programoverview" target="_blank">
+          <div className="p2pi-event">
+            <div className="p2pi-event-date">
+              May<br></br>8
+            </div>
+            <div className="p2pi-event-title">
+              <p className="p2pi-event-title-title">How Loblaw is Rethinking Loyalty and Engagement</p>
+              <p>
+                <img className="p2pi-map-icon" alt="Icon of map symbol" src="/assets/map-icon.svg" />
+                Rosemont, IL
+              </p>
+              <p>
+                <img className="p2pi-map-icon" alt="Icon of clock" src="/assets/clock-icon.svg" />
+                9:40-10:10 AM US CST
+              </p>
+            </div>
           </div>
-          <div className="p2pi-event-title">
-            <p className="p2pi-event-title-title">How Loblaw is Rethinking Loyalty and Engagement</p>
-            <p>
-              <img className="p2pi-map-icon" alt="Icon of map symbol" src="/assets/map-icon.svg" />
-              Rosemont, IL
-            </p>
-            <p>
-              <img className="p2pi-map-icon" alt="Icon of clock" src="/assets/clock-icon.svg" />
-              9:40-10:10 AM US CST
-            </p>
-          </div>
-        </div>
+        </a>
       </div>
       {/* <div className="p2pi-description">
         <p>

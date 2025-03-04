@@ -1,37 +1,47 @@
 .p2pi-container {
   height: 100%;
-  background: linear-gradient(-90deg, #2D2668, #1B0D36, #2C0B25, #2D2668);
+  background: linear-gradient(-90deg, #2D2668, #2C0B25, #1B0D36, #2D2668);
   /* background-color: var(--dark-purple); */
   margin: 0 auto;
   color: white;
   font-family: 'NeuzeitGro-Lig';
   text-align: center;
-  padding-bottom: 32px;
+  padding: 32px 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  
 }
 
 .p2pi-image {
-  flex: 0 0 40%;
+  flex: 0 0 calc(40% - 32px);
   text-align: center;
+  padding-right: 64px;
   img {
     max-height: 300px;
   }
   @media only screen and (max-width: 986px) {
     flex: 0 0 100%;
+    padding-right: 0;
   }
+  transition: 200ms transform ease-in-out;
+
+}
+
+.p2pi-image:hover {
+  transform: scale(1.025);
 }
 
 .p2pi-content {
-  flex: 0 0 60%;
+  flex: 0 0 calc(60% - 128px);
   max-width: 80%;
-  padding: 64px 64px;
+  padding: 64px 0;
   
   @media only screen and (max-width: 986px) {
     flex: 0 0 100%;
     max-width: 100%;
+    padding-top: 24px;
   }
 
   h2 {
@@ -39,6 +49,9 @@
     padding-bottom: 24px;
     color: #FDFAFE;
     text-shadow: 0px 0px 10px #6F1A96;
+    @media only screen and (max-width: 986px) {
+      margin: 0 64px;
+    }
   }
 }
 
@@ -70,6 +83,10 @@
   }
 }
 
+.p2pi-event:hover {
+  background-color: rgba(255, 255, 255, 0.156);
+}
+
 .p2pi-event-date {
   /* border-right: 1px solid rgba(255, 255, 255, 0.497); */
   text-wrap: nowrap;
@@ -92,7 +109,7 @@
 }
 
 .p2pi-event-title {
-  padding: 12px;
+  padding: 12px 32px;
   border-left: 1px solid rgba(255, 255, 255, 0.497);
 
   justify-self: center;
@@ -111,6 +128,6 @@
 }
 
 .p2pi-map-icon {
-  height: 32px;
-  padding: 0 10px 10px;
+  height: 24px;
+  padding: 0 10px 5px 0;
 }

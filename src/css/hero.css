@@ -275,7 +275,6 @@
       width: 100%;
     }
     @media only screen and (max-width: 768px) {
-      text-align: left;
       position: unset;
       margin: 0;
       width: 100%;

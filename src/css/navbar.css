@@ -131,7 +131,7 @@ button.navbar-toggler,
   height: auto;
   position: -webkit-sticky;
   position: sticky;
-  z-index: 100; 
+  z-index: 100;
   top: 0;
   background: linear-gradient(var(--dark-purple), #2D2E5B);
 }

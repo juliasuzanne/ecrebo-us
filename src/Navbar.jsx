@@ -36,7 +36,6 @@ export function Navbar() {
           alt="Ecrebo logo that acts as home page link"
         />
         <button
-          onClick={() => setScrolledUp("navbar-sticky")}
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"

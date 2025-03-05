@@ -426,7 +426,7 @@ canvas {
 }
 
 .light-to-dark-product {
-  background: linear-gradient(50deg, var(--bright-purple) 15%, var(--light-purple) 60%, var(--bright-green)110%);
+  background: linear-gradient(50deg, var(--bright-purple) 15%, rgb(208, 232, 255) 60%, var(--bright-green)110%);
   position: relative;
 
   .disclaimer {

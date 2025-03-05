@@ -1,6 +1,7 @@
 .p2pi-container {
   height: 100%;
-  background: linear-gradient(-90deg, #2D2668, #2C0B25, #1B0D36, #2D2668);
+  /* background: linear-gradient(-90deg, #2D2668, #2C0B25, #1B0D36, #2D2668); */
+  background: linear-gradient(90deg, rgb(11, 6, 62), #2D2668, var(--bright-purple));
   /* background-color: var(--dark-purple); */
   margin: 0 auto;
   color: white;
@@ -62,7 +63,8 @@
     padding-bottom: 24px;
     color: #FDFAFE;
     font-size: 28px;
-    text-shadow: 0px 0px 10px #a437d6;
+    /* text-shadow: 0px 0px 10px #a437d6; */
+    text-shadow: 0px 0px 10px var(--dark-purple); 
     @media only screen and (max-width: 986px) {
       margin: 0 24px;
       font-size: 28px;

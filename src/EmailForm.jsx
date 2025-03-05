@@ -11,11 +11,15 @@ export function EmailForm(props) {
   const [successMessageShow, setSuccessMessageShow] = useState(true);
   const [successMessage, setSuccessMessage] = useState([]);
   const [startAnim, setStartAnim] = useState(false);
+  const [startAnim2, setStartAnim2] = useState(false);
 
   const startAnimating = () => {
     setStartAnim(true);
   };
 
+  const startAnimating2 = () => {
+    setStartAnim2(true);
+  };
   const sendEmail = (e) => {
     e.preventDefault();
     const params = new FormData(e.target);
@@ -47,6 +51,8 @@ export function EmailForm(props) {
 
   return (
     <div id="contact-us" className={props.email_class}>
+      <ObserverComponent handleStartAnim={startAnimating2}></ObserverComponent>
+
       <form ref={form} onSubmit={sendEmail}>
         <div className="row">
           <div className="email-outsides">
@@ -100,6 +106,11 @@ export function EmailForm(props) {
       <img
         className={`${startAnim ? "email-circle box-left-animate" : "email-circle box-left"}`}
         src="/assets/Email-Circles.svg"
+      />
+
+      <img
+        className={`${startAnim2 ? "top-circle-bright box-right-animate" : "top-circle-bright box-right"}`}
+        src="/assets/01-top-dark.svg"
       />
     </div>
   );

@@ -72,7 +72,6 @@ export function Home() {
           src="/assets/01-bottom.svg"
         />
       </div>
-      <P2PIBadge></P2PIBadge>
       <ObserverComponent handleStartAnim={startAnimating}></ObserverComponent>
 
       <div
@@ -117,6 +116,7 @@ export function Home() {
             className={`${startAnim ? "circle-circle box-left-animate" : "circle-circle box-left"}`}
             src="/assets/circle-cta.svg"
           />
+          <P2PIBadge></P2PIBadge>
           <EmailForm header_color="white" email_class="home_email"></EmailForm>
         </div>
       </div>

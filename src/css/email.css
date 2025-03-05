@@ -1,10 +1,9 @@
 #contact-us {
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  /* border-radius: var(--border-radius) var(--border-radius) 0 0; */
   /* background: linear-gradient(0deg, var(--dark-purple), var(--bright-purple)); */
   color: var(--dark-purple);
   margin: 0 auto;
   padding: 15px 64px 40px;
-  max-width: 1200px;
   z-index: 10;
   position: relative;
   
@@ -53,6 +52,8 @@
 }
 
 form {
+  max-width: 1200px;
+  margin: 0 auto;
   @media only screen and (max-width: 986px) {
     margin: 0;
   }
@@ -65,7 +66,7 @@ form {
   border-radius: 4px;
   border: 0.2px solid lightgrey;
   margin: 12px 0;
-  z-index: 10;
+  z-index: 13;
 
 
   resize: vertical;

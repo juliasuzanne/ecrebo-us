@@ -13,10 +13,25 @@
   justify-content: center;
   width: 90%;
   border-radius: 18px;
-  margin-bottom: 48px;
   position: relative;
   z-index: 10;
   
+}
+
+.p2pi-parent {
+  background: linear-gradient(0deg, var(--bright-purple),  var(--light-purple));
+  padding: 48px 0;
+  position: relative;
+
+  .top-circle-dark {
+    position: absolute;
+    height: 200px;
+    width: auto;
+    right: -40px;
+    z-index: 0;
+    bottom: 0;
+    opacity: 70%;
+  }
 }
 
 .p2pi-image {

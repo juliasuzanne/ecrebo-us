@@ -33,10 +33,10 @@ export function ObserverComponent(props) {
   }, [containerRef, options]);
 
   return (
-    <div className="">
+    <div className="observer-component">
       {/* <div className="isVisible">{isVisible ? `${name} is visible` : ""}</div> */}
       <span className={` ${isActivated ? props.afterAnim : props.beforeAnim}`}>
-        <div ref={containerRef}>
+        <div ref={containerRef} className="observer-component">
           {props.textContent}
           {props.children}
         </div>

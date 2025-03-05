@@ -126,6 +126,7 @@ p {
     @media only screen and (max-width: 786px) {
       width: 100px;
       right: -33px;
+      display: none;
     }
   }
 
@@ -157,6 +158,7 @@ p {
     @media only screen and (max-width: 786px) {
       width: 600px;
       left: -250px;
+      display: none;
     }
   }
 
@@ -173,6 +175,7 @@ p {
     @media only screen and (max-width: 786px) {
       width: 260px;
       right: -33px;
+      display: none;
     }
   }
 
@@ -353,6 +356,10 @@ canvas {
   width: 290px;
   right: 0;
   rotate: 90deg;
+
+  @media only screen and (max-width: 786px) {
+    display: none;
+  }
 }
 
 .clickhere {

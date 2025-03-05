@@ -76,13 +76,14 @@ export function Rx() {
               </p>
               <p className="rx-cards">
                 <img className="wrap-icon" src="/assets/rx_icon-06.svg" height="50px" />
-                And, enjoy <img className="listmmlogo" src="/assets/mmlogorewards-2x.svg" />
+                And, enjoy &nbsp;
+                <img className="listmmlogo" src="/assets/mmlogorewards-2x.svg" />
                 &nbsp;
                 <img className="listmmlogo" src="/assets/mmlogorewards-rxlink.svg" />
               </p>
             </div>
           </ul>
-          <button className="rxactivate">Activate Now</button>
+          <p className="rxactivate  ">Activate Now</p>
         </div>
 
         <Footer></Footer>

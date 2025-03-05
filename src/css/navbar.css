@@ -197,12 +197,6 @@ button.navbar-toggler,
 .nav-link{
   color:white;
   font-family: 'NeuzeitGro-Lig';
-
-}
-
-.navbarimagepulse{
-  padding: 1em;
-  animation: call 2s infinite linear;
 }
 
 .navbarimage{

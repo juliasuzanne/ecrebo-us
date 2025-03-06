@@ -11,6 +11,8 @@
 .click-ref {
   color: white;
   margin-top: 100px;
+  font-size: var(--typography-sm);
+  font-family: 'NeuzeitGro-Lig';
 
   a {
     color: var(--bright-green);

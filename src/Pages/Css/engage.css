@@ -111,7 +111,7 @@
   }
   .personalizedheader{
     padding: 5px;
-    padding-left: 6vw;
+    padding-left: 64px;
     text-align: left;
     font-size: var(--typography-lg);
   }
@@ -168,8 +168,7 @@
   }
   .personalizedheader{
     padding: 5px;
-    padding-left: 10vw;
-
+    padding-left: 24px;
     text-align: left;
     font-size: 4.25vh;
   }
@@ -253,7 +252,7 @@
 
 @media screen and (max-width: 570px){
   #points{
-    max-width: 100%;
+    min-width: 100%;
     }
   }
 
@@ -294,13 +293,16 @@
 
 .itemtitle{
   font-family: "Gilroy-Regular";
-  font-size: 2vh;
-  margin: 1vw;
+  margin: 4px;
 }
 
 #price{
 font-weight: bold;
-font-size: 3.4vh;
+font-size: var(--typography-x-md);
+
+  @media only screen and (max-width: 786px) {
+    font-size: var(--typography-md);
+  }
 }
 
 #strikethrough{
@@ -311,21 +313,22 @@ font-size: 3.4vh;
 }
 
 .pointsmmrewardsimage{
-  height: 4vh;
-  padding-top: 1vh;
-  padding-bottom: .5vh;
+  width: 100%;
+  max-width: 140px;
+  padding-top: 2px;
+  padding-bottom: 1px;
 }
 
 .savingsmmrewardsimage{
-  height:4.8vh;
-  padding-top: 1vh;
-  padding-bottom: .9vh;
+  height: 23px;
+  padding-top: 2px;
+  padding-bottom: 1px;
   padding-left: 0;
   margin-left: 0;
 }
 
 #engagehead{
-font-size: clamp(2.2vh, 20px, 5vw);
+font-size: var(--typography-sm);
 width: 90%;
 font-family: "PulpDisplay-SemiBold";
 }
@@ -333,7 +336,7 @@ font-family: "PulpDisplay-SemiBold";
 #saving{
   font-weight: bold;
   color: rgb(4, 65, 4);
-  font-size: 2vh;
+  font-size: var(--typography-xs);
 }
 
 input[type="checkbox"] {
@@ -357,7 +360,6 @@ input[type="checkbox"]{
 
 .large2x {
   font-family: "NeuzeitGro-Bol";
-  font-size: 2.4vw;
 }
 
 .form-control + .form-control {

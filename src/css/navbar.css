@@ -123,6 +123,7 @@ button.navbar-toggler,
 .navbar-reg {
   width: 100%;
   height: auto;
+  
   background: linear-gradient(var(--dark-purple), #2D2E5B);
 }
 

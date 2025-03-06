@@ -143,7 +143,7 @@
 .demo-button-container {
   display: flex;
   gap: 7px;
-  transition: gap 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 
   .purple-arrow {
     background-image: url("/assets/ArrowPurple.svg");
@@ -157,4 +157,5 @@
 
 .demo-button-container:hover {
   gap: 10px;
+  opacity: 70%;
 }

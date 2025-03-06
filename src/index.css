@@ -72,10 +72,10 @@ html {
   }
 }
 
-body {
+body, html {
   margin: 0;
   overflow-x: hidden;
-  max-width: unset;
+  max-width: 100%;
 }
 
 canvas {

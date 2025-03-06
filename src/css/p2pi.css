@@ -159,8 +159,8 @@
   }
 
   @media only screen and (max-width: 786px) {
-    background-color: #cb9e2240;
-    color: white;;
+    background-color: #ffffff22;
+    color: white;
   }
 
 }
@@ -176,7 +176,7 @@
   @media only screen and (max-width: 786px) {
     text-align: center;
     border-left: 0px;
-    border-top: 1px solid rgba(255, 255, 255, 0.497);
+    border-top: 0.5px solid rgba(255, 255, 255, 0.497);
   }
 
   .p2pi-event-title-title {

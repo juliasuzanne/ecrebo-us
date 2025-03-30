@@ -27,7 +27,7 @@ export function P2PIBadge() {
                 <br className="p2pi-event-br"></br>8
               </div>
               <div className="p2pi-event-title">
-                <p className="p2pi-event-title-title">How Loblaw is Rethinking Loyalty and Engagement</p>
+                <p className="p2pi-event-title-title">How Loblaws is Rethinking Loyalty and Engagement</p>
                 <p>
                   <img className="p2pi-map-icon" alt="Icon of map symbol" src="/assets/map-icon.svg" />
                   Rosemont, IL
